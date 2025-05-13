@@ -1,0 +1,17 @@
+1. Open git terminal on local system in dedicated project folder.
+2. clone common repository with given command
+   -> git clone https://github.com/sqatools/GTM_PS_Batch10.git  
+
+3.  Once the clone is successful, then verify repository created successfully
+    in local folder  GTM_PS_BATCH10
+     ->  dir
+
+4. Navigate to repository folder with command
+   -> cd  GTM_PS_BATCH10
+
+5. Check files/folder inside repository with command
+  -> dir  # Deepesh
+
+6. Create a folder with your name in repo directory. e.g. Vidya
+
+7. Create a text file inside your name folder e.g. test_git_file.txt
