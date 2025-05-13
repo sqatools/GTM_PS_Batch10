@@ -15,3 +15,28 @@
 6. Create a folder with your name in repo directory. e.g. Vidya
 
 7. Create a text file inside your name folder e.g. test_git_file.txt
+
+8. go to terminal try to check status
+   ->  git status  : folder name will show in red color
+
+9. add folder to git with command
+   ->  git add folder_name
+
+10. check status again
+   ->  git status :  folder will show in green color
+
+11. initiate commit operation with command below
+
+   ->  git commit -m "commit message"
+
+12. Perform git push operation
+   ->  git push : push operation may fail with error push rejected
+
+13. command to update your repo locally.
+   ->  git pull
+   ->  It will open one editor (Linux editor)
+   ->  press ESC key on keyword
+   ->  Type :wq and hit enter
+   ->  It will close the pull details editor and update local repository.
+
+14. 
