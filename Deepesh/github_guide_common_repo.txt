@@ -39,4 +39,11 @@
    ->  Type :wq and hit enter
    ->  It will close the pull details editor and update local repository.
 
-14. 
+
+#################### Multi Branching Model #####################
+1. Go to GitHub server
+2. Open GTM_PS_BATCH10 repository
+3. click on branching dropdown, default branch name is main
+4. click on view all branches link ->  default branch will be visible (main)
+5. Click on New Branch button and provide new branch name e.g. deepesh_feature
+   ->  click on 'create new branch' button 
