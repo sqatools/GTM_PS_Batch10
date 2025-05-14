@@ -65,4 +65,30 @@
        ->  feature branch should be the active branch.
 
 
+9.  Create a file in your folder.
+10. goto terminal and check status with command 
+    ->  git status : new file will show in red color
+
+11. Add file with git add command
+    ->  git add file_path
+
+12. Initiate commit operation with command
+    ->  git commit -m "message"
+
+13. perform git push operation with command
+    ->  git push
+
+14. Check newly added file should be available in feature branch on GitHub server.
+
+15. Raise a pull again main branch with below steps
+
+16.  Navigate to repository folder and check there should green button to raise a pull request.
+     ->  compare & pull request
+
+17. 
+
+
+
+
+
   
