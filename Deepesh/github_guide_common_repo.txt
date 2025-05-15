@@ -85,7 +85,25 @@
 16.  Navigate to repository folder and check there should green button to raise a pull request.
      ->  compare & pull request
 
-17. 
+17. If above button is not visible
+    ->  Go to git server
+    ->  server for your branch
+    ->  click on contribute dropdown
+    ->  click on open pull request button.
+
+18. Create a pull request with title, description and required screenshot.
+
+19.  Add review from review section, then select any team member to review code.
+
+20.  The review has to review the code and approve pull request.
+
+21.  Once we got approval from reviewer, then we can merge changes to main branch.
+
+22.  Once feature branch changes are done, then it will visible in main branch.
+
+
+
+
 
 
 
