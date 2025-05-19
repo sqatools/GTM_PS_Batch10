@@ -2,6 +2,9 @@
 a = 50
 b = 30
 print("Addition of a & b :", a+b)
+
+c = a+b
+print("Value of c :", c)
 print(id(a))
 
 
@@ -9,21 +12,25 @@ print("-"*50)
 # 2. Python Program to subtract two integer values.
 V1 = 95
 V2 = 45
+V3 = V1-V2
 print("Subtraction of V1 & V2 :", V1-V2)
+print("Value of V3 :", V3)
 
 
 print("-"*50)
 # 3. Python program to multiply two numbers.
 A1 = 10
 B1 = 40
+C1 = A1*B1
 print("Multiplication of A1 & B1 :", A1*B1)
+print("Value of C1 :", C1)
 
 
 print("-"*50)
 # 4. Python program to repeat a given string 5 times.
-String1 = "Nisha"
-n1 = 5
-print("Output :", String1*n1)
+String = "Nisha"
+n = 5
+print("Output :", String*n)
 
 
 print("-"*50)
@@ -52,8 +59,8 @@ print("Value of H2 :", H2)
 
 print("-"*50)
 # 8. Python program to solve this Pythagoras theorem.
-#Theorem : a^2+b^2=c^2
-#Result : a**2+b**2
+# Theorem : a^2+b^2=c^2
+# Result : a**2+b**2
 a = 2
 b = 3
 print("Hypotenuse C^2 :", a**2+b**2)
