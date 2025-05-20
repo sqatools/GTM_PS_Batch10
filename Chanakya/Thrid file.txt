@@ -1,0 +1,6 @@
+adding the 3 file to repository
+
+
+git add Chanakya/Second file.txt  Chanakya/Thrid file.txt
+Third line
+
