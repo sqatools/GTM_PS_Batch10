@@ -17,6 +17,11 @@ print("value of,x,y,z:", x, y,z)
 
 
 
+p,t,r=20,3,8
+si=[p*t*r/100]
+print("si:", si)
+
+
 
 
 
