@@ -115,3 +115,70 @@ A = 5
 print("Square of 5 :", A**2) # 25
 print("Cube of 5 :", A**3) # 125
 print("5 repeat 5 time :", A**5) # 3125
+
+print("_"*50)
+########### compare two values with equal to and not equal to  ####
+
+x = 40
+y = 40
+z = 70
+
+# check and x and y have same value
+print(x == y) # True
+
+# check and x and z values are same
+print(x == z) # False
+
+# check and y and z values are not same
+print(y != z)  # True
+
+
+#############################################
+# write a python program to solve quadratic equation
+# (a+b)^2 = a^2 + b^2 + 2ab
+a = 9
+b = 7
+lhs = (a+b)**2
+rhs = a**2 + b**2 + 2*a*b
+print("LHS output :", lhs)
+print("RHS output :", rhs)
+
+
+
+##################################################
+# write a program to get average 5 numbers
+n1 = 50
+n2 = 60
+n3 = 70
+n4 = 90
+n5 = 100
+
+average = (n1+n2+n3+n4+n5)/5
+print("average output :", average)
+# average output : 74.0
+
+# class work
+# 1. write a program to calculate simple interest
+# si = (P*R*T)/100
+# P = principle amount
+# R = rate of interest
+# T = time in year
+
+# 2. write a program to calculate the compound interest
+"""
+CI = P(1+r/n)^nt - P
+P : principle amount
+r :  rate of interest
+n :  Number of time interest is compounded
+t : time in year
+
+"""
+
+# 3. Find area of sphere
+"""
+formula = 4*PI*R**2
+PI = 3.21
+R = radius
+
+
+"""
