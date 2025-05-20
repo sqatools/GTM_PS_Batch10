@@ -8,18 +8,23 @@
 
 # wap calucated the compound interst
 
-p = 500
-r = 10
-n = 2
-t = 3
-
-CI = p*(1+r/n)**(n*t)-p
-print(CI)
+# p = 500
+# r = 10
+# n = 2
+# t = 3
+#
+# CI = p*(1+r/n)**(n*t)-p
+# print(CI)
 
 # Wap find the area of shere
 
 # formal = 4*pi*r*2
-
 # r = 10
 # area = 4*3.14*r*r
 # print(area)
+b = 10
+c = 10
+a = 20
+print("Address of a:", a, id(a))
+print("Address of b:", b, id(b))
+print("Address of c:", c, id(c))
