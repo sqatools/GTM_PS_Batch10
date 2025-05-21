@@ -65,7 +65,34 @@ print("#9. a*b*c:", result)
 #10 Addition
 n1=9
 n2=7
-print("n1+n2: ",n1+n2)
+print("#10. n1+n2: ",n1+n2)
+
+#11 Area of square
+side = 9
+print("#11. Area of square: ",side**2)
+
+#12 Area of circle
+radius = 9
+area = 3.14*radius*radius
+print("#12. Area of circle: ",area)
+
+#13 Area of cube
+side = 9
+area = 6*side*side
+print("#13. Area of cube: ",area)
+
+#14.Division
+a=8
+b=2
+print("#14. a/b:", a/b)
+
+#15.Area of Cylinder
+h = 9
+r = 9
+area = 2*3.14*r*h+2*3.14*r*r
+print("#15. Area of cylinder: ",area)
+
+
 
 
 
