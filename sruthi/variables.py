@@ -92,6 +92,11 @@ r = 9
 area = 2*3.14*r*h+2*3.14*r*r
 print("#15. Area of cylinder: ",area)
 
+#16.reverse string
+num = int(input("#16.Enter a number:"))
+reverse = str(num)
+print(" Reverse of number: ", reverse[::-1])
+
 
 
 
