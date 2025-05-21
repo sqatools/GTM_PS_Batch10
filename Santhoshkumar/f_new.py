@@ -71,7 +71,7 @@ RHS= a**3-3*a**2*b+3*a*b**2+b**3
 print("#(a – b)3=",RHS)
 
 print("_"*50)
-"""
+
 sq=int(input("enter a side of square:"))
 print("Area of a square:",sq**2)
 
@@ -98,7 +98,7 @@ PI=3.14
 area=2*PI*r*h + 2*PI*r*r
 print("area of the cyclinder: ",area)
 print("_"*50)
-"""
+
 
 
 
@@ -115,7 +115,7 @@ print("_"*50)
 #compound Interset
 
 #CI=P(1+r/n)^nt - P
-"""
+
 #P=500000
 #r=8
 #n=5
@@ -130,11 +130,6 @@ t=int(input("enter number of years compunded:"))
 amount=p*((1+r/100)**(n*t))
 print("compund interset:",amount)
 
-
-#formula= 4*PI*R**2
-#PI=3.21
-#R=radius
-"""
 
 
 
