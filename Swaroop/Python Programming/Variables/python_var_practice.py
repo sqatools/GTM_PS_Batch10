@@ -51,6 +51,45 @@ i = 20
 j = 30
 print("average of all the numbers :", h+i+j/3)
 
+#sort the program
+values = [20,30,10,50]
+
+values.sort()
+print(values)
+n = len(values)
+print(n)
+if n%2 == 1:
+    median_value = values[n//2]
+else:
+    median_value = (values[n//2-1]+values [n//2])/2
+print(f"The median is : {median_value}")
+
+
+#Print square and cube of given number
+num1 = 5
+print("square of number:",num1**2)
+print("cube of number:", num1**3)
+
+#Python interchange values between variable
+g = 10
+f = 20
+g,f = f,g
+print("changed values between variables:",g,f)
+
+#Pythogrous theorem
+a = 3
+b = 4
+c = a**2 + b**2
+print("values of c:", c)
+z = c/5
+print(z)
+
+#calculate area of square
+side = int(input("Enter the square:"))
+print ("area of square:",side**2)
+
+
+
 
 
 
