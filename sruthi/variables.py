@@ -98,6 +98,37 @@ reverse = str(num)
 print(" Reverse of number: ", reverse[::-1])
 
 
+#16.reverse string
+num = int(input("#16.Enter a number:"))
+reverse = str(num)
+print(" Reverse of number: ", reverse[::-1])
+
+# 17. Python program to print the square and cube of a given number.
+C1 = 10
+print("# 17. Square of C1 :", C1**2)
+print("Cube of C1 :", C1**3)
+
+#18.Python program to solve the given math formula.
+# Formula : (a+b)^2 = a^2 + b^2 + 2ab
+# Result : a**2 + b**2 + 2*a*b
+a = 2
+b = 3
+print("# 18. Value of (a+b)^2 :", a**2 + b**2 + 2*a*b)
+
+#19.Substraction and Addition
+a=9
+b=7
+c=9
+print("#19. result:", (b-c)+(a+b))
+
+#20. Substraction
+num1 = 80
+num2 = 20
+print("#20. Subtraction of num1 - num2 :", num1 - num2)
+
+
+
+
 
 
 
