@@ -8,3 +8,5 @@ rhs = a**2 + b**2 + 2*a*b
 print("The value of lhs : " , lhs)
 print("The value of rhs :" , rhs)
 print("Verify lhs = rhs :" , lhs == rhs)
+print("Verify lhs = rhs :" , lhs != rhs)
+
