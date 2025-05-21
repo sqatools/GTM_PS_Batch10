@@ -35,19 +35,19 @@ u3 = 60
 u4 = 70
 print("# 5. Average of u1 u2 u3 & u4 :", u1+u2+u3+u4/4)
 
-# 11. Python program to solve the given math formula.
+# 6. Python program to solve the given math formula.
 # Formula : (a–b)^2 = a^2 + b^2 – 2ab
 # Result : a**2 + b**2 - 2*a*b
 a = 4
 b = 9
-print("# 11. Value of (a–b)^2 :", a**2 + b**2 - 2*a*b)
+print("# 6. Value of (a–b)^2 :", a**2 + b**2 - 2*a*b)
 
-#13. Python program to solve the given math formula.
+#7 Python program to solve the given math formula.
 # Formula : (a+b)^3 = a^3 + 3ab(a+b) + b^3
 # Result : a**3 + 3*a*b*(a+b) + b**3
 a = 3
 b = 9
-print("# 13. Value of (a+b)^3 :", a**3 + 3*a*b*(a+b) + b**3)
+print("# 7. Value of (a+b)^3 :", a**3 + 3*a*b*(a+b) + b**3)
 
 
 
