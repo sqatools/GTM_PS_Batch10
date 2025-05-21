@@ -49,6 +49,30 @@ a = 3
 b = 9
 print("# 7. Value of (a+b)^3 :", a**3 + 3*a*b*(a+b) + b**3)
 
+#8 Take two variables as input and assign value to them.
+a = 3
+b = 2
+result = (a+b)*(a-b)
+print("#8. (a^2-b^2): ",result)
+
+#9 Multiplication
+a=9
+b=9
+c=6
+result= a*b*c
+print("#9. a*b*c:", result)
+
+#10 Addition
+n1=9
+n2=7
+print("n1+n2: ",n1+n2)
+
+
+
+
+
+
+
 
 
 
