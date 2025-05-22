@@ -10,3 +10,10 @@ a1 , b1 ,c1 = 10 , 20 , 30
 Sum = a1 + b1 + c1
 
 print("Addition : " , Sum)
+
+print("-" * 50)
+
+x = 3
+x += 4
+
+print(x)

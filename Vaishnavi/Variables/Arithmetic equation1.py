@@ -9,4 +9,5 @@ print("The value of lhs : " , lhs)
 print("The value of rhs :" , rhs)
 print("Verify lhs = rhs :" , lhs == rhs)
 print("Verify lhs = rhs :" , lhs != rhs)
-
+print("Verify lhs = rhs :" , lhs == rhs or lhs != rhs )
+print("Verify lhs = rhs :" , lhs == rhs and lhs != rhs )
