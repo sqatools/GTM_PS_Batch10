@@ -154,11 +154,17 @@ b = 20
 # r = Anual interest rate
 # t = time
 
-P = 1000
-r = 10
-t = 2
+# P = 1000
+# r = 10
+# t = 2
+#
+# interest = P+(P/r)*t
+# total = interest
+# print("simple interest :",interest)
+# print("Total interest :",total)
 
-interest = P+(P/r)*t
-total = interest
-print("simple interest :",interest)
-print("Total interest :",total)
+a = [1,2,3,4,5,6]
+for num in a:
+    if num %2 ==0:
+        print(num,"this is a odd number")
+    else:print(num,"this is even number")
