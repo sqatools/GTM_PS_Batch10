@@ -1,5 +1,6 @@
 # 1. Python Program to add two integer values.
 import math
+from datetime import datetime
 
 a = 50
 b = 30
@@ -45,6 +46,23 @@ print("# 5. Average of N1 N2 N3 & N4 :", N1+N2+N3+N4/4)
 
 
 print("-"*50)
+# 6. Python program to get the median of given numbers.
+# Note: all the numbers should be arranged in ascending order
+# Formula : (n+1)/2 for even
+# Formula : ((n+2)+(n/2+1))/2 for odd
+# n = Number of values
+
+data = [10, 30, 20, 40, 50, 60]
+data.sort()
+n = len(data)
+if n % 2 == 1:
+    median_value = data[n//2]
+else:
+    median_value = (data[n//2-1]+data[n//2])/2
+print("# 6. The median Value :", median_value)
+
+
+print("-"*50)
 # 7. Python program to print the square and cube of a given number.
 C1 = 10
 print("# 7. Square of C1 :", C1**2)
@@ -62,59 +80,83 @@ print("# 8. Value of H2 :", H2)
 print("-"*50)
 # 9. Python program to solve this Pythagoras theorem.
 # Theorem : a^2+b^2=c^2
-# Result : a**2+b**2
-a = 2
-b = 3
-print("# 9. Hypotenuse c^2 :", a**2+b**2)
-print("Value of c :", math.sqrt(a**2+b**2))
+# LHS = a**2+b**2
+# RHS = c**2
+a = 3
+b = 4
+LHS = a**2+b**2
+c = math.sqrt(LHS)
+print("# 9. Hypotenuse c :", c)
+
+RHS = math.hypot(a, b)
+print("# 9. Hypotenuse c :", RHS)
 
 
 print("-"*50)
 # 10. Python program to solve the given math formula.
 # Formula : (a+b)^2 = a^2 + b^2 + 2ab
-# Result : a**2 + b**2 + 2*a*b
+# RHS : a**2 + b**2 + 2*a*b
+# LHS : (a+b)**2
 a = 2
 b = 3
-print("# 10. Value of (a+b)^2 :", a**2 + b**2 + 2*a*b)
+RHS = a**2 + b**2 + 2*a*b
+LHS = (a+b)**2
+print("# 10. RHS (a^2+b^2+2ab) :", RHS)
+print("# 10. LHS (a+b)^2 :", LHS)
 
 
 print("-"*50)
 # 11. Python program to solve the given math formula.
 # Formula : (a–b)^2 = a^2 + b^2 – 2ab
-# Result : a**2 + b**2 - 2*a*b
-a = 4
-b = 5
-print("# 11. Value of (a–b)^2 :", a**2 + b**2 - 2*a*b)
+# RHS = a**2 + b**2 - 2*a*b
+# LHS = (a–b)**2
+a = 3
+b = 9
+RHS = a**2 + b**2 - 2*a*b
+LHS = (a-b)**2
+print("# 11. RHS (a^2+b^2-2ab) :", RHS)
+print("# 11. LHS (a-b)^2 :", LHS)
 
 
 print("-"*50)
 # 12. Python program to solve the given math formula.
 # Formula : a^2 – b^2 = (a-b)(a+b)
-# Result : (a-b)*(a+b)
+# RHS = (a-b)*(a+b)
+# LHS = a**2 - b**2
 a = 7
 b = 6
-print("# 12. Value of a^2–b^2 :", (a-b)*(a+b))
+RHS = (a-b)*(a+b)
+LHS = a**2 - b**2
+print("# 12. RHS (a-b)(a+b) :", RHS)
+print("# 12. LHS a^2 – b^2 :", LHS)
 
 
 print("-"*50)
 # 13. Python program to solve the given math formula.
 # Formula : (a+b)^3 = a^3 + 3ab(a+b) + b^3
-# Result : a**3 + 3*a*b*(a+b) + b**3
+# RHS = a**3 + 3*a*b*(a+b) + b**3
+# LHS = (a+b)**3
 
 a = 3
 b = 2
-print("# 13. Value of (a+b)^3 :", a**3 + 3*a*b*(a+b) + b**3)
-
+RHS = a**3 + 3*a*b*(a+b) + b**3
+LHS = (a+b)**3
+print("# 13. RHS a^3+3ab(a+b)+b^3 :", RHS)
+print("# 13. LHS (a+b)^3 :", LHS)
 
 
 print("-"*50)
 # 14. Python program to solve the given math formula.
 # Formula : (a–b)^3 = a^3 – 3a^2b + 3ab^2 + b^3
-# Result : a**3 - 3*a**2*b + 3*a*b**2 + b**3
+# RHS = a**3 - 3*a**2*b + 3*a*b**2 + b**3
+# LHS = (a-b)**3
 
 a = 3
 b = 2
-print("# 14. Value of (a-b)^3 :", a**3 - 3*a**2*b + 3*a*b**2 + b**3)
+RHS = a**3 - 3*a*b*(a-b) - b**3
+LHS = (a-b)**3
+print("# 14. RHS a^3-3ab(a-b)-b^3 :", RHS)
+print("# 14. LHS (a-b)^3 :", LHS)
 
 
 print("-"*50)
@@ -132,12 +174,70 @@ print("-"*50)
 
 r = 4
 PI = 3.14
-print("# 16. Area of Circle :", PI*r**2)
+Area = PI*r**2
+print("# 16. Area of Circle :", Area)
 
 
 print("-"*50)
 # 17. Python program to calculate the area of a cube.
-# Formula = 6*a*a
-
+# Formula = 6a^2
 a = 6
-print(" 17. Area of Cube : ", 6*a*a)
+Area = 6*a**2
+print("# 17. Area of Cube : ", Area)
+
+
+print("-"*50)
+# 18. Python program to calculate the area of the cylinder.
+# Formula = 2PIr*h + 2PIr^2
+r = 4
+h = 5
+PI = 3.14
+Area = 2*PI*r*h + 2*PI*r**2
+print("# 18. Area of the Cylinder :", Area)
+
+
+print("-"*50)
+# 19. Python program to calculate simple interest.
+# Formula = P*r*t/100
+# P = Principle Amount
+# r = Annual interest rate
+# t = time
+P = 1000
+r = 10
+t = 2
+SI = P*r*t/100
+print("# 19. Simple Interest :", SI)
+
+
+print("-"*50)
+# 20. Python program to print the current date in the given format
+# Note: Use the DateTime library
+date = datetime.now()
+print("# 20. Current Date :", date.strftime("%d/%m/%Y"))
+
+
+print("-"*50)
+# 21. Python program to calculate days between 2 dates.
+# Input date : (2025, 5, 23) (2025, 5, 01)
+Date1 = datetime(2025, 5, 25)
+Date2 = datetime(2025, 5, 1)
+Output = (Date1-Date2).days
+print("#21. Number of days between two dates are :", Output, "Days")
+
+
+print("-"*50)
+# 22. Python program to calculate compound interest.
+# Formula : A = P(1+r/n)^(nt)
+# A = Final Amount
+# P = Principal Amount
+# r = Annual interest rate
+# n	= number of times interest applied per time period
+# t	= number of time periods elapsed
+# CI = A - P
+P = 3000
+r = 5
+t = 3
+A = P*(1+r/100)**t
+CI = A - P
+print("Final Amount :", A)
+print("# 22. Compound Interest :", CI)
