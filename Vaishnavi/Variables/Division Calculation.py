@@ -1,5 +1,5 @@
 a = 169
-b = 3
+b = 4
 Div = a/b
 Div2 = a//b
 
