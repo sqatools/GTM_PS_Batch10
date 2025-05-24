@@ -1,4 +1,4 @@
-#1.Python Program to add two integer values.
+"""#1.Python Program to add two integer values.
 import statistics
 
 a = int(input("Enter the First Number:"))
@@ -77,5 +77,26 @@ print("_"*50)
 formula4 = a**3 + 3 * a * b *(a + b) + b**3
 print("The (a - b)^3 is:",formula4)
 
-
-
+#15)Python program to calculate the area of the square.
+a = int(input("Enter one side of Square :"))
+area = a**2
+print("The area of square is:", area)
+print("_"*50)
+#16)Python program to calculate the area of a circle
+pi = 3.14
+radius = int(input("Enter the radius of circle :"))
+area = pi*radius**2
+print("The area of circle is:", area)
+import math
+#17) Python program to calculate the area of a cube
+size = int(input("Enter the size of cube :"))
+area = 6 * size ** 2
+print("The area of cube is:", area)
+import math
+#18). Python program to calculate the area of the cylinder.
+radius = int(input("Enter the radius of cylinder :"))
+height = int(input("Enter the height of the cylinder :"))
+area = 2 * 3.14 * radius * height + 2 * 3.14 * radius ** 2
+print("The area of cylinder is:", area)
+"""
+#19)Python program to check whether the given number is an Armstrong number or not.
