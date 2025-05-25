@@ -65,7 +65,7 @@ print("adding the values are :" , c+d)
 print("substraction the values are : ", c-d)
 print("Mulitipication of values are : " , c*d)
 print("divisoin of the valus are : ", c/d)
-print("power operation of the values are " , c**d)
+print("power operation of the values are " , c**3)
 print("double division fo the vlaues are : " , c//d)
 
 e = c+d
