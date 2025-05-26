@@ -176,7 +176,7 @@ str1 = "Python"
  0  1  2  3  4  5
  P  y  t  h  o  n
 -6 -5 -4 -3 -2 -1
-
+  
 """
 
 print(str1[0])  # P
@@ -190,3 +190,107 @@ print(str2[5])  # a
 print(str2[-8])  # g
 print(str2[6])  # m
 print(str2[-2])  # n
+
+print("_" * 50)
+######## list #########
+"""
+Properties:
+->  List is mutable data type. we can modify the list at any point of time.
+->  List store values in comma separated format
+->  List can contain all the type of data, e.g. int, float, complex, string, list
+    tuple, dict, set, bool.
+->  List follows positive negative indexing as like string.
+->  list store data in square brackets.
+->  Usage of the list data type, where we update data regularly
+    e.g employee management, there we can add, delete, and update employee info.
+"""
+
+list1 = [4, 5.6, 'Hello', 5 + 8j, [3, 5, 6], (1, 2, 3), {'a': 123}, {4, 7, 8, 4}, True]
+
+print(list1, type(list1))
+# [4, 5.6, 'Hello', (5+8j), [3, 5, 6], (1, 2, 3), {'a': 123}, {8, 4, 7}, True] <class 'list'>
+
+# list follows positive and negative indexing
+
+print(list1[4])  # [3, 5, 6]
+print(list1[-2])  # {8, 4, 7}
+print(list1[-6])  # (5+8j)
+print(list1[6])  # {'a': 123}
+print(list1[4][1])  # 5
+
+list2 = [4, 6, 8]
+list2.append(10)
+print("list2 :", list2)  # list2 : [4, 6, 8, 10]
+
+print("_" * 50)
+################################# Tuple ####################################
+
+"""
+Properties:
+->  Tuple is immutable data type. we can not modify the tuple.
+->  Tuple store values in comma separated format.
+->  Tuple can contain all the type of data, e.g. int, float, complex, string, list
+    tuple, dict, set, bool.
+->  Tuple follows positive negative indexing as like string and list.
+->  Tuple store data in round brackets.
+->  Usage of the tuple data type, where the data is fixed.
+    e.g store days in a months, days in week, months in year.
+->  Tuple is faster than list in terms of performance.
+"""
+
+tup1 = (2, 5.6, 'Python', (4, 6, 7), [1, 3, 5], {'b': 456}, {6, 8, 9}, True, False)
+
+print(tup1, type(tup1))
+# (2, 5.6, 'Python', (4, 6, 7), [1, 3, 5], {'b': 456}, {8, 9, 6}, True, False) <class 'tuple'>
+
+
+print(tup1[4])  # [1, 3, 5]
+print(tup1[2][2])  # t
+print(tup1[-6][-1])  # 7
+print(tup1[3][-1])  # 7
+
+tup2 = (3, 6, 7)
+# we don't have any method to update the tuple values
+
+
+print("_" * 50)
+################################# Dictionary ####################################
+from pprint import pprint
+
+dict1 = {'a': 123, 'b': 4567}
+"""
+# properties:
+->  Dictionary is mutable data type, we can modify the dict data.
+->  Dict store in key value format with curly braces { key: value}
+->  Dict store unique keys, duplicate keys are not allowed.
+    if we store duplicate key, then it will only consider latest defined key.
+->  Only immutable data type can be key in dict e.g. int, float, complex, string, tuple, boolean
+->  Dict can contains all types of data as value and duplicate values are also allowed.
+    e.g. int, float, complex, string, list, tuple, dict, set, bool.
+"""
+
+dict2 = {
+    12: 456,
+    3.5: 5.6,
+    'Python': 'We are learning Python',
+    (4, 6, 7): ('a', 'b', 'c', 'd'),
+    4 + 50j: 500 + 400j,
+    True: False,
+    # list, dict, set as key in not allowed
+    # [3, 5, 6] : [6, 7, 9, 2, 34]
+    'A': [4, 6, 8, 2, 8],
+    'B': {'a': 123, 'b': 567, 'c': 890},
+    'C': {3, 6, 8, 3, 7, 8}
+}
+
+pprint(dict2)
+
+print(type(dict2))
+# <class 'dict'>
+
+print("_"*50)
+# get dict data with key
+print(dict2['A']) # [4, 6, 8, 2, 8]
+print(dict2['A'][3]) # 2
+print(dict2['B']) # {'a': 123, 'b': 567, 'c': 890}
+print(dict2['B']['c']) # 890
