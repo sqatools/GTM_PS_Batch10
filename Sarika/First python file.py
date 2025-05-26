@@ -87,3 +87,19 @@ print("p-q-r:", p-q-r)
 a1 = 32
 a2 = 4
 print("a1/a2:", a1/a2)
+
+##########Division of values #################
+d1 = 45
+d2 = 4
+print("division single/:", d1/d2)
+print("division with double //:", d1//d2)
+
+####Remainder Operator##############
+v1 = 15
+v2 = 4
+print("remainder value:", v1%v2)
+
+########Power Operator########
+A = 6
+print("cube:", A**3)
+print("double:", A**2)
