@@ -294,3 +294,59 @@ print(dict2['A']) # [4, 6, 8, 2, 8]
 print(dict2['A'][3]) # 2
 print(dict2['B']) # {'a': 123, 'b': 567, 'c': 890}
 print(dict2['B']['c']) # 890
+
+
+print("_"*50)
+#################### Set ############################
+set1 = {4, 6, 7, 'a', 4, 7}
+print(set1, type(set1))
+# {'a', 4, 6, 7} <class 'set'>
+"""
+# properties:
+->  Set is mutable data type, we can modify the set values.
+->  Set only contains unique data, duplicate data is not allowed.
+->  Only immutable data type can be member in the set.
+    e.g. int, float, string, tuple, boolean.
+->  Set store values in random order.
+->  Set does not follow indexing.
+->  Set store data in curly with comma separated.
+"""
+
+set2 = {5, 4.5, 'Python', (4, 6, 7), True, None}
+print(set2)
+# {None, True, 4.5, 5, 'Python', (4, 6, 7)}
+
+
+# Can not add mutable data type as set member e.g. list, dict, set
+#set3 = {5, 4.5, 'Python', (4, 6, 7), True, None, [4, 6, 8]}
+#print(set3)
+# TypeError: unhashable type: 'list'
+
+
+set4 = {5, 7, 9, 10}
+set4.add(500)
+print(set4)
+# {5, 7, 9, 10, 500}
+
+
+print("_"*50)
+#######################Boolean Data type #############
+"""
+Properties:
+->  Boolean is immutable data type, can not modify it.
+->  Boolean only contains two values True or False
+->  Generally boolean values are the output of any condition.
+"""
+v1 = True
+v2 = False
+print(v1, type(v1))
+# True <class 'bool'>
+
+print(v2, type(v2))
+# False <class 'bool'>
+
+a = 40
+b = 60
+c = 40
+print(a == b) # False
+print(c == a) # True
