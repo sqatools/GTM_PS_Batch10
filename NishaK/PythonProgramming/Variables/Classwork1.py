@@ -3,6 +3,7 @@
 # P = Principle Amount
 # r = interest rate
 # t = time in year
+from datetime import datetime
 
 P = 1000
 r = 10
@@ -16,7 +17,7 @@ print("-"*50)
 # Program to calculate compound interest.
 # CI = P(1+r/n)^nt-P
 
-P = 1000
+P = 10000
 r = 10
 n = 1
 t = 2
@@ -34,4 +35,12 @@ PI = 3.21
 
 Area = 4*PI*R**2
 
-print("Area of Sphere :", Area) #Area of Sphere : 51.36
+print("Area of Sphere :", Area)  #Area of Sphere : 51.36
+
+
+date_1 = datetime(2025, 1, 5)
+date_2 = datetime(2025, 1, 22)
+result = (date_2 - date_1).days
+print("No of days :", result)
+
+

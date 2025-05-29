@@ -83,11 +83,43 @@ c = a**2 + b**2
 print("values of c:", c)
 z = c/5
 print(z)
-
+"""""
 #calculate area of square
 side = int(input("Enter the square:"))
 print ("area of square:",side**2)
+"""
 
+
+
+#solve a^2+b2=2ab formula
+l = 10
+j = 20
+r = ("show formula result:",a**2+b**2+2*a*b)
+print(r)
+
+#Math formula a2-b2 =(a-b)(a+b)
+a = 2
+b = 4
+r =("print the value a2-b2:",(a-b)*(a+b))
+print(r)
+
+#Armstrong number
+"""
+n = 153
+rev = 0
+while n>0:
+    rem = n%10
+    rev = rev +rem**3
+    n = n//10
+if rev == n:
+    print("it's an armstrong")
+else:
+    print("it's not  armstrong")
+ """"
+#current date
+import datetime
+date = datetime.datetime.now()
+print(date.strftime("%y %b %d"))
 
 
 
