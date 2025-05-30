@@ -140,3 +140,66 @@ else:
 # 1. unit < 100 : per unit charge is 15
 # 2. unit > 100  and num < 200 : per unit charge is 200
 # 3. unit > 200 : per unit charge is 25
+
+print("_"*50)
+#################### If condition with "in", "not in" operator #########
+
+# program to check given value v1 is available in list or not
+# and v2 is not available list
+list1 = [5, 7, 9, 2, 15]
+v1 = 5
+v2 = 70
+
+if v1 in list1:
+    print("v1 is available in list")
+else:
+    print("v1 is not available in list")
+
+
+# check v2 is not available in list
+if v2 not in list1:
+    print("v2 is not available in list")
+else:
+    print("v2 is available in the list")
+
+
+print("_"*50)
+#################### use of "is" and "is not" operator ###############
+# check given string in not None
+str1 = "Hello we are learning Programming"
+
+if str1 is not None:
+    print("str1 has value")
+else:
+    print("str1 is empty string")
+
+
+print("_"*50)
+# use of "is" operator
+var1 = False
+num = 30
+if var1 is True:
+    print("square of num :", num, num**2)
+else:
+    print("cube of num :", num, num**3)
+
+
+p1 = "Hello"
+if p1 is "Hello":
+    print("p1 contains Hello")
+else:
+    print("p1 does not contains Hello")
+
+
+print("_"*50)
+############# If condition in one line ############
+num = 50
+output = "even" if num%2 == 0 else "odd"
+print("output :", output, num)
+
+"""
+output : even 50
+"""
+
+
+print("even" if num%2 == 0 else "odd")
