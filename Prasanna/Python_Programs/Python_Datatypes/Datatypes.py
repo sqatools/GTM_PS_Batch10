@@ -14,11 +14,8 @@ Python Data Types
 4.  Set Data type
 5.  Boolean Data type
 
-
-
 """
-
-######### Integer Data Type ######
+######### 1. Integer Data Type ######
 """
 Properties:
 ->  Integer is immutable data type, once it is defined we can not update.
@@ -47,7 +44,8 @@ a = 200
 print(a)  # 200
 
 print("_" * 50)
-######### Float Data Type ######
+
+######### 2.Float Data Type ######
 """
 Properties:
 ->  Float is immutable data type, once it is defined we can not update.
@@ -70,6 +68,7 @@ print("f4 :", f4, type(f4))  # 6.786478326784236e+21 <class 'float'>
 print("f5 :", f5, type(f5))  # -4543.5095 <class 'float'>
 
 print("_" * 50)
+
 ######### Complex Data Type ######
 """
 Properties:
@@ -94,9 +93,9 @@ print("real number :", p2.real, type(p2.real))
 
 print("imaginary number :", p2.imag, type(p2.imag))
 # imaginary number : -500.0 <class 'float'>
+print("_" * 50)
 
 ############### Sequential data type ##############
-print("_" * 50)
 ##### string #########
 """
 Properties:
@@ -176,7 +175,7 @@ str1 = "Python"
  0  1  2  3  4  5
  P  y  t  h  o  n
 -6 -5 -4 -3 -2 -1
-  
+
 """
 
 print(str1[0])  # P
@@ -192,6 +191,7 @@ print(str2[6])  # m
 print(str2[-2])  # n
 
 print("_" * 50)
+
 ######## list #########
 """
 Properties:
@@ -223,6 +223,7 @@ list2.append(10)
 print("list2 :", list2)  # list2 : [4, 6, 8, 10]
 
 print("_" * 50)
+
 ################################# Tuple ####################################
 
 """
@@ -251,7 +252,6 @@ print(tup1[3][-1])  # 7
 
 tup2 = (3, 6, 7)
 # we don't have any method to update the tuple values
-
 
 print("_" * 50)
 ################################# Dictionary ####################################
@@ -294,7 +294,6 @@ print(dict2['A']) # [4, 6, 8, 2, 8]
 print(dict2['A'][3]) # 2
 print(dict2['B']) # {'a': 123, 'b': 567, 'c': 890}
 print(dict2['B']['c']) # 890
-
 
 print("_"*50)
 #################### Set ############################
