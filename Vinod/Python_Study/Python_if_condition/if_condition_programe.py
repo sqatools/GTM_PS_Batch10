@@ -148,7 +148,28 @@ else:
 
 age = 19
 
-if age <= 18:
+if age >= 18:
     print("person is eligible to vote on the basis (age ≥ 18):", age)
 else:
     print("person is not eligible to vote on the basis (age < 18):", age)
+
+
+# Q2. write a program to calculate the electricity bill amount on the basic of unit consumtion.
+# 1. unit < 100 : per unit charge is 15
+# 2. unit > 100  and num < 200 : per unit charge is 200
+# 3. unit > 200 : per unit charge is 25
+
+num1 = 10
+
+
+
+if num1 < 100:
+    print("Per unit charge is 15:", num1)
+elif num1 < 200:
+    print("Per unit charge is 200:", num1)
+else:
+    print("Per unit charge is 25:", num1)
+
+
+
+
