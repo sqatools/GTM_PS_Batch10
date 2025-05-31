@@ -1,3 +1,4 @@
+# IF_ELSE PYTHON PRACTISE PROGRAM
 
 # 1. Python program to check given number is divided by 3 or not.
 
@@ -11,6 +12,15 @@ else:
 print('_'*70)
 
 # 2. If else program to get all the numbers divided by 3 from 1 to 30.
+
+for i in range(1,31):
+    if i%3 == 0:
+        print(i, end=" ")
+    else:
+        pass
+
+print()
+print('_'*70)
 
 # 3. If else program to assign grades as per total marks.
 # marks > 40: Fail
@@ -64,3 +74,24 @@ else:
     print("The number is not divisible by 11.")
 
 print('_'*70)
+# 7. Python program to check given number is odd or even.
+
+a = 23
+
+if a%2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
+
+print('_'*70)
+
+# 10. Python program to validate user_id in the list of user_ids.
+
+user_ids = [1, 8, 12, 7, 65, 52, 47]
+
+id = 11
+
+if id in user_ids:
+    print("User ID is present")
+else:
+    print("User ID is not present.")
