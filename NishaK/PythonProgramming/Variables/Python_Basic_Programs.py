@@ -222,7 +222,7 @@ print("-"*50)
 Date1 = datetime(2025, 5, 25)
 Date2 = datetime(2025, 5, 1)
 Output = (Date1-Date2).days
-print("#21. Number of days between two dates are :", Output, "Days")
+print("# 21. Number of days between two dates are :", Output, "Days")
 
 
 print("-"*50)
@@ -241,3 +241,19 @@ A = P*(1+r/100)**t
 CI = A - P
 print("Final Amount :", A)
 print("# 22. Compound Interest :", CI)
+
+
+print("-"*50)
+# 23. Python program to calculate the volume of a sphere.
+# Formula = (4/3*pi*r^3)
+r = 2
+PI = 3.14
+Volume = (4/3*PI*r**3)
+print("# 23. Volume of sphere :", Volume)
+
+
+print("-"*50)
+# 24. Python program to find the square root of a number.
+# Note: Use the math library to get the square root.
+num1 = 49
+print("# 24. Square root of number :", math.sqrt(num1))
