@@ -103,3 +103,58 @@ print("remainder value:", v1%v2)
 A = 6
 print("cube:", A**3)
 print("double:", A**2)
+
+############compare two values with equal to and not equal to ##########
+
+x = 40
+y = 40
+z = 70
+
+print(x == y) #True
+print(x == z)# False
+print(x != z) #False
+
+######### Write a python program to solve quadratic equation ########
+
+# (a+b)^2 = a^2 + b^2 + 2ab
+a = 9
+b = 7
+
+lhs = (a+b)**2
+rhs = a**2 + b**2 + 2*a*b
+print("lhs output:", lhs)
+print("rhs output:", rhs)
+
+######write down to find the average of 5 numbers###########
+
+n1 = 50
+n2 = 60
+n3 = 70
+n4 = 90
+n5 = 100
+
+average = (n1 + n2 +n3 +n4 + n5)/5
+print("average of numbers:", average)
+
+######calculate simple interest.######
+
+P = 1500
+R = 5
+T = 2
+
+Q = P*R*T/100
+print("Q:", Q )
+
+#####Calculate compound interest ####
+##CI = P(1+R/N)^NT - P
+
+
+
+######Area of square######
+##Area = 4pir^2
+
+Pi = 3.21
+R = 14
+
+area = 4*3.21*R**2
+print("area:", area)
