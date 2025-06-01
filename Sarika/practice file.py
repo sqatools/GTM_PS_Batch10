@@ -80,4 +80,16 @@ rhs = a**2 + b**2 - 2*a*b
 print("lhs:", lhs)
 print("rhs:", rhs)
 
+########12). Python program to solve the given math formula.###
+###Formula : a2 – b2 = (a-b)(a+b)###
+
+a = 2
+b = 6
+
+lhs = a**2 - b**2
+rhs = (a-b)*(a+b)
+
+print("lhs:", lhs)
+print("rhs:", rhs)
+
 
