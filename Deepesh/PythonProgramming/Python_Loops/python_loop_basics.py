@@ -134,4 +134,124 @@ cube : 5 125
 cube : 9 729
 """
 
+print("_"*50)
+##################### Nested For Loop ###############
+
+# outer loop
+for i in range(1, 6): # i =1, 2, 3
+    print("Address :", i)
+    # Inner loop
+    for j in range(1, 4): # j = 1, 2, 3
+        print("Item :", j)
+
+    print("_"*50)
+
+
+print("_"*50)
+# write a program to draw triangular pattern
+"""
+*
+* *
+* * *
+* * * *
+* * * * * 
+"""
+
+for i in range(1, 6): # i = 1, 2, 3
+    for j in range(0, i): # j = 0 | 0, 1 | 0, 1, 2
+        print("*", end=' ')
+
+    print()
+
+
+print("_"*50)
+# write a program to draw reverse triangular pattern
+
+"""
+* * * * * 
+* * * *
+* * *
+* *
+*
+"""
+
+for i in range(1, 6): # i = 1, 2, 3 ....
+    for j in range(1, 7-i): # j = (1, 6), (1, 5), (1, 4)...
+        print("*", end=" ")
+
+    print()
+
+
+print("_"*50)
+################################################
+# write a program to print O pattern
+
+"""
+
+- * * * -   # i=1
+* - - - *   # i=2
+* - - - *   # i=3
+* - - - *   # i=4
+* - - - *   # i=5
+- * * * -   # i=6
+  
+"""
+
+for i in range(1, 7):
+    for j in range(1, 6):
+        if i in [1, 6]:
+            if j in [2, 3, 4]:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        elif i in [2, 3, 4, 5]:
+            if j in [1, 5]:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+
+        else:
+            print("*", end=" ")
+    print()
+
+"""
+# write a program to print T pattern
+* * * * * * 
+* * * * * * 
+    * * 
+    * * 
+    * *
+    * *
+    
+# write a program to print swastik pattern
+
+* *   * * * * *
+* *   * * * * *
+* *   * *
+* * * * * * * *
+* * * * * * * *
+      * *   * *
+* * * * *   * *
+* * * * *   * *
+
+"""
+
+
+print("_"*50)
+##############################
+# write a program to find out the given number is prime or not
+
+num = 23
+prime = True
+for i in range(2, num//2): # 2, 3, 4
+    if num%i == 0:
+        prime = False
+    else:
+        pass
+
+if prime:
+    print("This is prime number :", num)
+else:
+    print("This is not an prime number :", num)
+
 
