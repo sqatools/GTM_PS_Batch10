@@ -49,7 +49,49 @@ print("value of b:",b)
 
 ###9).Python program to solve this Pythagorous theorem.
 
-a1 = 2
-b2 = 4
-c2 = 3
-print("pythagoras")
+a = 2
+b = 4
+c = 3
+
+Q  = a**2 + b**2 - c**2
+
+print("Q:", Q )
+
+#####10). Python program to solve the given math formula.
+###Formula : (a + b)2 = a^2 + b^2 + 2ab
+
+a = 2
+b = 4
+
+lhs  = (a+b)**2
+rhs = a**2 + b**2 + 2*a*b
+
+print("lhs:", lhs)
+print("rhs:", rhs)
+
+########11). Python program to solve the given math formula.######
+###Formula : (a – b)2 = a^2 + b^2 – 2ab###
+
+a = 4
+b = 8
+lhs = (a-b)**2
+rhs = a**2 + b**2 - 2*a*b
+
+print("lhs:", lhs)
+print("rhs:", rhs)
+
+########12). Python program to solve the given math formula.###
+###Formula : a2 – b2 = (a-b)(a+b)###
+
+a = 2
+b = 6
+
+lhs = a**2 - b**2
+rhs = (a-b)*(a+b)
+
+print("lhs:", lhs)
+print("rhs:", rhs)
+
+#############
+
+
