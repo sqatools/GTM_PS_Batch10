@@ -158,3 +158,69 @@ R = 14
 
 area = 4*3.21*R**2
 print("area:", area)
+
+###20 May ####
+
+##Python Dta Type:
+# 1. Number Data Type
+#a. Integer Data Type
+#b. Float Data Type
+#c. Complex Number Data Type
+
+#2. Sequential Data Type:
+#a. String
+#b. List
+#c. Tuple
+
+#3. Dictionary Data Type
+#4. Set Data Type
+#5. Boolean Data Type
+
+###Integer Data Type#####
+
+"""
+
+Properties:
+-> Immutable, once it is defined we cannot change.
+-> Only contains whole number
+-> Can be positive or negetive 
+-> There is no specific number.
+"""
+
+num=0
+num1=10
+num2=100
+num3=458875547894562588
+num4=-456789
+
+print("num:", num, type(num))
+print("num1:", num1, type(num1))
+print("num2:", num2, type(num2))
+print("num3:", num3, type(num3))
+print("num4:", num4, type(num4))
+
+print("_" * 50)
+###Float Data Type#####
+
+"""
+Immutable, once it is defined we cannot change.
+-> Only contains pointer type values
+-> Can be positive or negetive 
+-> There is no specific number.
+
+"""
+
+f1 = 0.0
+f2 = 0.2
+f3 = 7218715678.58318784
+f4 = 6843485145443432784186.5897664962693987565
+f5 = -5463544.534843
+
+print("f1:", f1, type(f1))
+print("f2:", f2, type(f2))
+print("f3:", f3, type(f3))
+print("f4:", f4, type(f4))
+print("f5:", f5, type(f5))
+
+
+
