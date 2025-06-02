@@ -277,3 +277,26 @@ for i in range(1, 7):
 
 """
 
+print("_" * 50)
+################################################
+# write a program to print T pattern
+
+"""
+* * * * * * #1=1
+* * * * * * #1=2
+    * *     #1=3
+    * *     #1=4
+    * *     #1=5
+    * *     #1=6
+    
+"""
+
+for i in range(1, 7):  # Rows
+    for j in range(1, 6):  # Columns
+        if i == 1:
+            print("j", end=" ")  # Top row (horizontal line of T)
+        elif j == 3:
+            print("j", end=" ")  # Center column (vertical line of T)
+        else:
+            print(" ", end=" ")  # All other spaces
+    print()  # Move to next line after each row
