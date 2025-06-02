@@ -9,22 +9,23 @@ print("Value of b:",b)
 
 print("_"*70)
 
-'''
+
 # 9. Python program to solve this Pythagorous theorem.
 # Theorem : (a2 + b2 = c2)
 
 a = 8
 b = 6
+import math
 #a**2 + b**2 = c**2
 lhs = a**2 + b**2
 print(lhs)
-c = lhs
+c = math.sqrt(lhs)
 rhs = c**2
 print(rhs)
 
 print("_"*70)
 
-'''
+
 
 # 10. Python program to solve the given math formula.
 #Formula : (a + b)2 = a^2 + b^2 + 2ab
