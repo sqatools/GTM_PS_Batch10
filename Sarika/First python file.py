@@ -158,3 +158,142 @@ R = 14
 
 area = 4*3.21*R**2
 print("area:", area)
+
+###21 May ####
+
+##Python Dta Type:
+# 1. Number Data Type
+#a. Integer Data Type
+#b. Float Data Type
+#c. Complex Number Data Type
+
+#2. Sequential Data Type:
+#a. String
+#b. List
+#c. Tuple
+
+#3. Dictionary Data Type
+#4. Set Data Type
+#5. Boolean Data Type
+
+###Integer Data Type#####
+
+"""
+
+Properties:
+-> Immutable, once it is defined we cannot change.
+-> Only contains whole number
+-> Can be positive or negetive 
+-> There is no specific number.
+"""
+
+num=0
+num1=10
+num2=100
+num3=458875547894562588
+num4=-456789
+
+print("num:", num, type(num))
+print("num1:", num1, type(num1))
+print("num2:", num2, type(num2))
+print("num3:", num3, type(num3))
+print("num4:", num4, type(num4))
+
+print("_" * 50)
+###Float Data Type#####
+
+"""
+Immutable, once it is defined we cannot change.
+-> Only contains pointer type values
+-> Can be positive or negetive 
+-> There is no specific number.
+
+"""
+
+f1 = 0.0
+f2 = 0.2
+f3 = 7218715678.58318784
+f4 = 6843485145443432784186.5897664962693987565
+f5 = -5463544.534843
+
+print("f1:", f1, type(f1))
+print("f2:", f2, type(f2))
+print("f3:", f3, type(f3))
+print("f4:", f4, type(f4))
+print("f5:", f5, type(f5))
+
+####Complex Number Data Type####
+"""
+Properties:
+
+-> immutable data type
+-> combination of real and imaginary numbers
+-> Can be positive or negetive 
+
+e.g. x+yj
+x= real number
+y = imaginary number
+
+"""
+
+z =  10- 20j
+print("z:", z, type(z))
+
+#2. Sequential Data Type:
+
+####String####
+
+"""
+-> Immutable Data Type. 
+-> Can be defined with the help of single double and triple quote.
+-> follows positive and negative indexing.
+-> Can contain any type of data.
+
+"""
+
+s1 = ""
+s2 = "H"
+s3 = "Hello"
+s4 = 'Hello we are learning python'
+s5 = """Hello, what a lovely dat it is,
+I hope everything is good at your end and I wish you all 
+the best
+
+"""
+s6 = ''' Hello, what a lovely dat it is,
+I hope everything is good at your end and I wish you all 
+the best. 
+'''
+
+s7 = "Hello, we are learning 'python' language."
+s8 = 'Hello, we are learning "python" language.'
+
+print("s1:", s1,type(s1))
+
+###follows positive and negative indexing.####
+
+str1 = "Python"
+
+"""
+0 1 2 3 4 5
+P Y T H O N
+-6-5-4-3-2-1
+
+"""
+print(str1[1])
+print("str1:", str1[1])
+print(str1[-2])
+print(str1.index('O'))
+
+
+
+
+
+
+
+
+
+
+
+
+

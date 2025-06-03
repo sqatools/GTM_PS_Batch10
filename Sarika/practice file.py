@@ -89,9 +89,74 @@ b = 6
 lhs = a**2 - b**2
 rhs = (a-b)*(a+b)
 
-print("lhs:", lhs)
-print("rhs:", rhs)
+print("lhs:", lhs) ##lhs: -32
+print("rhs:", rhs) ##rhs: -32
 
-#############
+#############13). Python program to solve the given math formula#########
+##Formula : (a + b)3 = a3 + 3ab(a+b) + b3
 
+a = 3
+b = 2
 
+lhs = (a+b)**3
+rhs = a**3 + 3*a*b*(a+b) + b**3
+
+print("lhs:", lhs) #lhs: 125
+print("rhs:", rhs) #rhs: 125
+
+###########14). Python program to solve the given math formula###
+##Formula : (a – b)3 = a3 – 3a2b + 3ab2 – b3
+
+a = 4
+b = 2
+
+lhs = (a-b)**3
+rhs = a**3 - 3*a**2*b + 3*a*b**2 - b**3
+
+print("lhs:", lhs) ##lhs: 8
+print("rhs:", rhs) ##rhs: 8
+
+######15). Python program to calculate the area of the square####
+##Formula : area = a*a
+
+a = 3
+area = a*a
+
+print("area:", area) #area: 9
+
+##########16). Python program to calculate the area of a circle.###
+##Formula = PI*r*r
+
+r = 6
+PI = 3.14
+area = PI*r*r
+
+print("area:", area) ##area: 113.03999999999999
+
+###17). Python program to calculate the area of a cube.##
+##Formula = 6*a*a
+
+a = 5
+area = 6*a**2
+
+print("area:", area) ##area: 150
+
+####18). Python program to calculate the area of the cylinder###
+##Formula = 2*PI*r*h + 2*PI*r*r
+
+PI = 3.14
+r = 6
+h = 4
+
+area = 2*PI*r*h + 2*PI*r**2
+
+print("area:", area) ##area: 376.8
+
+####19). Python program to check whether the given number is an Armstrong number or not.##
+##Example: 153 = 1*1*1 + 5*5*5 + 3*3*3
+
+lhs = 153
+rhs = 1**3 + 5**3 + 3**3
+
+print("lhs:", lhs) ##lhs: 153
+print("rhs:", rhs)##rhs: 153
