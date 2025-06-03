@@ -283,7 +283,59 @@ P Y T H O N
 print(str1[1])
 print("str1:", str1[1])
 print(str1[-2])
-print(str1.index('O'))
+
+
+####### write characters with positive and negative indexing #####
+str2 = "Programming"
+print(str2[5])
+print(str2[-8])
+print(str2[6])
+
+#####26 may Datatype #####
+
+####List####
+
+"""
+##Properties###
+-> Mutable, can be modified.
+-> Store data in comma separated format.
+-> contain all type od data i.e. integer, float, tuple, set complex, string, dict. set , bool
+-> follows positive and negative indexing
+-> Store data in square bracket.
+-> Usage of the list data type, where updates are happening on regular basis.
+e.g Employee Management.
+
+"""
+list1 = [4, 5.6, 'Hello', 5 + 8j, [3, 5, 6], (1, 2, 3), {'a': 123}, {4, 7, 8, 4}, True]
+print("list1:", list1)
+print(list1[4])
+print(list1[-2])
+print(list1[-6])
+print(list1[6])
+print(list1[4][2])
+
+list2 = [4,5,6]
+list2.append(10)
+print("list2:", list2) ###list2: [4, 5, 6, 10]
+
+print("_"*50)
+
+####Tuple####
+
+"""
+-> IMMutable, cannot be be modified.
+-> Store data in comma separated format.
+-> contain all type od data i.e. integer, float, tuple, set complex, string, dict. set , bool
+-> follows positive and negative indexing
+-> Store data in round bracket.
+-> Usage of the list data type, where data is fixed.
+e.g. store days in a month, days in weeks, months in a year.
+-> It is faster than list in terms of performance.
+e.g Employee Management.
+"""
+
+
+
 
 
 
