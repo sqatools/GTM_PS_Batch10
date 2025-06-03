@@ -1,4 +1,4 @@
-# range(start, end, step)
+å# range(start, end, step)
 """
 -> range output will include start value and exclude end value
 -> in the range function default initial value is zero (0)
