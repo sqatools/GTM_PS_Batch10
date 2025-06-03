@@ -81,3 +81,93 @@ for i in list1:
         print("Square:", i**2)
     else:
         print("Cube:", i**3)
+
+print('_'*70)
+
+# 02/06/2025 Session
+############### Nested For Loop ###############
+
+for i in range(1,6):  #1,2,3,4,5
+    print("Address:", i)
+    for j in range(1,4): #1, 2, 3
+        print("Items:", j)
+
+print('_'*70)
+# write a program to draw triangular pattern
+"""
+*
+* *
+* * *
+* * * *
+* * * * * 
+"""
+
+for i in range(1,6):
+    for j in range(0, i):
+        print("*", end=" ")
+
+    print()
+print('_'*70)
+# write a program to draw reverse triangular pattern
+"""
+* * * * * 
+* * * *
+* * *
+* *
+*
+"""
+
+for i in range(1,6): #1,2,3,4,5
+    for j in range(1, 7-i): #(1,6),(1,5)
+        print("*", end=" ")
+
+    print()
+
+print('_'*70)
+
+# write a program to print O pattern
+"""
+
+- * * * -   # i=1
+* - - - *   # i=2
+* - - - *   # i=3
+* - - - *   # i=4
+* - - - *   # i=5
+- * * * -   # i=6
+
+"""
+
+for i in range(1,7):
+    for j in range(1,6):
+        if i in [1,6]:
+            if j in [2,3,4]:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        elif i in [2,3,4,5]:
+            if j in [1,5]:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        else:
+            print("*", end=" ")
+
+    print()
+
+# write a program to find out the given number is prime or not
+
+k = 12
+prime = True
+for i in range(2, k//2):
+    if k%i == 0:
+        prime = False
+    else:
+        pass
+
+if prime:
+    print("This is prime no.:",k)
+else:
+    print("This is not prime no.:",k)
+
+
+print('_'*70)
