@@ -14,16 +14,16 @@ else:
 
 units = int(input(" Please enter Number of Units you Consumed : "))
 
-if (units > 100):
-    surcharge = 15
-elif (units < 200):
-    surcharge = 20
-elif (units >= 200):
-    surcharge = 30
-total = surcharge
-print("\nElectricity Bill:", total)
+if(units > 100):
+    amount = units * 15
+elif(units < 200):
+    amount = units * 20
+elif(units > 200):
+    amount = units * 25
 
 
+    total= amount
+print("\nelectricity bill:", total)
 
 
 
