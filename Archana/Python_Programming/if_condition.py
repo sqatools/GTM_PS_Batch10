@@ -6,7 +6,7 @@ if a == b:
 else:
     print("The numbers are not equal")
 
-print("_"*50)
+print("_" * 50)
 
 # 2. Program to check the given value is even or odd
 
@@ -16,7 +16,7 @@ if num1 % 2 == 0:
 else:
     print("The number ais odd number")
 
-""" 
+"""
 # AND condition
 # Logical operators
 > : Greater than
@@ -32,13 +32,7 @@ is : is operator
 is not : is not operator
 
 """
-
-# 3. Program  to check if a given number is divisible by
-
-
-
-
-#4. Program to find the result of interview using nested if condition
+# 4.Program to find the result of interview using nested if condition
 round1 = "pass"
 round2 = "fail"
 round3 = "pass"
@@ -55,15 +49,16 @@ if round1 == "pass":
 else:
     print("First round is not cleared")
 
-# Homework
-# 1. Write a program to check a person is eligible to vote
-# 2. Write a program to calculate the EB bill amount on the basis of the unit consumptions
-if unit > 100 :
-    charge is 15
-if unit < 100 and unit < 200:
-    charge is 15
-    
+# 5. Program to check if a number is available in List
+List1 = [4, 5, 7, 10]
+v1 = 7
+v2 = 50
+if v1 in List1:
+    print("The value is available in the List")
+else:
+    print("The value is available in the List")
 
-
-
-
+if v2 not in List1:
+    print("The value is not available in the List")
+else:
+    print("The value is available in the List")
