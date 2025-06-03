@@ -334,6 +334,10 @@ e.g. store days in a month, days in weeks, months in a year.
 e.g Employee Management.
 """
 
+tup1 = (2, 5.6, 'Python', (4,6,7), [1,3,5], {'b': 456}, {6,8,9}, True, False)
+print("tup1:", tup1)
+
+
 
 
 
