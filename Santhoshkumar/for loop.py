@@ -1,4 +1,4 @@
-å  # range(start, end, step)
+ # range(start, end, step)
 """
 -> range output will include start value and exclude end value
 -> in the range function default initial value is zero (0)
@@ -289,12 +289,14 @@ print("_"*50)
     * *
     * *
 """
-for i in range(1,3):
-    for j in range(1,7):
-        print("*",end=" ")
+for i in range(2):
+    for j in range(6):
+        print("*", end=" ")
     print()
-for i in range(3,7):
-    print("*", end=" ")
 
-        print("*",end=" ")
+# Print the vertical part of the T (4 rows of 2 stars, shifted to the right)
+for i in range(4):
+    print(" "*4, end="")  # 4 spaces for alignment (each space = 1 character)
+    for j in range(3,5):
+        print("*", end=" ")
     print()
