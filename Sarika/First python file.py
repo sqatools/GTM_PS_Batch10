@@ -336,6 +336,37 @@ e.g Employee Management.
 
 tup1 = (2, 5.6, 'Python', (4,6,7), [1,3,5], {'b': 456}, {6,8,9}, True, False)
 print("tup1:", tup1)
+print("tup1:", tup1[4])
+print("tup1:",tup1[2][2] ) #tup1: t
+print("tup1:", tup1[-6][-1])
+
+tup2 = (3, 6 ,7)
+# We dont have any method to update the tuple value##
+
+print("_"*50)
+
+#3. Dictionary Data Type##
+dict7 = {'a': 123, 'b': 4567}
+
+"""
+#Properties:
+-> Mutable data type, we can modify the dict data. 
+-> Stores data in key value form in the form of curly braces {key:value}.
+-> Stores unique keys i.e. duplicate keys are not allowed. If we store duplicate key, it will only consider only the latest
+-> Only immutable data type can be the key in dict e.g. int, float, complex, string, tuple, boolean
+-> Can contain all data types as values and duplicate values are also allowed.
+ 
+"""
+
+dict2 = {12:456, 3.5:2.6, 'Python': 'We are learning python programming', (4,5,6):('a', 'b', 'c', 'd'), 4+50j: 500+600j, True : False}
+print("dict2:", dict2)
+
+
+
+
+
+
+
 
 
 
