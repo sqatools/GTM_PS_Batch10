@@ -283,7 +283,94 @@ P Y T H O N
 print(str1[1])
 print("str1:", str1[1])
 print(str1[-2])
-print(str1.index('O'))
+
+
+####### write characters with positive and negative indexing #####
+str2 = "Programming"
+print(str2[5])
+print(str2[-8])
+print(str2[6])
+
+#####26 may Datatype #####
+
+####List####
+
+"""
+##Properties###
+-> Mutable, can be modified.
+-> Store data in comma separated format.
+-> contain all type od data i.e. integer, float, tuple, set complex, string, dict. set , bool
+-> follows positive and negative indexing
+-> Store data in square bracket.
+-> Usage of the list data type, where updates are happening on regular basis.
+e.g Employee Management.
+
+"""
+list1 = [4, 5.6, 'Hello', 5 + 8j, [3, 5, 6], (1, 2, 3), {'a': 123}, {4, 7, 8, 4}, True]
+print("list1:", list1)
+print(list1[4])
+print(list1[-2])
+print(list1[-6])
+print(list1[6])
+print(list1[4][2])
+
+list2 = [4,5,6]
+list2.append(10)
+print("list2:", list2) ###list2: [4, 5, 6, 10]
+
+print("_"*50)
+
+####Tuple####
+
+"""
+-> IMMutable, cannot be be modified.
+-> Store data in comma separated format.
+-> contain all type od data i.e. integer, float, tuple, set complex, string, dict. set , bool
+-> follows positive and negative indexing
+-> Store data in round bracket.
+-> Usage of the list data type, where data is fixed.
+e.g. store days in a month, days in weeks, months in a year.
+-> It is faster than list in terms of performance.
+e.g Employee Management.
+"""
+
+tup1 = (2, 5.6, 'Python', (4,6,7), [1,3,5], {'b': 456}, {6,8,9}, True, False)
+print("tup1:", tup1)
+print("tup1:", tup1[4])
+print("tup1:",tup1[2][2] ) #tup1: t
+print("tup1:", tup1[-6][-1])
+
+tup2 = (3, 6 ,7)
+# We dont have any method to update the tuple value##
+
+print("_"*50)
+
+#3. Dictionary Data Type##
+dict7 = {'a': 123, 'b': 4567}
+
+"""
+#Properties:
+-> Mutable data type, we can modify the dict data. 
+-> Stores data in key value form in the form of curly braces {key:value}.
+-> Stores unique keys i.e. duplicate keys are not allowed. If we store duplicate key, it will only consider only the latest
+-> Only immutable data type can be the key in dict e.g. int, float, complex, string, tuple, boolean
+-> Can contain all data types as values and duplicate values are also allowed.
+ 
+"""
+
+dict2 = {12:456, 3.5:2.6, 'Python': 'We are learning python programming', (4,5,6):('a', 'b', 'c', 'd'), 4+50j: 500+600j, True : False}
+print("dict2:", dict2)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

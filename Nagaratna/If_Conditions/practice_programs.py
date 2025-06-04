@@ -12,3 +12,20 @@ if g%3 == 0 and g%5 == 0:
      print("its divisible" , g)
 else:
      print("its not divicible" , g)
+print("__-**-__"*5)
+
+num = int(input("enter a number,"))
+if num%11 == 0:
+     print(num**2)
+else:
+     print("num is not divoded by 11,")
+
+
+print("__-**-__"*5)
+
+num1 = int(input("enter your number", ))
+if num1%3 == 0:
+     print("its divicible num")
+else:
+     print("its not divicible")
+print("__-**-__"*5)
