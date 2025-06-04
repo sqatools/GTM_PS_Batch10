@@ -361,6 +361,49 @@ dict7 = {'a': 123, 'b': 4567}
 dict2 = {12:456, 3.5:2.6, 'Python': 'We are learning python programming', (4,5,6):('a', 'b', 'c', 'd'), 4+50j: 500+600j, True : False}
 print("dict2:", dict2)
 
+print("_"*50)
+
+###########04 June##########
+
+str1 = "Hello Python programming"
+print(str1, type(str1)) #Hello Python programming <class 'str'>
+
+##string formatting##
+
+str2 = "Hello my name is Rahul and age is 25 and living in Mumbai"
+name = "Pankaj"
+age = 30
+city = "Pune"
+
+###Methods used for formatting:###
+
+#A. String Concatenation:
+
+#result1 = "Hello my name is "+name+" and age is "+str(age)+" and living in "+city
+#print(result1) #Hello my name is Pankaj and age is 30 and living in Pune
+
+result1 = "Hello my name is "+name+" and age is "+str(age)+" and living in "+city
+print(result1) #Hello my name is Pankaj and age is 30 and living in Pune
+
+#B. Format Method:
+#result2 = "Hello my name is {} and age is {} and living in {}".format(name, age, city)
+#print(result2)#Hello my name is Pankaj and age is 30 and living in Pune
+
+result2 = "Hello my name is {} and age is {} and living in {}".format(name,age,city)
+print(result2) #Hello my name is Pankaj and age is 30 and living in Pune
+
+print("_"*50)
+
+#C. F String Formatting:
+result3 = f"Hello my name is {name} and age is {age} and living in {city}"
+print(result3) #Hello my name is Pankaj and age is 30 and living in Pune
+
+print("_"*50)
+
+
+
+
+
 
 
 
