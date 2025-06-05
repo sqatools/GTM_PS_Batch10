@@ -119,9 +119,185 @@ print(str8[-1:-10:])  # EMPTY output
 
 # Home Work
 """
-# str1 = "Virat is greate Indian Player"
-output1 = "Player is greate Indian Virat"
-output2 = "VVirat is greate Indian Playerr"
-output3 = "VViratt iiss ggreatee IIndiann PPlayerr"
-output4 = "(Virat is greate): reverse this part : Indian Player"
+# str1 = "Virat is great Indian Player"
+output1 = "Player is great Indian Virat"
+output2 = "VVirat is great Indian Playerr"
+output3 = "VViratt iiss ggreatt IIndiann PPlayerr"
+output4 = "(Virat is great): reverse this part : Indian Player"
 """
+str1 = "Virat is great Indian Player"
+
+print("_"*50)
+#Q1 :
+w1 = str1[:5]
+w3 = str1[-7:]
+w2 = str1[5:-7]
+
+output = f"{w3} {w2} {w1}"
+print(output)
+
+print("_"*50)
+#Q2 :
+f_chr = str1[0]
+l_chr = str1[-1]
+output2 = f"{f_chr}{str1}{l_chr}"
+print(output2)
+# VVirat is great Indian Playerr
+
+#################################################
+# string method
+print(dir(str))
+"""
+'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 
+'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum',
+ 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 
+ 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 
+ 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 
+ 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 
+ 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 
+ 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 
+ 'translate', 'upper', 'zfill'
+"""
+
+print("_"*50)
+##### upper() and lower() method ######
+
+str_a = "Hello we are Learning Python"
+print("Upper output :", str_a.upper())
+# Upper output : HELLO WE ARE LEARNING PYTHON
+print("Lower output :", str_a.lower())
+# Lower output : hello we are learning python
+
+print("_"*50)
+##### isupper() and islower() method ######
+# These method check the given string is in lower case or upper case.
+str_b = "GOOD MORNING"
+str_c = "python programing"
+str_d = "Hello Python"
+print("isupper str_b :", str_b.isupper()) # True
+print("islower str_c :", str_c.islower()) # True
+
+print("islower or islower for str_d", str_d.isupper(), str_d.islower())
+# False , False
+
+str_e = "HELLO &^%123"
+print("str_e isupper :", str_e.isupper())
+# str_e isupper : True
+
+print("_"*50)
+#####################################
+#title() method : This method convert the target string into titlecase, means, first
+#                 letter of each word will convert into upper case.
+
+str_f = "heLLo GoodMorning"
+print("title output :", str_f.title()) # Hello Goodmorning
+
+
+print("_"*50)
+#####################################
+# istitle():  this method check given string is title string or not
+str_g = "India is best cricket team &%^%$"
+str_j = "Virat Is Best Indian Player 2345"
+print("str_g istitle :", str_g.istitle()) # False
+print("str_j istitle :", str_j.istitle()) # True
+
+print("_"*50)
+#####################################
+# swapcase() method :  This method convert lower character to upper and upper character
+# to lower case.
+
+str_k = "Python is Very To Learn"
+print("str_k swapcase :", str_k.swapcase())
+# str_k swapcase : pYTHON IS vERY tO lEARN
+
+
+print("_"*50)
+#####################################
+# capitalize() method : This method convert only first letter of string into capital case
+# remaining character converted into lower case.
+
+str_l = "Python is Very To LeaRN"
+print("str_l to capitalize :", str_l.capitalize())
+# str_l to capitalize : Python is very to learn
+
+print("_"*50)
+#####################################
+# count() method : This method return the number occurrence of any char or substring in
+# the given string.
+
+str_q = "Python Pycon and Learning is easy"
+print("count of a :", str_q.count('a'))
+# count of a : 3
+
+print("count of Py :", str_q.count('Py'))
+# count of Py : 2
+
+print("_"*50)
+#####################################
+# index90 method : This method return the index position of char or substring in given target
+# string
+# ->  If same char/sub-string repeated multiple times, then index method will first value position.
+
+
+
+str_x = "Python Pycon and Learning is easy"
+print("Index of a :", str_x.index('a'))
+# Index of a : 13
+
+print("Index of ea :", str_x.index('ea'))
+# Index of ea : 18
+
+count = 0
+for i in range(len(str_x)):
+    if str_x[i] == 'a':
+        count +=1
+        if count == 3:
+            print(str_x[i], i)
+    else:
+        continue
+
+# third a index position
+# a 30
+
+# get index of non existing letter
+# print("index of w :", str_x.index('w'))
+# ValueError: substring not found
+
+print("_"*50)
+#######################################
+# find method() :  This method return the index position of exiting and letter
+#                 and if letter is not available in the target string, then it will
+#                 it will return -1
+
+str_y = "India in Growing Country"
+print("find G :", str_y.find('G'))
+# find G : 9
+
+# check for non existing letter
+print("Find W :", str_y.find("W"))
+# Find W : -1 # find method return -1
+
+print("_"*50)
+############################################
+# split() Method : This method return list of sub-string from target string.
+#                  ->  This method break the string from given delimeter and return output
+# in list
+
+str_s = "India is Growing Country"
+print("split with space :", str_s.split(" "))
+# split with space : ['India', 'is', 'Growing', 'Country']
+
+str_f = "India is Growainga Couantary"
+print("split with a letter :", str_f.split("a"))
+# split with a letter : ['Indi', ' is Grow', 'ing', ' Cou', 'nt', 'ry']
+
+url = "https://facebook.com"
+v1 = url.split("//")[0][:-1]
+print("v1 :", v1) # https
+# v1 : https
+
+v2 = url.split("//")[1].split(".")[0]
+print("v2 :",v2)
+# v2 : facebook
+
+
