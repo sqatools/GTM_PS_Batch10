@@ -1,3 +1,4 @@
+
 # PYTHON LOOPS PROGRAM
 
 # 1. Write a Python loops program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
@@ -58,3 +59,32 @@ for i in range(1,31):
 
 print('_'*70)
 
+'''
+10. Python for loop program to print the alphabet pattern ‘O’ using python.
+Output:
+  ***       i=1
+*     *     i=2
+*     *     i=3
+*     *     i=4
+*     *     i=5
+*     *     i=6
+  ***       i=7
+'''
+
+
+for i in range(1,8):
+    for j in range(1,6):
+        if i in [1,7]:
+            if j in [2,3,4]:
+                print("*", end=" ")
+            else:
+                print(" ",end=" ")
+        elif i in range(2,7):
+            if j in [1,5]:
+                print("* ",end=" ")
+            else:
+                print(" ",end=" ")
+        else:
+            print("*", end=" ")
+
+    print()
