@@ -361,6 +361,103 @@ dict7 = {'a': 123, 'b': 4567}
 dict2 = {12:456, 3.5:2.6, 'Python': 'We are learning python programming', (4,5,6):('a', 'b', 'c', 'd'), 4+50j: 500+600j, True : False}
 print("dict2:", dict2)
 
+print("_"*50)
+
+###########04 June##########
+
+str1 = "Hello Python programming"
+print(str1, type(str1)) #Hello Python programming <class 'str'>
+
+##string formatting##
+
+str2 = "Hello my name is Rahul and age is 25 and living in Mumbai"
+name = "Pankaj"
+age = 30
+city = "Pune"
+
+###Methods used for formatting:###
+
+#A. String Concatenation:
+
+#result1 = "Hello my name is "+name+" and age is "+str(age)+" and living in "+city
+#print(result1) #Hello my name is Pankaj and age is 30 and living in Pune
+
+result1 = "Hello my name is "+name+" and age is "+str(age)+" and living in "+city
+print(result1) #Hello my name is Pankaj and age is 30 and living in Pune
+
+#B. Format Method:
+#result2 = "Hello my name is {} and age is {} and living in {}".format(name, age, city)
+#print(result2)#Hello my name is Pankaj and age is 30 and living in Pune
+
+result2 = "Hello my name is {} and age is {} and living in {}".format(name,age,city)
+print(result2) #Hello my name is Pankaj and age is 30 and living in Pune
+
+print("_"*50)
+
+#C. F String Formatting:
+result3 = f"Hello my name is {name} and age is {age} and living in {city}"
+print(result3) #Hello my name is Pankaj and age is 30 and living in Pune
+
+print("_"*50)
+
+########SLICING IN STRING#######
+
+"""
+-> Default value is 1.
+-> Result will include the start index character and exclude the last index character as the output.
+-> Result will always be from left to right.
+-> Start and last index value could be positive and negative.
+->  If we dont provide the last index the default last index would end of string.
+-> The default start index value would be 0.
+
+"""
+str7 = "Good Morning"
+
+# 0  1  2  3  4  5  6  7  8  9  10  11
+ # G  O  O  D     M  O  R  N  I  N   G
+
+print(str7[0:4]) #Good
+print(str7[-7:-1]) #Mornin
+# This will include output from -7 to end of string
+print(str7[-7:]) #Morning
+print(str7[:8]) #Good Mor
+print(str7[5:1])#No result
+print(str7[2:-1])#od Mornin
+print(str7[-9:10])#d Morni
+print(str7[:])#Good Morning
+
+print("_"*50)
+
+"""
+Rule2 : str[start_index: last_index: step_value]
+->  Output will include start_index and exclude last_index and return output as per the step value
+->  default start_index is 0 and default last_index is end of string with positive step value
+->  default start_index is -1 and default last_index is begining of string with negative step value
+->  default step value is  1
+
+V E R Y   G O O D   M  O  R  N  I  N  G
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+
+"""
+
+str8 = "Very Good Morning"
+print(str8[5:9:1])#Good
+print(str8[2:15:2]) #R OD MRI
+print(str8[:10:1])# VERY GOOD
+print(str8[2::2]) #R OD MRIG############
+print(str8[:8:-1]) #gninroM
+print(str8[::-1])
+print(str8[2:14:])
+print(str8[-1:-10:])#NOT POSSIBLE
+
+
+
+
+
+
+
+
+
 
 
 
