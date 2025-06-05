@@ -12,8 +12,8 @@ else:
 print("-"*50)
 # Write a program to check the given value is even or odd
 
-num1= 20
-if num1%2 == 0:
+num1 = 20
+if num1 % 2 == 0:
     print("Given number is even :", num1)
 else:
     print("Given number is odd :", num1)
@@ -52,8 +52,8 @@ is not: is not operator
 print("-"*50)
 # Write a python program to check given number is divisible by 3 and 5
 
-num2= 20
-if num2%3 == 0 and num2%5 == 0:
+num2 = 20
+if num2 % 3 == 0 and num2 % 5 == 0:
     print("Number is divisible by 3 & 5 :", num2)
 else:
     print("Number is not divisible by 3 & 5 :", num2)
@@ -64,7 +64,7 @@ print("-"*50)
 # Write a python program to check given number is divisible by 5 or 7
 
 num3 = 50
-if num3%5 == 0 or num3%7 ==0:
+if num3 % 5 == 0 or num3 % 7 == 0:
     print("Number is divisible by 5 or 7 :", num3)
 else:
     print("Number is not divisible by 5 or 7 :", num3)
@@ -154,7 +154,6 @@ else:
 # v2 is not in list : 9
 
 
-
 print("-"*50)
 # use of "is" and "is not" operator
 
@@ -190,7 +189,7 @@ else:
 print("_"*50)
 # If condition in one line
 
-num2= 49
-output = ("even" if num2%2 == 0 else "odd")
+num2 = 49
+output = ("even" if num2 % 2 == 0 else "odd")
 print("Output :", output, num2)
 # Output : odd 49
