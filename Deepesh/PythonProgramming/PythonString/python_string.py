@@ -300,4 +300,96 @@ v2 = url.split("//")[1].split(".")[0]
 print("v2 :",v2)
 # v2 : facebook
 
+print("_"*50)
+##############################
+# replace() method : This method replace the word1 with word2 from given target string and return the updated string.
+#                     -> User can define the number of occurrences to replace from given string.
+#                      -> str.replace(word1, word2, no_of_occurrences)
+#                     -> if user don't provide any value for no_of_occurrences, then it will replace all available
+#                        matching words.
+
+str_m = "Python is Best 5 Programming, Python is Easy to Learn 5"
+result = str_m.replace("Python", "JAVA")
+print("result :", result)
+# JAVA is Best Programming, JAVA is Easy to Learn
+
+
+result2 = str_m.replace("Python", "JAVA", 1).replace("Easy", "Hard").replace("5", "10")
+print("Result2 :", result2)
+# JAVA is Best 10 Programming, Python is Hard to Learn 10
+
+
+print("_"*50)
+##############################
+# strip() method  :  This method remove all the trailing spaces from given string. it means the spaces which is
+#                    available in the begining and end of the string.
+
+str_k = "  Python Programming  "
+print(str_k)
+#   Python Programming
+
+# remove trailing spaces
+output2 = str_k.strip()
+print(output2)  #Python Programming  # there is no space in output
+
+# lstrip method :  This method will remove left side space or space available in the begining of the string
+
+str_p = "    We Are Learning Python     "
+print(str_p.lstrip())  # We Are Learning Python      # output does not contain left side spaces.
+
+# rstrip method :  This method will remove right side space or space available at end of the string
+print(str_p.rstrip())  #     We Are Learning Python
+
+
+print("_"*50)
+###############################
+# join() method :  This method will join each character of string with provided delimeter, e.g. -,*/
+
+str_A = "Programming"
+
+result1 = "-".join(str_A)
+print("result1 :", result1) # result1 : P-r-o-g-r-a-m-m-i-n-g
+
+result2 = "&*^%".join(str_A)
+print("result2 :", result2) # P&*^%r&*^%o&*^%g&*^%r&*^%a&*^%m&*^%m&*^%i&*^%n&*^%g
+
+
+print("_"*50)
+##########################################
+# isnumeric method(): This method return true if string contains only numbers
+
+s1 = "354543 34"
+print(s1.isnumeric()) # False
+
+s2 = "5464567456"
+print(s2.isnumeric()) # True
+
+print("_"*50)
+###########################################
+# isalnum() method:  This method return true if string contains alphabate and numbers
+
+s3 = "Hello 345"
+print(s3.isalnum()) # False
+
+s4 = "Hello77777"
+print(s4.isalnum()) # True
+
+s5 = "77777"
+print(s5.isalnum()) # True
+
+s6 = "Python"
+print(s6.isalnum()) # True
+
+
+print("_"*50)
+###########################################
+# isalpha() method: This method return true if string contains only alphabate.
+
+s7 = "Python Programming"
+print(s7.isalpha()) # False
+
+s8 = "PythonProgramming"
+print(s8.isalpha()) # True
+
+###############################################################
 
