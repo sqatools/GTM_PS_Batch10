@@ -6,38 +6,59 @@ output2 = "VVirat is greate Indian Playerr"
 output3 = "VViratt iiss ggreatee IIndiann PPlayerr"
 output4 = "(Virat is greate): reverse this part : Indian Player"
 """
+# Output1:Player is great Indian Virat
 print("#Output 1")
 print("*" * 10)
 str1 = "Virat is great Indian Player"
-# output1 = "Player is great Indian Virat"words
-words = str1.split()  # ['Virat', 'is', 'great', 'Indian', 'Player']
-words[0], words[-1] = words[-1], words[0]
-output1 = ' '.join(words)
-print(output1)
+wrd1 = str1[:5]
+wrd2 = str1[-6:]
+wrd3 = str1[5:-6]
+str2 = wrd2 + wrd3 + wrd1
+print(str2)
 
+
+# output2 = "VVirat is greate Indian Playerr"
 print("-" * 50)
 print("#Output 2")
 print("*" * 10)
-words = str1.split()  # ['Virat', 'is', 'great', 'Indian', 'Player']
-words[0] = 'V' + words[0]
-words[4] = words[4] + 'r'
-output2 = ' '.join(words)
+str1 = "Virat is great Indian Player"
+wrd4 = str1[0]
+wrd5 = str1[-1]
+output2 = wrd4 + str1 + wrd5
 print(output2)
 
+# output3 = "VViratt iiss ggreat IIndiann PPlayerr"
 print("-" * 50)
 print("#Output 3")
 print("*" * 10)
-# output3 = "VViratt iiss ggreat IIndiann PPlayerr"
 str1 = "Virat is great Indian Player"
 # rule: add first letter + word + last letter
-words = str1.split()
-modified_words = []
-for char in words:
-    modified_word = char[0].upper() + char + char[-1].lower()
-    modified_words.append(modified_word)
+# Manually slice out each word based on known positions
+w1 = str1[0:5]  # Virat
+w2 = str1[6:8]  # is
+w3 = str1[9:14]  # great
+w4 = str1[15:21]  # Indian
+w5 = str1[22:]  # Player
 
-output3 = ' '.join(modified_words)
+# Build output using rule: first letter + word + last letter
+output3 = w1[0] + w1 + w1[-1] + " " + \
+          w2[0] + w2 + w2[-1] + " " + \
+          w3[0] + w3 + w3[-1] + " " + \
+          w4[0] + w4 + w4[-1] + " " + \
+          w5[0] + w5 + w5[-1]
+
 print(output3)
+
+#output4 = "(Virat is great): reverse this part : Indian Player"
+print("-" * 50)
+print("#Output 4")
+print("*" * 10)
+str1 = "Virat is great Indian Player"
+wd1 = str1[0:14]
+wd2 = str1[14:]
+output4 = wd1[::-1] + wd2
+print(output4)
+
 
 # .1). Write a Python program to get a string made of the
 # first and the last 2 chars from a given string.
@@ -67,14 +88,16 @@ len_str2 = len(str2)
 if len_str2 % 4 == 0:
     print(str2[::-1])
 else:
-    print("Cannot reverse the word", end=" ")
+    print("Cannot reverse the word")
 
 # 4).Python string program to test whether a passed letter is a vowel or consonant.
 
 vowels = "aeiou"
-str3 = input("Enter the letter:").lower()
+str3 = input("Enter any letter:").lower()
 if str3 in vowels:
-    print("The letter is a vowel:", str3)
+    print(f"The letter {str3} is a vowel")
+else:
+    print(f"The letter {str3} is not a vowel")
 
 # 5). Find the longest and smallest word in the input string.
 str4 = "This is sentence with long and short words"
@@ -108,7 +131,6 @@ print(new_word)
 # 8). Python string program to count occurrences of a substring in a string.
 str4 = "school"
 sub_string = "ol"
-#Printng output
-count =str4.count(sub_string)
+# Printng output
+count = str4.count(sub_string)
 print(count)
-
