@@ -1,4 +1,4 @@
-# Home Work
+# HomeWork
 """
 # str1 = "Virat is great Indian Player"
 output1 = "Player is great Indian Virat"
@@ -35,7 +35,6 @@ w5 = str1[-6]+str1[-6:]+str1[-1]
 output3 = f"{w1} {w2} {w3} {w4} {w5}"
 print("Output3 :", output3)
 # Output3 : VViratt iiss ggreatt IIndiaa PPlayerr
-
 
 
 print("-"*50)
