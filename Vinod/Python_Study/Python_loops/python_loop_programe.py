@@ -291,12 +291,44 @@ print("_" * 50)
     
 """
 
-for i in range(1, 7):  # Rows
-    for j in range(1, 6):  # Columns
-        if i == 1:
-            print("j", end=" ")  # Top row (horizontal line of T)
+for i in range(1, 7):  # Rows from 1 to 6
+    for j in range(1, 7):  # Columns from 1 to 6
+        if i <= 2:
+            print("*", end=" ")  # Top horizontal bar
         elif j == 3:
-            print("j", end=" ")  # Center column (vertical line of T)
+            print("*", end=" ")  # Vertical part (two columns starting from col 4)
         else:
-            print(" ", end=" ")  # All other spaces
-    print()  # Move to next line after each row
+            print(" ", end=" ")  # Blank space
+    print()  # Move to next lin
+
+
+print("_" * 50)
+################################################
+# write a program to print swastik pattern
+"""
+
+
+* *   * * * * *
+* *   * * * * *
+* *   * *
+* * * * * * * *
+* * * * * * * *
+      * *   * *
+* * * * *   * *
+* * * * *   * *
+
+"""
+
+n = 8  # Size of the Swastik (must be even and ≥ 5)
+
+for i in range(n):
+    for j in range(n):
+        if (
+            (i < n // 2 and (j < n // 2 or j == n - 1)) or  # Top-left & top-right arms
+            (i == n // 2 or i == n // 2 - 2) or             # Middle horizontal bar
+            (i >= n // 2 and (j == 0 or j >= n // 2))       # Bottom-left & bottom-right arms
+        ):
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
