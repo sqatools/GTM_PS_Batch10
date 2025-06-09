@@ -231,3 +231,132 @@ for num in range(1, 100):
     if prime:
         print(num, end=" ")
 # 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
+
+
+print()
+print("_"*50)
+# continue and break statement
+
+# continue statement
+
+for i in range(1, 10):
+    if i == 5 or i == 6:
+        continue
+    print(i, end=" ")
+# 1 2 3 4 7 8 9
+
+
+print()
+print("_"*50)
+# break statement
+
+for j in range(1, 10):
+    if j == 5:
+        break
+    print(j, end=" ")
+# 1 2 3 4
+
+print()
+print("_"*50)
+# while loop in python:
+
+n = 1
+while n <= 10:
+    print(n)
+    n += 1
+
+
+print("_"*50)
+# infinite loop
+"""
+n = 1
+
+while True:
+    print(n)
+    n += 1
+    if n == 100000:
+        break
+"""
+
+
+print("_"*50)
+# write a program to reverse any given number
+
+num = 123
+# output = 321
+
+reverse = 0
+while num > 0:
+    temp = num % 10
+    reverse = reverse*10 + temp
+    num = num//10
+print("Reverse Value :", reverse)
+
+
+print("_"*50)
+#  ASCII VALUES ################
+
+# Capital A-Z : 65-90
+# Small a-z : 97-122
+
+
+char = "A"
+print(ord(char))
+# 65
+
+print(chr(65))
+# A
+
+
+print("_"*50)
+for i in range(65, 91):
+    print(chr(i), end=" ")
+# A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+
+print()
+print("-"*50)
+for i in range(97, 123):
+    print(chr(i), end=" ")
+# a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+
+print()
+print("-"*50)
+for i in range(30, 65):
+    print(chr(i), end=" ")
+#     ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @
+
+
+print("-"*50)
+# write a program to print a given pattern with letter
+"""
+A
+B C
+D E F
+G H I J
+K L M N O
+"""
+
+num = 65
+for i in range(1, 6):
+    for j in range(1, i+1):
+        print(chr(num), end=" ")
+        num += 1
+    print()
+
+
+print()
+print("-"*50)
+
+num = 65
+for i in range(1, 6):
+    for j in range(1, i+1):
+        print(chr(num), end=" ")
+        num += 1
+    print()
+for k in range(1, 5):
+    for l in range(5, 0+k, -1):
+        print(chr(num), end=" ")
+        num += 1
+    print()
