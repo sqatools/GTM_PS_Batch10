@@ -54,3 +54,40 @@
 #         odd.append(val)
 #
 # print("Even numbers: ",odd)
+
+
+#6 Print the following small alphabet letter pattern using Python Loops
+
+char = 97  ## ASCII value of 'a'
+var1 = 4
+var2 = 4
+
+for i1 in range(7):  #range(7) generates the numbers: 0, 1, 2, 3, 4, 5, 6
+    if i1 < 4:   # i1 is less than 4, i.e., during the first 4 iterations of the loop (i1 = 0, 1, 2, 3).
+        var1 = var1 - 1   #Decreases the value of var1 by 1 each time
+        var2 = var2 + 1   # Increases the value of var2 by 1 each time.
+
+        for j1 in range(9):
+
+            if j1 > var1 and j1 < var2:
+
+                print(chr(char), end=" ")
+                char += 1
+            else:
+                print(" ", end=" ")
+        print()
+
+        # var1 = var1 - 1
+        # var2 = var2 + 1
+    else:
+        var1 = var1 + 1
+        var2 = var2 - 1
+        for k in range(9):
+
+            if k > var1 and k < var2:
+
+                print(chr(char), end=" ")
+                char += 1
+            else:
+                print(" ", end=" ")
+        print()
