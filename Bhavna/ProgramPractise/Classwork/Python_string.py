@@ -137,30 +137,14 @@ l_char = str1[-1]
 output2 = f"{f_char}{str1}{l_char}"
 print("Output2:", output2)
 
-# a = str1[0]*2+str1[1:4]+str1[4]*2
-# b = str1[6]*2 + str1[7]*2
-# c = str1[9]*2 + str1[10:13] + str1[13]*2
-# d = str1[15]*2 + str1[16:20] + str1[20]*2
-# e = str1[-6]*2 + str1[-5:-1] + str1[-1]*2
-# output3 = f"{a}{b}{c}{d}{e}"
-# print("Output3:", output3)
+a = str1[0]*2+str1[1:4]+str1[4]*2
+b = str1[6]*2 + str1[7]*2
+c = str1[9]*2 + str1[10:13] + str1[13]*2
+d = str1[15]*2 + str1[16:20] + str1[20]*2
+e = str1[-6]*2 + str1[-5:-1] + str1[-1]*2
+output3 = f"{a}{b}{c}{d}{e}"
+print("Output3:", output3)
 
-for char in str1[0:5]:
-    print((char*2),end="")
-
-for char in str1[5:8]:
-     print(char*2,end="")
-
-for char in str1[8:14]:
-    print(char*2, end="")
-
-for char in str1[-14:-6]:
-    print(char*2,end="")
-
-for char in str1[-1:-1]:
-    print(char*2, end="")
-
-print()
 r1 = str1[13::-1]
 r2 = str1[14:28]
 Output4 = f"{r1}{r2}"
