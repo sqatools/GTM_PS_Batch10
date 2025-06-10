@@ -161,8 +161,7 @@ print(d6)
 
 # 2. If  string follows rules of the dictionary then string to dict conversion with the help
 # of json module.
-
-details = '{"Name" : "Rahul", "Age": 35, "Email": "rahul@gmail.com", "mobile": 645646574}'
+details='{"Name" : "Rahul", "Age": 35, "Email": "rahul@gmail.com", "mobile": 645646574}'
 print(details, type(details))
 # {"Name" : "Rahul", "Age": 35, "Email": "rahul@gmail.com", "mobile": 645646574} <class 'str'>
 
