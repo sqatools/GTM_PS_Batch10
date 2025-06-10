@@ -31,7 +31,7 @@ for word in word_list:
         continue
 
 print("Output :", output)
-#Output : Rahul Manoj Nisha Satya
+# Output : Rahul Manoj Nisha Satya
 
 
 
@@ -57,38 +57,30 @@ print("Max len :", max_len) # Max len : 11
 print("Max len word :", max_len_word) # Max len word : Programming
 
 
-############ Home Work ############
-#Q1 write a python program to get palindrom word from given string.
+# ########### Home Work ############
+# Q1 write a python program to get palindrome word from given string.
 # palindrome :  it word and reverse of word is same then it is palindrome.
-str5 = "eWe Are AAAvAAE ThphT  OOPOO LLRLLE"
+str5 = "eWe Are AAAvAAE ThphT OOPOO LLRLLE"
 output = "eWe ThphT OOPOO"
-
-#Q2 write a python program count all the vowels from given string.
-str6 = "Python Programming"
-#output = 4
-
-print("_"*50)
-#################################################
-
-#Q.1 write a Python Program to get below output.
-
-str1 = "We Are Learning Python Program"
-# output = {'W': 'WWEE', "A": "AArEE", "L": "LLearninGG", "P": "PPythoNN PPrograMM"}
-
-output = {}
-# get word with split method and split by space.
-word_list = str1.split(" ")
-for word in word_list:
-    f_ltr = word[0] # first letter
-    l_ltr = word[-1] # last letter
-    print("Output :", output)
-    if f_ltr not in output:
-        output[f_ltr] = f"{f_ltr.upper()*2}{word[1:-1]}{l_ltr.upper()*2}"
+words_list = str5.split(" ")
+pal_word_count = 0
+for char in words_list:
+    if char[::-1] == char:
+        pal_word_count += 1
+        print("The  palindrome word is:", char)
     else:
-        output[f_ltr]  = output[f_ltr] + " " + f"{f_ltr.upper()*2}{word[1:-1]}{l_ltr.upper()*2}"
-
-print("Output :", output)
-
+        continue
+print("The number of palindrome words are:", pal_word_count)
 
 
-
+# Q2). write a python program count all the vowels from given string.
+str6 = "Python Programming"
+vowels_list = "aeiou"
+# output = 4
+count = 0
+for char in str6:
+    if char in vowels_list:
+        count += 1
+    else:
+        continue
+print("Number of vowels:", count)

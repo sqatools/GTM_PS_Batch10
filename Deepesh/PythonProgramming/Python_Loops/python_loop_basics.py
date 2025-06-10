@@ -1,4 +1,4 @@
-å# range(start, end, step)
+# range(start, end, step)
 """
 -> range output will include start value and exclude end value
 -> in the range function default initial value is zero (0)
@@ -148,7 +148,7 @@ for i in range(1, 6): # i =1, 2, 3
 
 
 print("_"*50)
-# write a program to draw triangular pattern
+
 """
 *
 * *
