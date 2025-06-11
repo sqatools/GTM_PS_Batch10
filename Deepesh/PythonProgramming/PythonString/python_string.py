@@ -16,7 +16,7 @@ result1 =  "Hello my name is "+name+" and age is "+str(age)+" and living in "+ci
 print(result1)
 # Hello my name is Pankaj and age is 30 and living in Pune
 
-# 2. Format Method:
+
 result2 =  "Hello my name is {} and age is {} and living in {}".format(name, age, city)
 print(result2)
 # Hello my name is Pankaj and age is 30 and living in Pune
