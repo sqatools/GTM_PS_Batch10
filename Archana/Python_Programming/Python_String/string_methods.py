@@ -12,17 +12,17 @@ city = "Pune"
 # 1. String Concatenation:
 val = "Hello"+" Good Morning"
 print(val)
-result1 =  "Hello my name is "+name+" and age is "+str(age)+" and living in "+city
+result1 = "Hello my name is "+name+" and age is "+str(age)+" and living in "+city
 print(result1)
 # Hello my name is Pankaj and age is 30 and living in Pune
 
 # 2. Format Method:
-result2 =  "Hello my name is {} and age is {} and living in {}".format(name, age, city)
+result2 = "Hello my name is {} and age is {} and living in {}".format(name, age, city)
 print(result2)
 # Hello my name is Pankaj and age is 30 and living in Pune
 
 # 3. F string formatting:
-result3 =  f"Hello my name is {name} and age is {age} and living in {city}"
+result3 = f"Hello my name is {name} and age is {age} and living in {city}"
 print(result3)
 # Hello my name is Pankaj and age is 30 and living in Pune
 
