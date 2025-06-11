@@ -75,6 +75,7 @@ print('_'*70)
 
 
 ############ Home Work ############
+
 #Q1 write a python program to get palindrom word from given string.
 # palindrome :  it word and reverse of word is same then it is palindrome.
 str5 = "eWe Are AAAvAAE ThphT OOPOO LLRLLE"
@@ -90,19 +91,39 @@ for char in a:
 
 print('_'*70)
 
-#Q2 write a python program count all the vowels from given string.
+#Q.2 write a python program count all the vowels from given string.
 # str6 = "Python Programming"
 #output = 4
 
 str6 = "Python Programming"
 A1 = {'A','E','I','O','U','a','e','i','o','u'}
 count = 0
-
 for char in str6:
     if char in A1:
         count += 1
-        print(char)
+        # print(char)
     else:
         continue
 
 print("Output:",count)
+print('_'*70)
+############################
+# 10/06/2025 Session
+#Q.1 write a Python Program to get below output.
+
+str1 = "We Are Learning Python Program"
+# output = {'W': 'WWEE', "A": "AArEE", "L": "LLearninGG", "P": "PPythoNN PPrograMM"}
+
+output = {}
+# get word with split method and split by space.
+word_list = str1.split(" ")
+for word in word_list:
+    f_ltr = word[0]
+    l_ltr = word[-1]
+    print("Output:",output)
+    if f_ltr not in output:
+        output[f_ltr] = f"{f_ltr.upper()*2}{word[1:-1]}{l_ltr.upper()*2}"
+    else:
+        output[f_ltr]  = output[f_ltr] + " " + f"{f_ltr.upper()*2}{word[1:-1]}{l_ltr.upper()*2}"
+
+    print("Output:", output)

@@ -48,3 +48,46 @@ output_b = str1[14:]
 output4 = f"{output_a}{output_b}"
 print("Output4 :", output4)
 # taerg si tariV Indian Player
+
+
+print("-"*50)
+#Q1 write a python program to get palindrom word from given string.
+# palindrome :  if word and reverse of word is same then it is palindrome.
+str5 = "eWe Are AAAvAAE ThphT OOPOO LLRLLE"
+# output = "eWe ThphT OOPOO"
+
+output = [ ]
+word_list = str5.split(" ")
+for word in word_list:
+    reverse = word[-1::-1]
+    print(reverse)
+    if word == reverse:
+        output.append(word)
+    else:
+        continue
+print("Output :", output)
+"""
+eWe
+erA
+EAAvAAA
+ThphT
+OOPOO
+ELLRLL
+"""
+# Output : ['eWe', 'ThphT', 'OOPOO']
+
+print("-"*50)
+#Q2 write a python program count all the vowels from given string.
+str6 = "Python Programming"
+#output = 4
+
+output = 0
+vowels = 'aeiou'
+for char in str6:
+    if char in vowels:
+        output += 1
+        print(char)
+    else:
+        continue
+print("Count of vowels :", output)
+# Count of vowels : 4

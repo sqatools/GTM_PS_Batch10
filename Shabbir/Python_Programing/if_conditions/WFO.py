@@ -8,13 +8,13 @@
 # Q1. write a program to check the person is eligible to vote on the basis age > 18
 
 
-"""
+
 age = int(input("Please enter Candidate the age for Vote :"))
 if age >=18:
     print("The Candidate is eligible for Vote")
 else:
     print("The Candidate is not Eligible for Vote")
-"""
+####################################################################
 
 unit1 = float(input("Enter the electricity bill amount : "))
 if unit1 < 100:
