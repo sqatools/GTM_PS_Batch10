@@ -59,6 +59,28 @@ for i in range(1,31):
 
 print('_'*70)
 
+# 8. Write a program that accepts a word from the user and converts all uppercases in the word to lowercase using python.
+
+Input = "SqaTOOlS"
+print("Output:", Input.lower())
+print('_'*70)
+
+# 9). Python loops program that accepts a string and calculates the number of digits and letters using python.
+# Input : “python1234”
+
+str_Input = "python1234"
+digits = 0
+letter = 0
+
+for i in str_Input:
+    if i.isalpha():
+        letter+=1
+    elif i.isnumeric():
+        digits+=1
+print("Letters:",letter)
+print("Digits:",digits)
+
+print('_'*70)
 '''
 10. Python for loop program to print the alphabet pattern ‘O’ using python.
 Output:
