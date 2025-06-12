@@ -1,4 +1,4 @@
-#range(start, end, step)
+# range(start, end, step)
 """
 -> range output will include start value and exclude end value
 -> in the range function default initial value is zero (0)
@@ -13,14 +13,14 @@ print("_"*50)
 for i in range(20):
     print(i,end="  ")
 print("_"*50)
-#program to print a table of any number with default step value (1)
+# program to print a table of any number with default step value (1)
 num = int(input("Enter a number: "))
 for j in range(1,11):
     print(j, "*" , num ,":" , j*num)
 print("_"*50)
 
 
-## get value with the help end value in range
+# get value with the help end value in range
 for k in range(20,5,-5):
     print(k, end=" ")
 print()
@@ -30,7 +30,7 @@ for l in range(-7,6,1):
     print(l, end=" ")
 print()
 print("_"*50)
-###### Use if condition inside for loop #######
+# Use if condition inside for loop #######
 # program to get all the even numbers from 1 to 30
 for i in range(1,31):
     if i % 2 == 0:
@@ -48,10 +48,10 @@ for i in range(1,21):
 print()
 print("_"*50)
 ############################
-## write a program to get check given string contains vowels
+# write a program to get check given string contains vowels
 string = "Hi My self Prasanna it contains vowels"
 vowels = "aeiou"
-for  char in string:
+for char in string:
     if char in vowels:
         print(char, "vowel found ")
     else:
@@ -68,12 +68,12 @@ for val in list_a:
         print("Cube is :",val, val**3)
 print("_"*50)
 
-##################### Nested For Loop ###############
+# Nested For Loop ###############
 
 # outer loop
 for i in range(1,6):
     print("Address :", i)
-    #inner loop
+    # inner loop
     for j in range(1,6):
         print("Item :", j)
 print()
