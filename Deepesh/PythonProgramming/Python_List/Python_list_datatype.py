@@ -321,3 +321,74 @@ list_A.append('Python')
 
 print("list_A :", list_A) # [5, 8, 2, 6, 12, 'Python']
 print("list_B:", list_B)  # [5, 8, 2, 6, 12, 101]
+
+print("_"*50)
+#################################### List comprehension ###########################
+
+# program to get even value from list
+list1 = [5, 8, 2, 7, 12, 56]
+#output = [8, 2, 12, 56]
+output = []
+for val in list1:
+    if val%2 == 0:
+        output.append(val)
+    else:
+        continue
+
+print(output) # [8, 2, 12, 56]
+
+# solve same program with list comprehension
+result = [x for x in list1 if x%2 == 0]
+print("result :", result) # result : [8, 2, 12, 56]
+
+
+print("_"*50)
+# program to get below value from given list values
+list2 = [5, 8, 2, 17]
+# output = [(5, 'odd'), (8, 'even'), (2, 'even'), (17, 'odd')]
+output2 = []
+
+for y in list2:
+    if y%2 == 0:
+        output2.append((y, 'even'))
+    else:
+        output2.append((y, 'odd'))
+
+print("result :", output2)  # [(5, 'odd'), (8, 'even'), (2, 'even'), (17, 'odd')]
+
+print("_"*50)
+### solve above program with the help of list comp ####
+
+result2 = [(y, 'even') if y%2 ==0 else (y, 'odd') for y in list2]
+print("result2 :", result2)
+# result2 : [(5, 'odd'), (8, 'even'), (2, 'even'), (17, 'odd')]
+
+print("_"*50)
+############################
+# write a python program to get given combinations
+l1 = ['a', 'b', 'c']
+l2 = [2, 3]
+# output = [(a, 2), (a, 3), (b, 2), (b, 3), (c, 2), (c, 3)]
+output3 = []
+for v1 in l1:
+    for v2 in l2:
+        print(v1, v2)
+        output3.append((v1, v2))
+
+
+print(output3)
+# [('a', 2), ('a', 3), ('b', 2), ('b', 3), ('c', 2), ('c', 3)]
+
+##########
+# generate same output with list comprehension
+result3 = [(p, q) for p in l1 for q in l2]
+print("result3 :", result3)
+# [('a', 2), ('a', 3), ('b', 2), ('b', 3), ('c', 2), ('c', 3)]
+
+
+print("_"*50)
+#################### max, min, sum functions  ###############
+list4 = [6, 7, 91, 12, 45, 87]
+print("Max value :", max(list4)) # Max value : 91
+print("Min value :", min(list4)) # Min value : 6
+print("Sum of list values :", sum(list4)) # Sum of list values : 248
