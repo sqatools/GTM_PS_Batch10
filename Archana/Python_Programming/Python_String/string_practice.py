@@ -39,3 +39,26 @@ for char in str2:
 
 print("Max Count:", max_count)
 print("Max Char:", max_repeat_char)
+
+# 4. Calculate the length of a string with loop logic
+str3 = "Python is the booming programming language"
+count = 0
+for char in str3:
+    count += 1
+print("The length of the string is :", count)
+
+
+
+# 5. Replace the second occurrence of a character with $ symbol
+str4 = "excellent"
+f_occ_char = ""
+for char in str4:
+    if char in f_occ_char:
+        f_occ_char = f_occ_char + "$"
+    else:
+        f_occ_char = f_occ_char + char
+print("The updated code is:", f_occ_char)
+
+# 6. Swap the last character of a string using indexing
+str5 = "Program"
+print(str5[-1]+str5[1:-1]+str5[0])
