@@ -167,23 +167,202 @@ print("average output :", average)
 # T = time in year
 
 # 2. write a program to calculate the compound interest
-"""
-CI = P(1+r/n)^nt - P
-P : principle amount
-r :  rate of interest
-n :  Number of time interest is compounded
-t : time in year
+# """
+# CI = P(1+r/n)^nt - P
+# P : principle amount
+# r :  rate of interest
+# n :  Number of time interest is compounded
+# t : time in year
+#
+# """
+#
+# # 3. Find area of sphere
+# """
+# formula = 4*PI*R**2
+# PI = 3.21
+# R = radius
+
 
 """
 
-# 3. Find area of sphere
-"""
-formula = 4*PI*R**2
-PI = 3.21
-R = radius
+# 
+# Python Program to add two integer values.
+# 
+# 1. Take two numbers as input.
+# 2. Add the two numbers using the + operator.
+# 3. Print the result.
+# 
+# num1 = 10
+# num2 = 20
+# 
+# print("Addition of num1+num2:",num1+num2)
+# 
+# Python program to check whether the given number is an Armstrong number or not.
+# num = a = 153
+# rev = 0
+# 
+# while a>0:
+#     rem = a%10
+#     rev = rev +rem**3
+#     a= a//10
+# 
+# if rev == num:
+#     print("It is a armstrong number")
+# else:
+#     print("It is not a armstrong number")
+# 
+# #Python Program to subtract two integer values.
+# num1 = 50
+# num2 = 20
+# 
+# print(" subsraction of num1-num2:", num1-num2)
+# 
+# 
+# #########
+# Python program to multiply two numbers.
+# num1 = 20
+# num2 = 40
+# 
+# print("multiplication of num1*num2:", num1*num2)
+# 
+# 
+# 
+# ##########
+# Python program to repeat a given string 5 times.
+# 
+# str1 = "hellow"
+# n1 = 4
+# 
+# print("result:",str1*n1)
+# 
+# 
+# 
+# Python program to get the Average of given numbers.
+# 
+# a = 40
+# b = 50
+# c = 30
+# 
+# print(" total sum of number:", (a+b+c)/3)
+# 
+# 
+# 
+# 
+# Python program to get the median of given numbers.
+# all the numbers should be arranged in ascending order
+# 
+# values = [10, 20, 30, 40, 50]
+# 
+# # sort the list
+# values.sort()
+# 
+# # get length of the list
+# n = len(values)
+# 
+# if n % 2 == 1:
+#     median_value = values[n // 2]
+# else:
+#     median_value = (values[n // 2 - 1] + values[n // 2]) / 2
+# 
+# print(f"The median is: {median_value}")
+# 
+# 
+# Python program to print the square and cube of a given number.
+# 
+# num1 = 9
+# print("Square of number :", num1**2)
+# 
+# print("Cube of number :", num1**3)
+# 
+# Python program to interchange values between variables.
+# a = 10
+# b = 20
+# a, b = b, a
+# 
+# print("value of a :", a)
+# print("value of b :", b)
+# 
+# 
+# Python program to solve this Pythagorous theorem.
+# 
+# a = 10
+# b = 20
+# 
+# c = math.sqrt(a**2 + b**2)
+# 
+# print("The length of the hypotenuse is:", c)
+# 
+# 
+# 
+# Python program to solve the given math formula.
+# Take two variables as input and assign value to them.
+# 
+# a = 2
+# b = 3
+# result = a**2+2*a*b+b**2
+# 
+# print("(a+b)^2: ",result)
+# 
+# Python program to solve the given math formula.
+# a = 2
+# b = 3
+# result = a**2-2*a*b+b**2
+# 
+# print("(a-b)^2: ",result)
+# 
+# 
+# Python program to solve the given math formula.
+# a = 3
+# b = 2
+# result = (a+b)*(a-b)
+# 
+# print("(a^2-b^2): ",result)
+# 
+# Python program to solve the given math formula.
+# 
+# a = 3
+# b = 2
+# result = a**3+3*a*b*(a+b)+b**3
+# 
+# print("(a+b)^3: ",result)
+# 
+# 
+# 
+# Python program to solve the given math formula.
+# 
+# a = 3
+# b = 2
+# result = a**3-3*a**2*b+3*a*b**2+b**3
+# 
+# print("(a-b)^3: ",result)
+# 
+# Python program to calculate the area of the square.
+# side = int(input("Enter the side of a square: "))
+# print("Area of sqaure: ",side**2)
+# 
+# Python program to calculate the area of a circle.
+# radius = int(input("Enter radius of circle: "))
+# area = 3.14*radius*radius
+# 
+# print("Area of circle: ",area)
+# 
+# Python program to calculate the area of a cube.
+# side = int(input("Enter side of a cube: "))
+# area = 6*side*side
+# 
+# print("Area of cube: ",area)
 
 
-"""
+
+#Python program to calculate the area of the cylinder.
+r = int(input("Enter radius of cylinder: "))
+h = int(input("Enter height of cylinder: "))
+area = 2*3.14*r*h+2*3.14*r*r
+
+print("Area of cylinder:",area)
+
+"""""
+
 
 
 
