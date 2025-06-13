@@ -11,3 +11,4 @@ print("_"*50)
 str2="tuple"
 tup1=tuple(str2)
 print(tup1,type(str2))
+
