@@ -300,3 +300,44 @@ for i in range(4):
     for j in range(3,5):
         print("*", end=" ")
     print()
+
+print("_"*50)
+
+"""
+# write a program to print swastik pattern
+
+* *   * * * * *
+* *   * * * * *
+* *   * *
+* * * * * * * *
+* * * * * * * *
+      * *   * *
+* * * * *   * *
+* * * * *   * *
+
+
+for i in range(9):
+    for j in range(9):
+        if i in [1,3]:
+            #if j in [9]:
+                print("*",end="")
+            else:
+                print("*",end="")
+    print()
+
+
+
+for i in range(6):
+    print(i * "*", end=" ")
+    for i in range(4-i):
+        print("*",end=" ")
+    print()
+"""
+
+
+
+for i in range(1, 11):
+
+
+    if i != 3 and i != 6:
+        print(i)

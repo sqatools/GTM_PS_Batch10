@@ -322,4 +322,4 @@ print("_" * 50)
 print(dict2['A'])  # [4, 6, 8, 2, 8]
 print(dict2['A'][3])  # 2
 print(dict2['B'])  # {'a': 123, 'b': 567, 'c': 890}
-print(dict2['B']['c'])  # 890
+print(dict2['B']['c'])  # 890.

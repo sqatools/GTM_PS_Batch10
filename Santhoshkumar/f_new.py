@@ -1,3 +1,5 @@
+"""
+
 print("hello world")
 print("_"*40)
 
@@ -132,6 +134,36 @@ print("compund interset:",amount)
 
 
 
+#odd or even
+
+num= int(input("enter a number: "))
+if num%2==0:
+    print(num,"is even")
+else:
+    print(num, "is odd")
 
 
+
+num1=1.5
+num2=3.7
+
+sum=num1+num2
+print("the sum=",sum)
+
+"""
+
+w=25
+y=2.5
+
+temp=w
+w=y
+y=temp
+
+print("after swapping w: ",w)
+print("after swapping y:",y)
+
+num = 9
+#cube=num**
+print("cube of 9 is",num**3)
+print("cube of 9 is", num**2)
 
