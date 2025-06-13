@@ -21,9 +21,6 @@ for i in range(len(str2) - 1):
 print("Max Count:", max_count)
 print("Max Char:", max_repeat_char)
 
-
-
-
 # 3. find the most occurance character in the input string.
 str2 = "He is a Excelllent Volley balll player "
 char_count = {}
@@ -47,8 +44,6 @@ for char in str3:
     count += 1
 print("The length of the string is :", count)
 
-
-
 # 5. Replace the second occurrence of a character with $ symbol
 str4 = "excellent"
 f_occ_char = ""
@@ -62,3 +57,14 @@ print("The updated code is:", f_occ_char)
 # 6. Swap the last character of a string using indexing
 str5 = "Program"
 print(str5[-1]+str5[1:-1]+str5[0])
+
+
+l1 = ['a','b','c']
+l2 =[2,3]
+"output = [('a,2'),('b,3'),('b,2'),('b,3'),('c,2'),('c,3')]"
+
+for i in l1:
+    for j in l2:
+        print(i,j)
+
+
