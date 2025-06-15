@@ -1,10 +1,10 @@
 # 13/06/2025 SESSION CONTINUE
 
 #### get max value from given list #####
-list = [8,7,25,74,70]
+list1 = [8,7,25,74,70]
 max_value = 0
 
-for val in list:
+for val in list1:
     if val>max_value:
         max_value = val
     else:
@@ -50,3 +50,44 @@ for j in list_b:
         output.append(j)
 
 print(output)
+
+print('_'*70)
+
+#######################################
+# 13/06/2025 Session
+# write a python program to add all the duplicate values in the child list
+# list_c = [2, 7, [3, 5, 7], [2, 4, 6, 4], [8, 1, 4, 8]]
+# ouptut = [2, 7, [3, 5, 7], [2, 8, 6], [16, 1, 4]]
+
+
+list_c = [2, 7, [3, 5, 7], [2, 4, 6, 4], [8, 1, 4, 8]]
+
+output = []
+# apply loop and get each value from list
+for val in list_c:
+    # check given val is a child list
+    if isinstance(val, list):
+        print(val)
+        temp = []
+        temp2 = []
+        # apply loop on child
+        for v1 in val:
+            # get value count from child list
+            v1_count = val.count(v1)
+
+            if v1_count>1 and v1 not in temp2:
+                temp.append(v1*v1_count)
+                temp2.append(v1)
+            elif v1 in temp2:
+                continue
+            else:
+                temp.append(v1)
+
+        print("temp:",temp)
+        output.append(temp)
+    else:
+        output.append(val)
+print(output)
+
+print('_'*70)
+
