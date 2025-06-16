@@ -73,3 +73,21 @@ for k in list4:
     else:
         continue
 print(output)
+
+print('_'*70)
+
+# 10). Python program to split the list into two-part, the left side all odd values and the right side all even values.
+Input = [5, 7, 2, 8, 11, 12, 17, 19, 22]
+even = []
+odd = []
+
+for i in Input:
+    if i%2 == 0:
+        even.append(i)
+    else:
+        odd.append(i)
+print("Even No.:",even)
+
+odd.extend(even)
+print(odd)
+
