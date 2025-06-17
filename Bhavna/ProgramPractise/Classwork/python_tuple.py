@@ -60,3 +60,64 @@ print('_'*70)
 result = tup2*2
 print(result)
 # (8, 95, 6, 32, 41, 2, 8, 66, 12, 8, 8, 95, 6, 32, 41, 2, 8, 66, 12, 8)
+
+print('_'*70)
+
+################################################
+# 16/06/2025 Session
+
+################### Get Max, Min, and sum of all value in  given tuple ###################
+
+tup3 = (7,4,5,23,69,55,1)
+print("Max value:",max(tup3))
+print("Min value:",min(tup3))
+print("Sum of values:",sum(tup3))
+
+print('_'*70)
+
+##############################################
+# Q1 write a tuple program to get factorial of numbers.
+
+tup4 = (5,2,9,4)
+output = []
+
+# Loop to get each value of tuple
+for val in tup4:
+    print(val)
+    fact = 1
+    for i in range(val,0,-1):
+        fact = fact*i
+    output.append(fact)
+
+print(tuple(output))   #(120, 2, 362880, 24)
+
+print('_'*70)
+##############################################
+# p2 :  write a python program to get all email from given tuple value
+tup5 = ('id1@gmial.com',9898989898,'id2@gmial.com',7878787878,
+        'id3@gmial.com')
+
+output_list = []
+
+for i in tup5:
+    if isinstance(i,str) and "@" in i:
+        print(i)
+        output_list.append(i)
+    else:
+        continue
+
+print("email:", output_list)
+# email: ['id1@gmial.com', 'id2@gmial.com', 'id3@gmial.com']
+
+print('_'*70)
+
+# get common values from both tuples
+tup6 = (4, 7, 9, 23, 5, 6, 12)
+tup7 = (12, 4, 7, 9, 34, 6, 45)
+
+output = []
+for i in tup6:
+    if i in tup7:
+        output.append(i)
+
+print(tuple(output))
