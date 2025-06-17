@@ -119,7 +119,88 @@ output = dict3.pop('email') # test_email@gmail.com
 print(output) # test_email@gmail.com
 print(dict3) # {'name': 'Mehul', 'password': '$$#$#$$'}
 
+print("_"*50)
 # write a program to move data from one dict to another.
 dict4 = {'A': 567, 'B': 789, 'C': 456}
 dict5 = {}
+temp = dict4.copy()
+
+for key in temp:
+    dict5[key] = dict4.pop(key)
+
+print("dict5 :", dict5)
+print("dict4 :", dict4)
+
+print("_"*50)
+#######################################
+# keys() and values() method: This method return list of keys and values
+
+dict6 = {'A': 567, 'B': 789, 'C': 456}
+print("list of keys :", dict6.keys()) # dict_keys(['A', 'B', 'C'])
+print("list of keys :", dict6.values()) # dict_values([567, 789, 456])
+
+
+print("_"*50)
+#######################################
+# popitems() method :  This method remove key value pair from dict and return the output as tuple of key and value.
+
+dict7 = {'A': 567, 'B': 789, 'C': 456}
+var = dict7.popitem()
+print("removed value :", var) # ('C', 456)
+print("updated dict7 :", dict7) # {'A': 567, 'B': 789}
+
+
+
+
+print("_"*50)
+#######################################
+# clear() method :  clear method, clear all the data from dictionary.
+dict8 = {'A': 567, 'B': 789, 'C': 456}
+dict8.clear()
+print("dict8 :", dict8) # dict8 : {}
+
+
+print("_"*50)
+#######################################
+# del keyword:  this will remove entire dict variable from the memory
+
+dict9 = {'A': 567, 'B': 789, 'C': 456}
+del dict9
+# print(dict9)
+# NameError: name 'dict9' is not defined
+
+dict10 = {'A': 567, 'B': 789, 'C': 456, 'D': 777, 'E': 443}
+del dict10['D']
+print("dict10 :", dict10)
+# dict10 : {'A': 567, 'B': 789, 'C': 456, 'E': 443}
+
+print("_"*50)
+#######################################
+# fromkeys Method :  This method create a dictionary with the help of list of keys with one single value
+
+list1 = ['P', 'Q', 'R']
+output = dict.fromkeys(list1, 100)
+print("output :", output) #
+# {'P': 100, 'Q': 100, 'R': 100}
+
+
+print("_"*50)
+#######################################
+# setdefault method :
+
+dict11 = {'A': 567, 'B': 789, 'C': 456, 'E': 443}
+# get existing key data :  If provide keys is already available, then it will return the value of existing key
+# without any modification in the dictionary.
+output = dict11.setdefault('E',  300)
+print("output :", output)
+# output : 443
+
+# Get non existing key data: If the key is not available, then it will return the default value for that
+# that key and update same will update to the dictionary as well
+
+output2 = dict11.setdefault('F', 500)
+print("output :", output2) # output : 500
+print("dict11 :", dict11)
+# {'A': 567, 'B': 789, 'C': 456, 'E': 443, 'F': 500}
+
 
