@@ -49,3 +49,9 @@ for i in range(len(list_f)):
     else:
         continue
 print(output2)
+
+list_g = [2, 7, [4, 3, 6, 2], [4, 5, 3, 3], [3, 5, 6, 5]]
+# output  =[2,7, [4, 3, 6, 2],[4,5,3,3],[3,5,6,5]
+output = []
+# for val in list_g:
+# check given value is a child list
