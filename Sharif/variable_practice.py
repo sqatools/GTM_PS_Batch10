@@ -24,7 +24,7 @@ A = B = C = 100
 print (A,B,C) # 100 100 100
 print (a,b,c) # 20 50 80
 
-# Basic Mathematical Operations Using Variables:
+# Basic Mathematical Operations Using Python_Variables:
 # Creating variables and assigning value to them:
 a, b = 10 , 20
 print (a+b) # 30 #Addition
