@@ -143,7 +143,7 @@ print(d6)
 # ValueError: dictionary update sequence element #0 has length 1; 2 is required
 """
 
-# 2. If  string follows rules of the dictionary then string to dict conversion with the help
+# 2. If string follows rules of the dictionary then string to dict conversion with the help
 # of json module.
 
 details = '{"Name" : "Rahul", "Age": 35, "Email": "rahul@gmail.com", "mobile": 645646574}'
@@ -178,3 +178,256 @@ s9 = 'Hello'
 b2 = bool(s9)
 print(b2, type(b2))
 # True <class 'bool'>
+
+############################## List #############################
+
+print("_"*50)
+###### list ->  int ####### conversion is not possible
+###### list ->  float ####### conversion is not possible
+###### list ->  complex ####### conversion is not possible
+
+
+print("_"*50)
+###### list ->  string #######
+list1 = [5, 7, 8, 2]
+str1 = str(list1)
+print(str1, type(str1), str1[0], str1[1])
+# [5, 7, 8, 2] <class 'str'> [ 5
+
+
+print("_"*50)
+###### list ->  tuple #######
+list2 = [6, 8, 2, 3]
+tup2 = tuple(list2)
+print(tup2, type(tup2))
+# (6, 8, 2, 3) <class 'tuple'>
+
+
+print("_"*50)
+###### list ->  dict #######
+# direct conversion from list to dict is not possible
+
+list_a = ['a', 'b', 'c']
+list_b = [33, 55, 77]
+output = dict(zip(list_a, list_b))
+print(output, type(output))
+# {'a': 33, 'b': 55, 'c': 77} <class 'dict'>
+
+
+print("_"*50)
+###### list ->  set #######
+list3 = [6, 8, 2, 3, 6, 8, 7, 8]
+set3 = set(list3)
+print(set3, type(set3))
+# {2, 3, 6, 7, 8} <class 'set'>
+
+
+print("_"*50)
+###### list ->  boolean #######
+list4 = []
+b1 = bool(list4)
+print(b1, type(b1))
+# False <class 'bool'>
+
+
+list5 = [6, 8, 22]
+b2= bool(list5)
+print(b2, type(b2))
+# True <class 'bool'>
+
+
+############################### Tuple ################################
+
+print("_"*50)
+###### tuple ->  int ####### conversion is not possible
+###### tuple ->  float ####### conversion is not possible
+###### tuple ->  complex ####### conversion is not possible
+
+
+print("_"*50)
+###### tuple ->  string #######
+tup1 = (5, 2, 8, 1, 3)
+str1 = str(tup1)
+print(str1, type(str1), str1[0], str1[-2])
+# (5, 2, 8, 1, 3) <class 'str'> ( 3
+
+
+print("_"*50)
+###### tuple ->  list #######
+tup2 = (5, 2, 8, 1, 3)
+list2 = list(tup2)
+print(list2, type(list2))
+# [5, 2, 8, 1, 3] <class 'list'>
+
+
+print("_"*50)
+###### tuple ->  dict #######
+# direct conversion is not possible
+
+tup_a = ('p', 'q', 'r')
+tup_b = (34, 789, 123)
+
+output = dict(zip(tup_a, tup_b))
+print(output, type(output))
+# {'p': 34, 'q': 789, 'r': 123} <class 'dict'>
+
+
+print("_"*50)
+###### tuple ->  set #######
+tup3 = (5, 7, 2, 7, 8, 5, 2, 5, 7)
+set3 = set(tup3)
+print(set3, type(set3))
+# {8, 2, 5, 7} <class 'set'>
+
+
+print("_"*50)
+###### tuple ->  bool #######
+
+tup1 = tuple()
+b1 = bool(tup1)
+print(b1, type(b1))
+# False <class 'bool'>
+
+tup2 = (3, 6, 8)
+b2 = bool(tup2)
+print(b2, type(b2))
+# True <class 'bool'>
+
+
+
+################################ dictionary ##########################
+print("_"*50)
+###### dict ->  int ####### conversion is not possible
+###### dict ->  float ####### conversion is not possible
+###### dict ->  complex ####### conversion is not possible
+
+print("_"*50)
+###### dict ->  string #######
+dict1 = {'a': 567, 'b': 789}
+str1 = str(dict1)
+print(str1, type(str1), str1[-2], str1[2])
+# {'a': 567, 'b': 789} <class 'str'> 9 a
+
+
+print("_"*50)
+###### dict ->  list #######
+dict2 = {'a': 567, 'b': 789, 'c': 333, 'd': 673}
+list2 = list(dict2)
+print(list2, type(list2))
+# ['a', 'b', 'c', 'd'] <class 'list'>
+
+
+print("_"*50)
+###### dict ->  tuple #######
+dict3 = {'a': 567, 'b': 789, 'c': 333, 'd': 673}
+tup3 = tuple(dict3)
+print(tup3, type(tup3))
+# ('a', 'b', 'c', 'd') <class 'tuple'>
+
+print(dict3.values()) # dict_values([567, 789, 333, 673])
+
+print("_"*50)
+###### dict ->  set #######
+dict3 = {'a': 567, 'b': 789, 'c': 333, 'd': 673}
+set3 = set(dict3)
+print(set3, type(set3))
+# {'a', 'b', 'c', 'd'} <class 'set'>
+
+
+print("_"*50)
+###### dict ->  bool #######
+dict1 = {}
+b1 = bool(dict1)
+print(b1, type(b1))
+# False <class 'bool'>
+
+dict_b = {'A': 'Python', 'B': 'Programming'}
+b2 = bool(dict_b)
+print(b2, type(b2))
+# True <class 'bool'>
+
+
+################################# SET ###################################
+
+print("_"*50)
+###### set ->  int ####### conversion is not possible
+###### set ->  float ####### conversion is not possible
+###### set ->  complex ####### conversion is not possible
+
+print("_"*50)
+###### set ->  string #######
+set1 = {5, 7, 2, 7, 8}
+str1= str(set1)
+print(str1, type(str1), str1[-2])
+# {8, 2, 5, 7} <class 'str'> 7
+
+
+print("_"*50)
+###### set ->  list #######
+set2 = {5, 7, 2, 7, 8, 10}
+list2 = list(set2)
+print(list2, type(list2))
+# [2, 5, 7, 8, 10] <class 'list'>
+
+
+print("_"*50)
+###### set ->  tuple #######
+set3 = {5, 7, 2, 7, 8, 10, 12, 45}
+tup3 = tuple(set3)
+print(tup3, type(tup3))
+# (2, 5, 7, 8, 10, 12, 45) <class 'tuple'>
+
+
+print("_"*50)
+###### set ->  dict ####### direct conversion is not possible
+
+# we can create dict with set using zip function.
+set_a = {'a', 'b', 'c'}
+set_b = {55, 77, 23}
+output = dict(zip(set_a, set_b))
+print(output)
+# {'b': 55, 'c': 77, 'a': 23}
+
+print("_"*50)
+###### set ->  bool #######
+
+set1 = set()
+b1 = bool(set1)
+print(b1, type(b1))
+# False <class 'bool'>
+
+
+set2 = {5, 7, 2, 7, 9}
+b2 = bool(set2)
+print(b2, type(b2))
+# True <class 'bool'>
+
+####################################### Boolean #########################
+
+print("_"*50)
+###### bool ->  int #######
+b1 = True
+n1 = int(b1)
+print(n1, type(n1))
+# 1 <class 'int'>
+
+print("_"*50)
+###### bool ->  float #######
+b2 = True
+f2 = float(b2)
+print(f2, type(f2))
+# 1.0 <class 'float'>
+
+
+print("_"*50)
+###### bool ->  string #######
+b3 = False
+s3 = str(b3)
+print(s3, type(s3), s3[0])
+# False <class 'str'> F
+
+print("_"*50)
+###### bool ->  list ####### conversion is not possible
+###### bool ->  tuple ####### conversion is not possible
+###### bool ->  dict ####### conversion is not possible
+###### bool ->  set ####### conversion is not possible

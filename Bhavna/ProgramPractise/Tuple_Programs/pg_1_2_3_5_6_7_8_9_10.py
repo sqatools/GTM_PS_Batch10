@@ -1,6 +1,12 @@
 
 # Tuple Practice Programs
 
+# 1). Python tuple program to create a tuple with 2 lists of data.
+list1 = [4, 6, 8]
+list2 = [7, 1, 4]
+output = zip(list1,list2)
+print(tuple(output))
+
 # 2). Python tuple program to find the maximum value from a tuple.
 Input = (41, 15, 69, 55)
 print("Max Value:",max(Input))
