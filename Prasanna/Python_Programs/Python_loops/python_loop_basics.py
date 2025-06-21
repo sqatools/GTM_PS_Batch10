@@ -63,9 +63,9 @@ print("_"*50)
 list_a = [5, 7, 12, 6, 8, 3, 5, 9]
 for val in list_a:
     if val%2 == 0:
-        print("Square is: ",val, val**2)
+        print("Square is: ", val, val**2)
     else:
-        print("Cube is :",val, val**3)
+        print("Cube is :", val, val**3)
 print("_"*50)
 
 # Nested For Loop ###############
@@ -80,7 +80,7 @@ print()
 print("_"*50)
 
 # write a program to draw triangular pattern
-for i in range(1,6):
-    for j in range(0,i):
+for i in range(1, 6):
+    for j in range(0, i):
         print("*", end=' ')
     print()
