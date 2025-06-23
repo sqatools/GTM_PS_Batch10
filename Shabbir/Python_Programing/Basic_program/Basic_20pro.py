@@ -37,7 +37,7 @@ num1 = 9
 print("The square of :",num1*2)
 print("The cube of :",num1**3)
 print("_"*50)
-
+"""
 # 8). Python program to interchange values between variables.
 a = 10
 b = 20
@@ -45,3 +45,25 @@ b = 20
 a,b = b,a
 print("a :",a)
 print("b :",b)
+
+"""
+
+""""
+# 9). Python program to solve this Pythagorous theorem.
+# Theorem : (a2 + b2 = c2)
+
+a = int(input("Enter the number:"))
+b = int(input("Enter the number:"))
+c = (a*2+b*2)*2
+print(c)
+
+"""
+
+#  Python program to solve the given math formula.
+# Formula : (a + b)2 = a^2 + b^2 + 2ab
+
+a = float(input("Enter the number:"))
+b = float(input("Enter the number:"))
+c = (a+b)**2
+d = a^2+b^2+2*a*b
+print(c+d)
