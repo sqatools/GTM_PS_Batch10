@@ -68,15 +68,19 @@ for word in word_list:
     else:
         continue
 print(output)
-
+"""
 # Q3: write a program to get max length word from given string.
 str3 = "We Are Learning Python Programming , Its easy to learn"
 word_list = str3.split(" ")
 max_len = 0
 max_len_word = " "
 for word in word_list:
-    if len(word_list) > max_len:
-        length = len()
+
+    if len(word) > max(len(word_list)):
+        length = len(word)
+        length > max_len_word
     else:
         continue
-print("Maximum length of word is:",word_list,length)
+print("Maximum length of word is:",word,length)
+"""
+
