@@ -317,3 +317,12 @@ print("Reverse:",max[::-1])
 
 str1 = "We are Learning Python Programming"
 b = str1.split()
+max = " "
+sec = " "
+for i in a:
+    if len(i)>len(max):
+        max = i
+    if len(i)>len(sec) and len(max)>len(sec):
+        sec = i
+print(sec)
+print("Longest Word:",max)
