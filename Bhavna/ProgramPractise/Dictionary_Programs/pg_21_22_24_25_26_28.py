@@ -34,3 +34,28 @@ b = ['Virat', 'cricket', 1,  32]
 d = zip(a,b)
 print(dict(d))
 
+# 26). Python Dictionary program to find maximum and minimum values in a dictionary.
+
+Dict = { 'a' : 10, 'b' : 44 , 'c' : 60, 'd' : 25}
+list = []
+for i in Dict.values():
+    list.append(i)
+
+print("Maximum value:",max(list))
+print("Minimum Value:",min(list))
+
+print('_'*70)
+
+# 28). Python Dictionary program to replace words in a string using a dictionary.
+String = 'learning python at sqa-tools'
+Dict = { 'at' : 'is', 'sqa-tools' : 'fun'}
+# Output = ‘learning python is fun’
+
+
+for k, v in Dict.items():
+    String = String.replace(k,v)
+
+print(String)
+
+print('_'*70)
+
