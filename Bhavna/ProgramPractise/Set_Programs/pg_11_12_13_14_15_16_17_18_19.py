@@ -49,3 +49,28 @@ average = sum(s3)/len(s3)
 print(average)
 
 print('_'*70)
+
+# 18). Python program to check if all elements in a set are even.
+
+s = {2,4,6,8}
+c=0
+for i in s:
+    if i%2 == 0:
+        c +=1
+if c == len(s):
+    print('the set is even')
+else:
+    print('the set is not even')
+
+# 19). Python program to check if all elements in a set are odd.
+
+s1 = {1,3,5,7,9,10}
+c = 0
+
+for i in s1:
+    if i%2 != 0:
+        c+=1
+if c == len(s1):
+    print("The set is odd")
+else:
+    print("The set is not odd")
