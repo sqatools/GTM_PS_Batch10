@@ -37,7 +37,7 @@ def addition(n1, n2):
 
 
 # Pass by value
-addition(20, 30)
+#addition(20, 30)
 # addition value: 50
 
 # Pass by reference
@@ -63,10 +63,10 @@ def factorial(num):
     print(f"factorials value {num}:", fact)
 
 
-print("_" * 50)
-factorial(5)  # factorials value 5: 120
-factorial(7)  # factorials value 7: 5040
-factorial(5 + 1)  # factorials value 6: 720
+# print("_" * 50)
+# factorial(5)  # factorials value 5: 120
+# factorial(7)  # factorials value 7: 5040
+# factorial(5 + 1)  # factorials value 6: 720
 
 print("_" * 50)
 ################################
@@ -87,13 +87,13 @@ def math_operation(num1, num2=30):
 
 
 # if we dont provide any value of default param ,then it will take default value
-math_operation(100)
-
-print("_" * 50)
-# overwrite the default value, 20 value will overwrite the default value of num2.
-math_operation(80, 20)
-
-print("_" * 50)
+# math_operation(100)
+#
+# print("_" * 50)
+# # overwrite the default value, 20 value will overwrite the default value of num2.
+# math_operation(80, 20)
+#
+# print("_" * 50)
 
 
 ######################################
@@ -112,7 +112,7 @@ def user_info(*args):
     print("addition of numbers :", sum)
 
 
-user_info('John', 'john@gmail.com', '789798798', 'Mumbai', 'Maharashtra', 10, 30, 40, 50, [4, 6, 7])
+#user_info('John', 'john@gmail.com', '789798798', 'Mumbai', 'Maharashtra', 10, 30, 40, 50, [4, 6, 7])
 
 """
 Home work :
@@ -136,7 +136,7 @@ def get_user_details(**kwargs):
         print(key, ":", value)
 
 
-get_user_details(name='John', email='john@gmail.com', phone=78979879878, address='Mumbai')
+#get_user_details(name='John', email='john@gmail.com', phone=78979879878, address='Mumbai')
 
 print("_" * 50)
 ##################################
@@ -153,4 +153,100 @@ def verify_login(**kwargs):
 # write a python function code to get fabonaci value from 1 to 100
 #fabonaci = [1, 2, 3, 5, 8, 13, 21 .....]
 
+print("_"*50)
+########################### return value from function ################
+def addition_values(n1, n2):
+    return n1+n2
 
+# result = addition_values(70, 60)
+# print("output :", result)
+# # output : 130
+#
+# print("_"*50)
+# whenever we return any value from function then it will stop execution  of function
+#  ->  we can define data type of parameters with :int or any other data type.
+#  ->  we can provide return type of the function using -> int/str etc.
+def get_sum_values(num: int) -> int:
+    """
+    This function will return the sum of all the values from 1 to num
+    :param num: input value required to during the call of the function.
+    :return:
+    """
+    sum = 0
+    for i in range(1, num):
+        print(i)
+        sum = sum + i
+        print("sum :", sum)
+        if sum > 100:
+            return sum
+        else:
+            continue
+
+
+#result = get_sum_values(100)
+#print("result :", result)
+
+#result = get_sum_values('Hello')
+#print("result :", result)
+
+print(get_sum_values.__doc__)
+"""
+This function will return the sum of all the values from 1 to num
+    :param num: input value required to during the call of the function.
+    :return:
+"""
+
+
+print("_"*50)
+#################################################
+# call function inside function
+def add(v1, v2):
+    return v1+v2
+
+def multiplication(v1, v2):
+    return v1*v2
+
+def subtract(v1, v2):
+    return v1-v2
+
+def divide(v1, v2):
+    return v1//v2
+
+
+def calculator(opt, num1, num2):
+    if opt == 1:
+        print("addition of values :", add(num1, num2))
+    elif opt == 2:
+        print("multiplication of values :", multiplication(num1, num2))
+    elif opt == 3:
+        print("division of values :", divide(num1, num2))
+    elif opt == 4:
+        print("subtraction of values :", subtract(num1, num2))
+
+# calculator(2, 5, 6)
+# # multiplication of values : 30
+# calculator(1, 40, 700)
+# # addition of values : 740
+# calculator(3, 40, 5)
+# # division of values : 8
+# calculator(4, 50, 5)
+# # subtraction of values : 45
+
+
+
+
+print("_"*50)
+######################## INNER FUNCTION #########################
+
+def outer_func():
+    def inner_fun1(msg):
+        print("inner 1 msg :", msg)
+
+    def inner_fun2(msg):
+        print("inner 2 msg :", msg)
+
+
+    inner_fun1("Hello good morning")
+    inner_fun2("Hope you are doing good")
+
+outer_func()
