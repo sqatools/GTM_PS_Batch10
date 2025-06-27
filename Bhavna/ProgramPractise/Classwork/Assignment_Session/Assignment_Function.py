@@ -39,7 +39,7 @@ print('_'*70)
 
 # 26/06/2025 session assignment - np
 
-# write a python function code to get fabonaci value from 1 to 100
+# write a python function code to get fibonacci value from 1 to 100
 #fabonaci = [1, 2, 3, 5, 8, 13, 21 .....]
 
 def fib():
