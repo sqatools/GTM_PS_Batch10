@@ -29,3 +29,11 @@ for i,j in Input.items():
 print("Sum of all items:",sum)
 
 print('_'*70)
+
+# 19). Python program to iterate over a dictionary.
+Dict1 = {'food':'burger', 'type':'fast food'}
+
+for k,v in Dict1.items():
+    print(k,':',v)
+
+print('_'*70)

@@ -6,3 +6,7 @@ for commonvalue in tup7:
     if commonvalue in tup6:
          print(commonvalue)
 
+
+
+
+
