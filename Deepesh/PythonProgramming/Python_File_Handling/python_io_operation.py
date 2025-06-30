@@ -130,7 +130,7 @@ def read_specific_range_of_file(filepath, start, end):
             print(lines_list[i], end="")
 
 
-read_specific_range_of_file("read_data.txt", 2, 8)
+#read_specific_range_of_file("read_data.txt", 2, 8)
 
 
 
@@ -142,3 +142,44 @@ read_specific_range_of_file("read_data.txt", 2, 8)
 # 0. from start point of the file. e.g. seek(10, 0)
 # 1. from current position of the cursor e.g. seek(20, 1)
 # 2. end of the file. seek(-50, 2)
+
+
+def tell_with_seek_method_offset_zero(filepath):
+    with open(filepath, "r") as file:
+        print("start location :", file.tell())
+        file.seek(30, 0) # set new cursor position from begining of the file.
+        print("updated location :", file.tell())
+        char_20 = file.read(20)
+        print("20 chars :", char_20)
+        print("new cursor location :", file.tell())
+
+
+#tell_with_seek_method_offset_zero("read_data.txt")
+
+
+def tell_with_seek_method_offset_one(filepath):
+    with open(filepath, "rb") as file:
+        print("start location :", file.tell())
+        file.seek(30, 0) # set new cursor position from begining of the file.
+        print("updated location :", file.tell())
+        file.seek(30, 1)
+        print("new location :", file.tell())
+        char_10 = file.read(10)
+        print("10 characters :", char_10)
+        print("new location 2 :", file.tell())
+
+
+#tell_with_seek_method_offset_one("read_data.txt")
+
+
+
+def tell_with_seek_method_offset_two(filepath):
+    with open(filepath, "rb") as file:
+        print("start location :", file.tell())
+        file.seek(-50, 2) # set new cursor position from begining of the file.
+        print("updated location :", file.tell())
+        char_50 = file.read()
+        print("last char50 characters :", char_50)
+        print("new location 2 :", file.tell())
+
+tell_with_seek_method_offset_two("read_data.txt")
