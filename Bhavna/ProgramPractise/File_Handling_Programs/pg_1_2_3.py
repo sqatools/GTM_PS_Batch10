@@ -41,16 +41,4 @@ new_data = "Appending content to the existing file"
 
 append_data_existing_file("write.txt",new_data)
 
-# 4). Python file program to get the file’s first three and last three lines.
-def get_first_last_3lines(filepath):
-    file = open(filepath,"r")
-    data = file.readlines()
-    for i in (data[:3]):
-        print(i)
-
-    for i in (data[-3:]):
-        print(i)
-
-
-get_first_last_3lines("Read.txt")
 
