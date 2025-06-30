@@ -150,20 +150,25 @@ def fib():
 fib()
 
 print('_'*70)
-
+'''
 # Practice Program with kwargs:
 # Write a python program to get list of all usersname from db_user which is matching there credentials
 # db_users = [user1, user2, user3, user5, user7]
 
+
 def db_users(**kwargs):
     print(kwargs)
-    # for k in kwa
-    db = [""]
+    for k,v in kwargs.items():
+        if k == 'username':
+            print(k)
 
-db_users()
+
+
+db_users(username = 'user1',password= 'user1@12', username = 'user2',password = 'user2@12') #'username' = 'user3','password'= 'user3@12','username' = 'user4','password'= 'user4@12','username' = 'user5','password'= 'user5@12','username' = 'user5','password'= 'user6@12')
 
 print('_'*70)
-'''
+
+########################
 def abc(**kwargs):
     output = []
 
@@ -178,4 +183,109 @@ db_user = ['username' = 'user1','password'= 'user1@12',
     'username' = 'user4','password'= 'user4@12'
     'username' = 'user5','password'= 'user5@12'
     'username' = 'user5','password'= 'user6@12'
-    ]'''
+    ]
+
+'''
+######################################################
+# 26/06/2025 Session
+
+################### return value from function ############
+
+def addition(a1,a2):
+    return a1+a2
+
+result = addition(20,30)
+print("Output:",result)
+# Output: 50
+
+print('_'*70)
+
+# whenever we return any value from function then it will stop execution  of function
+#  ->  we can define data type of parameters with :int or any other data type.
+#  ->  we can provide return type of the function using -> int/str etc.
+
+def sum_value(num:int) -> int:
+
+    """
+    This function will return the sum of all the values from 1 to num
+    :param num: input value required to during the call of the function
+    :return:
+    """
+
+    sum = 0
+    for i in range(1,num):
+        print(i)
+        sum = sum + i
+        print("sum:",sum)
+        if sum>100:
+            return sum
+        else:
+            continue
+
+result = sum_value(100)
+print("Result:",result)
+
+# result = "hi"
+# print(result)
+
+print(sum_value.__doc__)
+'''
+This function will return the sum of all the values from 1 to num
+:param num: input value required to during the call of the function
+:return:
+'''
+
+print('_'*70)
+
+#################################################
+# call function inside function
+
+def add(b1,b2):
+    return b1+b2
+
+def multiplication(b1,b2):
+    return b1*b2
+
+def subtraction(b1,b2):
+    return b1-b2
+
+def division(b1,b2):
+    return b1//b2
+
+
+def calculator(opt,num1,num2):
+    if opt==1:
+        print("Addition of values:",add(num1,num2))
+    elif opt==2:
+        print("Multiplication of values:",multiplication(num1,num2))
+    elif opt==3:
+        print("Subtraction of values:",subtraction(num1,num2))
+    elif opt==4:
+        print("Division of values:",division(num1,num2))
+
+calculator(1,50,20)
+# Addition of values: 70
+calculator(2,10,20)
+# Multiplication of values: 200
+calculator(3,50,20)
+# Subtraction of values: 30
+calculator(4,90,2)
+# Division of values: 45
+
+print('_'*70)
+
+######################## INNER FUNCTION #########################
+
+def outer_function():
+    def inner_function1(msg):
+        print("Inner 1st msg:",msg)
+
+    def inner_function2(msg):
+        print("Inner 2nd msg:",msg)
+
+    inner_function1("Hi, whatsup?")
+    inner_function2("All the best")
+
+outer_function()
+# Inner 1st msg: Hi, whatsup?
+# Inner 2nd msg: All the best

@@ -1,4 +1,4 @@
-"""
+ """
 str1 = "Virat is greate Indian Player"
 output1 = "Player is greate Indian Virat"
 output2 = "VVirat is greate Indian Playerr"
