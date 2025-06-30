@@ -31,3 +31,7 @@ get_even_file_lines("read_data.txt", "even_lines.txt")
 
 # write a python program to change the upper case to lower case lower to upper.
 
+
+# write a program to get all the email ids from given file.
+
+
