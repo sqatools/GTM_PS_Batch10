@@ -57,6 +57,18 @@ odd()
 
 print('_'*70)
 
+# 28). Python function program to print and accept login credentials.
+
+def login():
+    Username = input("Enter the username:")
+    Password = input("Enter the password:")
+    print("Credentials accepted")
+
+login()
+
+
+print('_'*70)
+
 # 29). Python function program to get the addition with the return statement.
 
 def add(a,b):
@@ -64,3 +76,14 @@ def add(a,b):
 
 result = add(20,30)
 print("Addition:",result)
+
+print("_"*70)
+# 30). Python function program to create a Fruitshop Management system.
+
+def fruitshop(fruit,fruit_price,quantity):
+    print("Fruit name:",fruit)
+    print("Fruit Price:",fruit_price)
+    print("Quantity:",quantity)
+    print("Total:", fruit_price*quantity)
+
+fruitshop("Mango",200,30)
