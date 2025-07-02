@@ -338,7 +338,7 @@ str_p = "    We Are Learning Python     "
 print(str_p.lstrip())  # We Are Learning Python      # output does not contain left side spaces.
 
 # rstrip method :  This method will remove right side space or space available at end of the string
-print(str_p.rstrip())  #     We Are Learning Python
+print(str_p.rstrip())  #We Are Learning Python
 
 
 print("_"*50)
