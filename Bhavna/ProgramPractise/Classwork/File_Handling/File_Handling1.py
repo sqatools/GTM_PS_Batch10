@@ -1,4 +1,4 @@
-# 28/06/2025 Session
+# 27/06/2025 Session
 '''
 Different mode to open file
 1. read mode(r): When we want to read file content then will open in read mode
@@ -128,10 +128,82 @@ read_specific_range_of_file("read_data.txt",2,4)
 
 print('_'*70)
 
-# Tell method(): thus method tell you thr current location of the cursor.
+# Tell method(): this method tell you the current location of the cursor.
 #seek method(bytes, offset): This method helps us to set the cursor position with respect the offset value.
 
 # offset values in seek method
 # 0. from start point of the file. seek(10,0)
 # 1. from current position of the cursor. seek (20,1)
 # 2. end of the file seek(-50,2)
+
+#######################################################
+# 30/06/2025 Session
+
+def tell_with_seek_method_zero(filepath):
+    with open(filepath,'r') as file:
+        print("start location:",file.tell())
+        file.seek(30,0)
+        print("updated location:",file.tell())
+        char = file.read(20)
+        print("new cursor location:",file.tell())
+
+# tell_with_seek_method_zero("read_data.txt")
+
+def tell_with_seek_method_one(filepath):
+    with open(filepath,'rb') as file:
+        print("start location:",file.tell())
+        file.seek(30,0)
+        print("updated location:",file.tell())
+        file.seek(30,1)
+        print("new location:",file.tell())
+        char = file.read(20)
+        print("20 characters:",char)
+        print("new location 2:",file.tell())
+
+# tell_with_seek_method_one("read_data.txt")
+
+def tell_with_seek_method_offset_two(filepath):
+    with open(filepath,"rb") as file:
+        print("start location:",file.tell())
+        file.seek(-50,2) #set cursor postion at the end of file
+        print("updated location:",file.tell())
+        char_30 = file.read()
+        print("last 30 character:",char_30)
+        print("new location2:",file.tell())
+
+tell_with_seek_method_offset_two("read_data.txt")
+
+#write a python program to change the uppercase to lowercase and lowercase to upper case
+def convert(filepath):
+    with open(filepath,"r") as file:
+        data = file.read()
+
+        content = data.swapcase()
+
+        with open(filepath,"w") as file:
+            file.write(content)
+
+convert("read_data.txt")
+
+
+# write a program to get all the email ids from the given file
+
+def email(filepath):
+    email = []
+    file = open(filepath,"r")
+    data = file.read()
+    list = data.split(" ")
+    print(list)
+
+    for char in list:
+        if "@" in char:
+            email.append(char)
+        else:
+            continue
+
+    print(email)
+    file.close()
+email("Userfile.txt")
+
+
+
