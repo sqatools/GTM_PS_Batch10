@@ -1,5 +1,5 @@
-# install openpyxl package
-# pip install openpyxl
+# install openpyxl package with below command
+# -> pip install openpyxl
 
 import openpyxl
 
