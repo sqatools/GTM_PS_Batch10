@@ -43,6 +43,7 @@ def convert(filepath):
 # convert("read_data.txt")
 
 # write a program to get all the email ids from given file.
+
 def email(filepath):
     emails = []
     file = open(filepath,"r")
@@ -59,3 +60,5 @@ def email(filepath):
     print(emails)
     file.close()
 email("Userfile.txt")
+
+

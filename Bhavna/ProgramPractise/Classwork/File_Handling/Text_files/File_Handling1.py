@@ -64,7 +64,7 @@ def append_content_to_file(filepath,content):
 # 2. Append to the existing file: it will append content to that existing file.
 
 new_data = "Appending content to the existing file\n"
-append_content_to_file("new_append_file.txt",new_data)
+append_content_to_file("new_append_file.txt", new_data)
 
 
 ##########################
@@ -111,7 +111,7 @@ def read_line_of_file(filepath,line_no):
             line = file.readline()
             print(line,end="")
 
-read_line_of_file("read_data.txt",3)
+read_line_of_file("read_data.txt", 3)
 
 #######################################
 
@@ -124,7 +124,7 @@ def read_specific_range_of_file(filepath,start,end):
         for i in range(start-1,end,1):
             print(lines_list[i],end="")
 
-read_specific_range_of_file("read_data.txt",2,4)
+read_specific_range_of_file("read_data.txt", 2, 4)
 
 print('_'*70)
 
@@ -183,7 +183,7 @@ def convert(filepath):
         with open(filepath,"w") as file:
             file.write(content)
 
-convert("read_data.txt")
+# convert("read_data.txt")
 
 
 # write a program to get all the email ids from the given file
