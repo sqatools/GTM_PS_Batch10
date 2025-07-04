@@ -1,4 +1,5 @@
 import os
+import shutil
 
 #############
 # get current working directory
@@ -172,5 +173,24 @@ Directory of C:\
 
 
 """
+#os.system("notepad.exe")
 
-os.system("notepad.exe")
+print("_"*50)
+###########################################
+# copy file from on location to another location
+src_path = r"E:\Filesdata\count_name.txt"
+target_path =  r"E:\Filesdata\Batch10\count_name.txt"
+
+# copy file with same name as source
+shutil.copy(src_path, target_path)
+
+
+# copy file with difference name from source
+target_path2 =  r"E:\Filesdata\Batch10\count_name_new.txt"
+shutil.copy(src_path, target_path2)
+
+print("_"*50)
+#################### Copy directory tree to the target location ###############
+src_dir_path = r"E:\Filesdata\Batch10"
+tar_dir_path = r"E:\Filesdata\folder2"
+shutil.copytree(src_dir_path, tar_dir_path)
