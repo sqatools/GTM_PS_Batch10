@@ -125,3 +125,40 @@ line_by_line("Read.txt")
 
 print('_'*70)
 
+# 9). Python file program to find the longest word in a file.
+def longest_word(filepath):
+    lw = ""
+    max_len = 0
+    with open(filepath,"r") as file:
+        data = file.read()
+        list = data.split()
+        print(list)
+
+    for char in list:
+        if len(char)>max_len:
+            max_len = len(char)
+            lw = char
+        else:
+            continue
+    print("Longest word:",lw)
+longest_word("Read.txt")
+
+print('_'*70)
+
+# 10). Python file program to get the count of a specific word in a file.
+
+def word(filepath):
+    count = 0
+    with open(filepath,"r") as file:
+        data = file.read()
+        list = data.split(" ")
+        print(list)
+
+    for char in list:
+        if char == "raced":
+            count+=1
+        else:
+            continue
+    print(count)
+
+word("count.txt")

@@ -99,4 +99,4 @@ height = int(input("Enter the height of the cylinder :"))
 area = 2 * 3.14 * radius * height + 2 * 3.14 * radius ** 2
 print("The area of cylinder is:", area)
 """
-#19)Python program to check whether the given number is an Armstrong number or not.
+# 19)Python program to check whether the given number is an Armstrong number or not.
