@@ -39,13 +39,13 @@ print("Result :", result)
 
 # get next two days date
 output = datetime.now() + timedelta(days=2)
-print("Output :", output)
-# Output : 2025-07-08 12:24:16.609807
+print("Output :", output.date())
+# Output : 2025-07-08
 
 # get two days previous date
 output2 = datetime.now() - timedelta(days=2)
-print("Output :", output2)
-# Output : 2025-07-04 12:26:52.548117
+print("Output :", output2.date())
+# Output : 2025-07-04
 
 # Get current time zone name.
 print(datetime.now().astimezone().tzname())
