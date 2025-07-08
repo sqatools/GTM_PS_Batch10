@@ -54,7 +54,7 @@ for char in str1:
         print(count)
     else:
         continue
-print("Total number of Capital letters in Str1 is:",count)
+print("Total number of Capital letters in Str1 is:", count)
 ###########################################################
 # Q2: write a program to remove duplicate names from given string.
 str2 ="Rahul Manoj Nisha Prasanna Nisha Deepesh Archana"
@@ -68,7 +68,7 @@ for word in word_list:
     else:
         continue
 print(output)
-"""
+
 # Q3: write a program to get max length word from given string.
 str3 = "We Are Learning Python Programming , Its easy to learn"
 word_list = str3.split(" ")
@@ -82,5 +82,5 @@ for word in word_list:
     else:
         continue
 print("Maximum length of word is:",word,length)
-"""
+
 

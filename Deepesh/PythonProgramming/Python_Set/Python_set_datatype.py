@@ -272,10 +272,46 @@ print("set result :", s1)
 print("set result :", list(s1)) # ['Programming', 'Python', 'Automation']
 
 
+print("_"*50)
 #Q : HW: write a python program to get all values from any person
 l2 = {'Python', 'Programming', 'Language'}
-# output1 = {'Py', 'Pr', 'La', 'on', 'ng', 'age'}
-# output2 = {'Python', 'Progmin',  'Langue'}
+# output1 = {'Py', 'Pr', 'La', 'on', 'ng', 'ge'}
+
+# output2 = {'Python', 'Progra',  'Langua'}
+
+output1 = set()
+for word in l2:
+    first_two = word[:2]
+    last_two = word[-2:]
+    output1.add(first_two)
+    output1.add(last_two)
+
+print("output1 :", output1)
+# {'Py', 'on', 'La', 'ge', 'ng', 'Pr'}
+
+print("_"*50)
+####################
+output2 = set()
+for word in l2:
+    sub_str = word[:6]
+    output2.add(sub_str)
+
+print("output :", output2)
+# {'Langua', 'Progra', 'Python'}
 
 
+print("_"*50)
+#####################################
+# frozenset :  This is the set data type, which is immutable in nature.
+list1 = [40, 50, 60, 7, 20, 40, 8, 40]
+var1 = frozenset(list1)
+print(var1)
+# frozenset({7, 40, 8, 50, 20, 60})
+
+#var1[1] = 700
+#TypeError: 'frozenset' object does not support item assignment
+
+#var1.add(100)
+#     ^^^^^^^^
+# AttributeError: 'frozenset' object has no attribute 'add'
 

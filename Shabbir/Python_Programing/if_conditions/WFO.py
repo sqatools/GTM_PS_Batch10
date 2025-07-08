@@ -16,12 +16,12 @@ else:
     print("The Candidate is not Eligible for Vote")
 ####################################################################
 
-unit1 = float(input("Enter the electricity bill amount : "))
-if unit1 < 100:
-    charge = unit1 * 15
-elif unit1 <= 200:
-    charge = unit1 * 20
-else: charge = unit1 * 25
-print("The Total Bill amount is :",charge)
+# unit1 = float(input("Enter the electricity bill amount : "))
+# if unit1 < 100:
+#     charge = unit1 * 15
+# elif unit1 <= 200:
+#     charge = unit1 * 20
+# else: charge = unit1 * 25
+# print("The Total Bill amount is :",charge)
 
 

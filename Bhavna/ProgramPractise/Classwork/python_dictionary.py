@@ -242,6 +242,7 @@ dict_b = {'a':1,'b':2,'c':3,'d':4}
 result1 = {k:v for k,v in dict_b.items() if v%2==0}
 print('result1:',result1)
 
+# result1: {'b': 2, 'd': 4}
 print('_'*70)
 
 # write program repeat the keys 2 time if value is even and repeat key three times if values are odd
@@ -249,6 +250,7 @@ dict_B = {'p': 10, 'q': 15, 'r': 8, 's': 13, 't': 20}
 result2 = {(k*2) if v%2==0 else (k*3):v for k,v in dict_B.items()}
 print('result2:',result2)
 
+# result2: {'pp': 10, 'qqq': 15, 'rr': 8, 'sss': 13, 'tt': 20}
 print('_'*70)
 
 #############################################################
@@ -284,8 +286,72 @@ for fruits, price in fruits_with_price.items():
     pur_fruits = purchased_fruits[fruits]
     fruit_bill = pur_fruits*price
     total_bill_1 = total_bill_1+fruit_bill
-
-    updated_fruit = fruit_inventory[fruits] - pur_fruits
-    print(fruits,'|',updated_fruit)
+    fruit_inventory[fruits] = fruit_inventory[fruits]-pur_fruits
+    # updated_fruit = fruit_inventory[fruits] - pur_fruits
+    # print(fruits,'|',updated_fruit)
 
 print('total_bill:',total_bill_1)
+print(fruit_inventory)
+
+'''
+Apple | 95
+Mango | 494
+Banana | 288
+Lichi | 240
+total_bill: 1320
+'''
+
+print('_'*70)
+
+# write a python program to add duplicates values from given dictionary.
+dict_C = {'a': 10, 'b': 20, 'c': 30, 'd': 10, 'e': 20, 'f': 50, 'g': 60, 'h': 50}
+# output = {'ad': 20, 'be': 40, 'c': 30}
+
+output={}
+temp = ""
+
+for k1,v1 in dict_C.items():
+    for k2,v2 in dict_C.items():
+        if k1 != k2 and v1 == v2 and (k1 not in temp and k2 not in temp):
+            output[f"{k1}{k2}"]=v1+v2
+            temp = temp + k1
+            temp = temp + k2
+
+    if k1 not in temp:
+            output[k1] = v1
+            temp = temp+k1
+
+print(output)
+
+print('_'*70)
+
+school  = {'student': [
+                           {'name': 'rahul', 'email': 'rahul@gmail.com', 'phone': 4545445},
+                           {'name': 'mohit', 'email': 'mohit@gmail.com', 'phone': 6543634564},
+                            {'name': 'raju', 'email': 'raju@gmail.com', 'phone': 86786765786},
+                            {'name': 'Santam', 'email': 'Santam@gmail.com', 'phone': 993878778545},
+                             {'name': 'amit', 'email': 'amit@gmail.com', 'phone': 454544657676},
+                            {'name': 'mitesh', 'email': 'mitesh@gmail.com', 'phone': 65436634564},
+                            {'name': 'nitesh', 'email': 'nitesh@gmail.com', 'phone': 867866765786},
+                            {'name': 'Raghav', 'email': 'Raghav@gmaill.com', 'phone': 998786778545},
+
+                        ],
+           'teacher' : [   {'name': 'Mohan Gupta', 'email': 'mohan@gmaill.com', 'phone': 545435345},
+                           {'name': 'Raghav Sharma', 'email': 'raghav@gmaill.com', 'phone': 34543543}],
+           }
+
+from pprint import pprint
+
+print(school['student'][1]['email']) #mohit@gmail.com
+
+# print(list(school['teacher'][0].items())[0])
+print('_'*70)
+
+name = 'Santam'
+for k1,v1 in school.items():
+    # print(k1,':',v1)
+    for val in v1:
+        # print(val)
+        print("name:", val['name'])
+        print("email:", val['email'])
+        print("Phone:", val['phone'])
