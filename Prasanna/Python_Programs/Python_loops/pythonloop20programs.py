@@ -1,4 +1,4 @@
-# Write a Python loops program to find those numbers which are divisible by 7 and multiple
+"""# Write a Python loops program to find those numbers which are divisible by 7 and multiple
 # of 5, between 1500 and 2700 (both included).
 # Input1:1500
 # Input2:2700
@@ -76,3 +76,26 @@ for i in range(1, 31):
 # Output : “sqatools”
 str1 = str(input("Enter your string"))
 print(str1.lower())
+
+# Print pattern
+n = int(input("Enter how many Stars"))
+for i in range(n):
+    for j in range(i,n):
+        print("*", end="")
+    print()
+"""
+def even_numbers(input_list):
+    even_numbers = []
+    for item in input_list:
+        try:
+            if int(item) % 2 == 0:
+                even_numbers.append(item)
+        except:
+            print("value error")
+    return even_numbers
+
+# Sample input with mixed types
+sample_list = [2, '8', 5, 'hello', None, 12]
+
+result = even_numbers(sample_list)
+print("Even numbers in the list:", result)

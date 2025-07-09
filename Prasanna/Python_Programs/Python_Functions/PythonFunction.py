@@ -54,20 +54,40 @@ def fib( lower, upper):
             print(num2, end=" ")
             num1,num2 = num2, num1 + num2
 fib( 1, 100)
+def fibonacci(i):
+    a=0
+    b=1
+    for count in range(1,i,1):
+        sum=a+b
+        a=b
+        b=sum
+        print(sum,end=" " )
+
+fibonacci(100)
+
 #Write a python program to nget list of all usersname from db_user which is matching there credentials
 db_users = [user1, user2, user3, user5, user7]
 """
+
+
 # Basic Programs:
 # 1). Python function program to add two 8numbers.
-def add(num1,num2):
+def add(num1, num2):
     return num1 + num2
-total = add(4,3)
+
+
+total = add(4, 3)
 print("Output:", total)
+
+
 # 2). Python function program to print the input string 10 times.
 def string(str1):
-    print(str1*10)
+    print(str1 * 10)
+
+
 str1 = input("Enter any string you want to print\n")
 string(str1)
+
 
 # 3). Python function program to print a table of a given number.
 def table(number):
@@ -75,4 +95,6 @@ def table(number):
     for i in range(1, 11):
         value = number * i
         print(i, "*", number, "=", value)
+
+
 table(5)
