@@ -121,3 +121,24 @@ print('_'*70)
 # os.system("dir D:\\")
 
 # os.system("notepad")
+###################################################
+# 04/07/2025 Session
+import shutil
+
+# copy file from one location to another location
+src_path = r"D:\abc.txt.txt"
+tar_path = r"D:\Demo\Batch2\abc.txt.txt"
+
+# copy file with same name as source
+shutil.copy(src_path,tar_path)
+
+# copy file with difference name from source
+tar_path1 = r"D:\Demo\Batch2\abc_new.txt"
+shutil.copy(src_path,tar_path1)
+
+print('_'*70)
+
+#################### Copy directory tree to the target location ###############
+src_dir_path = r"D:\Demo\Batch1"
+tar_dir_path = r"D:\Demo\Batch4"
+shutil.copytree(src_dir_path,tar_dir_path)
