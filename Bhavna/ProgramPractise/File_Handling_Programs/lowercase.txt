@@ -1,0 +1,11 @@
+1.contrary to popular belief, lorem ipsum is not simply random text.
+2.it has roots in a piece of classical latin literature from 45 bc,
+3.making it over 2000 years old.
+4.richard mcclintock, a latin professor at hampden-sydney college in virginia,
+5.looked up one of the more obscure latin words,
+6.consectetur, from a lorem ipsum passage, and going through the cites of the word in classical literature,
+7.discovered the undoubtable source.
+8.lorem ipsum comes from sections 1.10.32 and 1.10.33 of "de finibus bonorum et malorum" user@1.com
+user2@.com
+user3@.com
+user4@.com
