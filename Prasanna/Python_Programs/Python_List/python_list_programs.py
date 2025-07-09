@@ -1,4 +1,4 @@
-# Q1. Python program to calculate the square of each number from the given list.
+"""# Q1. Python program to calculate the square of each number from the given list.
 list1 = [5, 8, 9, 2, 11]
 output = []
 for val in list1:
@@ -122,3 +122,36 @@ reverse_list = list(reversed(c))
 print(reverse_list)
 d = [42, 47, 98, 58]
 print(d.reverse())
+"""#16) find the max and min value in an array
+def find_max_min(array):
+    return max(array), min(array)
+
+array = [2,4,6,7,9]
+print("Max value and Minimum Value:", find_max_min(array))
+
+# 17 Reverse an array
+array = [34, 56, 67, 89, 90]
+rev = []
+for value in array:
+    rev = array[::-1]
+print("reverse of array:", rev)
+
+# 18) Left rotate array by one Position
+def left_rotate(arr):
+    return arr[1:]+arr[:1]
+arr = [1, 2, 3, 4, 5]
+print("Left Rotate:", left_rotate(arr))
+# 19) Remove Duplicates from Sorted Array
+def remove_duplicates(arr1):
+    return list(dict.fromkeys(arr1))
+arr1 = [1, 3, 5, 4, 5, 6, 5, 3, 4, 2, 11, 3, 4, 2, 3]
+print("Duplicates Removing in array:", remove_duplicates(arr1))
+# 20)  5. Second Largest Element
+def second_largest(array1):
+    unique = list(set(array1))
+    if len(unique) < 2:
+        return none
+    unique.sort()
+    return unique[-2]
+array1 = [1, 3, 5, 7, 8, 9]
+print("Second Largest:", second_largest(array1))

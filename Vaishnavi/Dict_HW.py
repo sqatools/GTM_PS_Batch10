@@ -6,8 +6,3 @@ purchased_fruits = {'Apple': 5, 'Mango': 6, 'Banana': 12, 'Lichi': 10}
 # updated
 # fruit_investory = {'Apple': 95, 'Mango': 494, 'Banana': 288, 'Lichi': 240}
 
-total_bill= 0
-fruit_investory_left=0
-
-for fruits , value in fruits_with_price:
-bill=
