@@ -18,7 +18,13 @@ method : When we define any function inside the class, then it is called method.
             def show_city_name(cls):
                 print(cls.city)
 
-         3. static method:
+         3. static method: when we create a method with decorator as @staticmethod, then it is called static method.
+                           ->  static method are associated with class name, no need to created object of the class
+                               to call the static method.
+
+            @staticmethod
+            def factorial(var1):
+                code
 
 variable : when we define any variable, inside the class, then it is class member variable.
            # There are two types of variable inside the class.
@@ -50,6 +56,11 @@ constructor:  Constructor that initialize the memory of the object of the class.
                     self.v_2 = v2
 
 
+self :  self is nothing but object/instance of the class itself.
+        ->  wheneve we call any instance method with the object, then no need to pass any value for self parameter, as object
+            itself is consider as first parameter of the method internally.
+
+
 """
 
 
@@ -74,17 +85,18 @@ class ABC:
 
         self.print_table()
 
+    # instance method
     def greeting(self):
         print("Hello Good Morning")
 
-    def print_table(self, num=5):
+    def print_table(self, num=5):   # instance method
         for i in range(1, 11):
             print(i, "*", num, "=", i * num)
 
-    def addition_values(self):
+    def addition_values(self):  # instance method
         print("addition :", self.v_1 + self.v_2)
 
-    def multiplication(self, num1, num2):
+    def multiplication(self, num1, num2):  # instance method
         print("multiply output :", num1*num2)
 
     @classmethod
@@ -92,7 +104,7 @@ class ABC:
         print("city name :", cls.city)
 
     @staticmethod
-    def factorial(num):
+    def factorial(num): #  static method
         """
         static methods are just like normal function outside of the class, this method directly associated
         with class name, no need to create object of the class to access the static method.
@@ -138,3 +150,10 @@ print("_"*50)
 # create all different types of methods.
 # create all types of variables
 # create a parametrize constructor.
+
+print("_"*50)
+###########################################
+# call method with object
+
+obj.greeting() # calling method with object
+ABC.greeting(obj) # call method class name, then we have pass object as parameter to the method.
