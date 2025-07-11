@@ -2,7 +2,7 @@
 Inheritance : When one class acquire the property another class, then it called inheritance.
 
 1. singleton inheritance :  class A ->  Class B
-2. multiple level inheritance :  class A -> Class B -> Class C
+2. multilevel inheritance :  class A -> Class B -> Class C
 3. multiple inheritance :  Class A ->  Class C , Class B ->  Class C
 4. Hierarchical inheritance :  Class A - > Class B,  Class A ->  Class C
 """
