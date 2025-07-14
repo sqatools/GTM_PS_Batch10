@@ -1,7 +1,3 @@
-"""
-install selenium with below command
-->  pip install selenium
-"""
 import time
 
 from selenium import webdriver
