@@ -35,8 +35,14 @@ def count_words(filepath):
             count+=1
         print(count)
 
-count_words("AnotherPractice_file.txt")
+#count_words("AnotherPractice_file.txt")
 
 #15). Python file program to sort all the lines File as per line length size.
 
-
+def sort_line(filepath):
+    with open(filepath,"r") as f:
+        data=f.readlines()
+        data.sort()
+        for val in data:
+            print(val)
+sort_line("Uppercase_file.txt")
