@@ -1,4 +1,4 @@
-# OS Module Programs
+# OS Module Practice Programs
 
 # 1). Write a Python Program To Get The Current Working Directory.
 import os
@@ -37,3 +37,17 @@ print('_'*70)
 # 8). Write a Python Program To Remove An Empty Directory Using os.rmdir()
 
 # os.rmdir("F2")
+
+# 9). Write a Python Program To Remove a Non-empty DirecTory Using
+# os.mkdir("T1")
+
+import shutil
+# shutil.rmtree("T1")
+
+print('_'*70)
+
+# 10). Write a Python Program To Join 2 paths.
+target_path = r"D:\Demo"
+file_name = "abc.txt"
+filepath = os.path.join(target_path,file_name)
+print("filepath:",filepath)
