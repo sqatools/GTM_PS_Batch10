@@ -96,3 +96,53 @@ dict13 = {1: 'a', 2: 'b'}
 dict13.update({3: 'c'})
 
 print(dict13)
+
+
+
+#1 q1 list1 - [4, 6, 8, 12, 67, 34, 50, 60, 70]
+# get the value between 10 - 50
+
+list1 = [4, 6, 8, 12, 67, 34, 50, 60, 70]
+output1 = []
+for val in list1:
+    if val > 10 and val <= 51:
+        output1.append(val)
+print(output1)
+
+
+# 2. reverse a string of a longest word
+str1 = "We are learning Python Programming"
+for char in str1:
+    word_list = str1.split(" ")
+    max_len = 0
+    max_len_word = ""
+    for word in word_list:
+        word_len = len(word)
+        if word_len > max_len:
+            max_len = word_len
+            max_len_word = word
+        else:
+            continue
+print("Reverse of Max length word :", max_len_word[::-1])
+
+
+# # 3. Find the second-largest word
+# str1 = "We are learning Python Programming"
+# for char in str1:
+#     word_list = str1.split(" ")
+#     max_len = 0
+#     max_len_word = ''
+#     second_large = ''
+#     for word in word_list:
+#         word_len = len(word)
+#         if word_len > max_len:
+#             max_len = word_len
+#             max_len_word = word
+#         elif word_len > second_large > max_len and
+# print("Max length word :", max_len_word[::-1])
+# print("")
+
+
+
+
+

@@ -55,18 +55,41 @@ print("check folder path exist:", os.path.exists(folder_path))  # True
 print("check folder path exist:", os.path.exists(folder_path2))  # False
 
 
-# find a python program to get ecven numbers from list with exception handling
-def Exception_handling_even(list1):
+def get_file_folder_count(tar_path):
+    files_list = []
+    folder_list = []
+    # get list of all file/folder
+    all_data = os.listdir(tar_path)
+    # loop over file/folder list
+    for data in all_data:
+        # get path of the file/path
+        data_path = os.path.join(tar_path, data)
+        # check given path is file or not
+        if os.path.isfile(data_path):
+            # if isfile is true then add in files_list
+            files_list.append(data)
+        else:
+            # if isfile is False then add in folder_list
+            folder_list.append(data)
 
-    try:
-        for i in list1:
-            if i % 2 == 0:
-                print("Is a even number:", i)
-            else:
-                continue
-    except Exception as e:
-        print("Can not validate a string value ")
-        print(e)
+    print("Total files :", len(files_list))
+    print("Total folders :", len(folder_list))
 
-list1 = [3, 5, 6, 8, 10]
-Exception_handling_even('Good Morning')
+
+get_file_folder_count(r"/Users/Sathish/Projects/br/")
+
+print("_"*50)
+#######################################
+# get size of the file
+file_path_3 = "/Users/Sathish/Projects/br/f1/f2/f3/f4/f5/DSC_0255_TEST.jpg"
+print("File size :", os.path.getsize(file_path_3))  # 492618 bytes
+
+print("File modify time :", os.path.getmtime(file_path_3))
+
+print("_"*50)
+####################################
+# execute os command with python module
+# os.system("control") # open win control panel
+
+#os.system("ls /Users/Sathish") # get list of all files/folder in the given path
+os.system("ls")
