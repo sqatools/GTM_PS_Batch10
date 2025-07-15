@@ -1,0 +1,10 @@
+# There are 2 type of xpath
+1. absolute xpath (non-recommended): absolute xpath follows complete dom structure to indentify any specific element.
+   e.g.  /html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input
+
+2. relative xpath: relative xpath works with any attribute of specific element
+     e.g.  //tagname[@attribute='value']
+           -> //input[@type="password"]
+           -> //input[@data-testid="royal-pass"]
+           -> //input[@placeholder="Password"]
+           -> //input[@aria-label='Password']
