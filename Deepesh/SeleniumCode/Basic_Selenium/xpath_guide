@@ -77,10 +77,12 @@
 
                  e.g  //ref_tagname[@attribute='value']//following::tar_tagname[@attribute='value']
                    -> //span[text()='From']//following-sibling::p
+
 5) preceding: with the help preceding method we can find out all the element which are available upper side of refer element
                on the web page.
                 e.g. -> //ref_tagname[@attribute='value']//preceding::tar_tagname[@attribute='value']
                      -> //td[text()='Mumbai']//preceding::input[@id='birthday']
+
 6) preceding-sibling:
                e.g  -> //ref_tagname[@attribute='value']//preceding-sibling::tar_tagname[@attribute='value']
                     -> //td[text()='Indore']//preceding-sibling::td[2]
