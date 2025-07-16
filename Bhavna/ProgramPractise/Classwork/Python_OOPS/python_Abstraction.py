@@ -5,7 +5,7 @@ Abstraction in Python
 # focus on simplify the complex code structure by hiding the import and internal information from the user
 # and provide the overview of the particular project.
 
-# In abstraction parent class method will be override by child class, and implimentation will be done inside
+# In abstraction parent class method will be override by child class, and implementation will be done inside
 # the child class.
 
 """

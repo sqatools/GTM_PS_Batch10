@@ -17,7 +17,7 @@ def greater(*args):
         elif isinstance(i,float):
             continue
 
-greater(1, 2, 3,[1040,2445,106,3234,3546,3,9,25,790,45],12.6)
+#greater(1, 2, 3,[1040,2445,106,3234,3546,3,9,25,790,45],12.6)
 
 def verify_login(**kwargs):
     db_user = 'user1'
@@ -27,4 +27,4 @@ def verify_login(**kwargs):
     else:
         print("Invalid credentials")
 
-verify_login(username='user5',password='user@12345')
+#verify_login(username='user5',password='user@12345')

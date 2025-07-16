@@ -41,3 +41,18 @@ def get_file_count(target_path_1):
     print("Total files:",len(file_list))
 
 get_file_count(r"D:\Demo/Batch2")
+
+# 15). Write a Python Program To Get The Total Folder Count In The Target Path
+
+def get_folder_count(target_path2):
+    folder_list = []
+
+    all_data = os.listdir(target_path2)
+
+    for data in all_data:
+        data_path = os.path.join(target_path2,data)
+        if os.path.isdir(data_path):
+            folder_list.append(data)
+    print("Total Folder:",len(folder_list))
+
+get_folder_count(r"D:\Demo")
