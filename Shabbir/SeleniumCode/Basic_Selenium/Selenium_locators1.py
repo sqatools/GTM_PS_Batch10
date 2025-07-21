@@ -31,7 +31,6 @@ driver = get_browser('Chrome')
 # maximize browser
 driver.maximize_window()
 driver.implicitly_wait(20)
-
 def get_element_with_id_name():
     # launch web with get method
     driver.get("https://www.facebook.com")
