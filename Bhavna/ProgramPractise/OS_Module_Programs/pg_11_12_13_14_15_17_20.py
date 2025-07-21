@@ -1,6 +1,7 @@
 # OS Module Practice Programs
 
 import os.path
+import shutil
 
 # 11). Write a Python Program To Check The File On a Given Path.
 
@@ -56,3 +57,19 @@ def get_folder_count(target_path2):
     print("Total Folder:",len(folder_list))
 
 get_folder_count(r"D:\Demo")
+
+# 17). Write a Python Program To Copy The File Source Path To The Target Path.
+
+src_path = r"D:\abc.txt.txt"
+target_path = r"D:\Demo\abc.txt.txt"
+
+shutil.copy(src_path,target_path)
+print('_'*70)
+
+
+# 20). Write a Python Program To Remove The File From The Given Path.
+
+file_path = r"D:\testfile.txt"
+# os.remove(file_path)
+
+print('_'*70)
