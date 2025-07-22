@@ -67,11 +67,9 @@ fibonacci(100)
 
 #Write a python program to nget list of all usersname from db_user which is matching there credentials
 db_users = [user1, user2, user3, user5, user7]
-"""
-
 
 # Basic Programs:
-# 1). Python function program to add two 8numbers.
+# 1). Python function program to add two numbers.
 def add(num1, num2):
     return num1 + num2
 
@@ -95,6 +93,62 @@ def table(number):
     for i in range(1, 11):
         value = number * i
         print(i, "*", number, "=", value)
-
-
 table(5)
+
+# 4)
+def bubble_sort(arr):
+     n = len(arr)
+     for i in range(n):
+         for j in range(0, n - i - 1):
+             if arr[j] > arr[j + 1]:
+                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+arr = [5, 2, 9, 1, 5]
+bubble_sort(arr)
+print("Bubble:", arr)
+"""
+# 4). Python function program to find the maximum of three numbers.
+def largest(a,b,c):
+    if a > b :
+        if a > c:
+            print("a is largest", a)
+        else:
+            print("c is largest", c)
+    else:
+        print("b is largest", b)
+largest(12,-9,78)
+# 5). Python function program to find the sum of all the numbers in a list.
+def sum_list(Input):
+    sum = 0
+    for i in Input:
+        sum = sum + i
+    print("Sum", sum)
+Input = [6, 9, 4, 5, 3]
+sum_list(Input)
+
+# 6). Python function program to multiply all the numbers in a list.
+def mul_list(Input1):
+    mul = 1
+    for i in Input1:
+        mul = i * mul
+    print("mul" ,mul)
+Input1 = [-8, 6, 1, 9, 2]
+mul_list(Input1)
+
+# 7). Python function program to reverse a string.
+def reverse(string1):
+    for ch in string1:
+        rev = string1[::-1]
+    print("reverse string", rev)
+string1 = input("Enter any String")
+rev = ""
+
+reverse(string1)
+
+# 8). Python function program to check whether a number is in a given range.
+# Input : num = 7, range = 2 to 20
+def is_range(num):
+    if num in range(2, 20):
+        print("Number in range")
+num = int(input("Enter any number"))
+print("The value is in range")
