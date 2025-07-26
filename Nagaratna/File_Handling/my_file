@@ -1,0 +1,9 @@
+def odd_file(filepath ):
+    data7= open("C:\\Users\\nagar\\Downloads\\My_Filename.txt","r")
+    data8 =open("Created second file","w")
+    test= data7.read()
+    for x in range(0,len(test)):
+        if((x+1) % 2!= 0):
+            data8.write(test[x])
+        else:
+            passTesting in bangalore office

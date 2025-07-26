@@ -17,4 +17,7 @@ result2 = random.randrange(1, 20, 3)
 print("result2 :", result2)
 # result2 : 13
 
-
+def new_random():
+    participants = ["Nagaratna", "Amit", "Sneha", "Rahul", "Divya"]
+    choice = random.choice()
+    print(choice)
