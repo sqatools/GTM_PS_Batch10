@@ -13,11 +13,13 @@ def Age(n):
     except Exception as f:
         print(f)
 
-Age(16)
+Age(14)
 
 try:
     with open("file.txt", "r") as f:
         content = f.read()
         print(content)
-except FileNotFoundError:
-    print("The file does not exist.")
+except Exception as e:
+    print(e)
+"""except FileNotFoundError:
+    print("The file does not exist.")"""
