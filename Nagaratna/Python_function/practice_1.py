@@ -6,7 +6,7 @@ add =(a+b)
 print("Sum of two values : ",add,type(add))
 # 2). Python Program to subtract two integer values.
 sub = b/a
-print(sub)
+print(sub)          
 #3). Python program to multiply two numbers.
 mul = a*b
 print(mul,type(mul))

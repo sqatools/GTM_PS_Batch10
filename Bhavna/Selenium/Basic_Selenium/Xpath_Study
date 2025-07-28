@@ -1,5 +1,6 @@
 # 16/07/2025 Session
-'''
+
+
 # There are 2 type of xpath
 1. absolute xpath (non-recommended): absolute xpath follows complete dom structure to indentify any specific element.
    e.g.  /html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input
@@ -92,6 +93,4 @@ Basic XPath Methods:
 6) preceding-sibling:
                e.g  -> //ref_tagname[@attribute='value']//preceding-sibling::tar_tagname[@attribute='value']
 //td[text()='Delhi']//preceding-sibling::td[2]
-
-'''
 

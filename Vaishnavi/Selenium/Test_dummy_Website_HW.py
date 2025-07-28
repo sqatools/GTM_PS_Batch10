@@ -8,7 +8,7 @@ def get_web_browser(browser):
     if browser.lower()=="chrome":
         driver=webdriver.Chrome()
     if browser.lower()=="edge":
-        driver=webdriver.edge()
+        driver=webdriver.Edge()
     return driver
 
 driver=get_web_browser("chrome")
