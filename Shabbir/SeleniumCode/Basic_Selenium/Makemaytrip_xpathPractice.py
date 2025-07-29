@@ -23,15 +23,17 @@ def get_element():
     From.send_keys(Keys.ENTER)
     time.sleep(10)
 
+    To_drive = driver.find_element(By.XPATH,"//span[text()='To']")
+    time.sleep(10)
+    To_drive.click()
+    To_drive.send_keys('Hopset,')
+    time.sleep(10)
+    To_drive.send_keys(Keys.ARROW_DOWN)
+    time.sleep(10)
+    To_drive.send_keys(Keys.ENTER)
+    time.sleep(5)
 
 
-
-    # driver.implicitly_wait(20)
-    # driver.find_element(By.ID,"email").send_keys("SHABBIR")c`
-    # driver.implicitly_wait(10)
-    # driver.find_element(By.NAME,"pass").send_keys("Shabbir@123")
-    # driver.implicitly_wait(5)
-    # driver.find_element(By.NAME,"login").click()
 
 get_element()
 
