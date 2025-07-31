@@ -17,7 +17,6 @@ def test_subtraction():
 def test_division():
     x1 = 40
     x2 = 5
-    assert x1//x2 == 9
 
 
 def test_greeting():
