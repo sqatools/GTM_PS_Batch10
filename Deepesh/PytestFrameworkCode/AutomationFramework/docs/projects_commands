@@ -1,0 +1,2 @@
+# execute automation code from root directory AutomationFramework
+->  python -m pytest -v .\tests\ui\openhrm_test\
