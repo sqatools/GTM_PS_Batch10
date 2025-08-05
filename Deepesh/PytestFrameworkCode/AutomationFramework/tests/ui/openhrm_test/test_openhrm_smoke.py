@@ -13,9 +13,14 @@ class TestOpenHRM:
         self.hrm = OpenHRM(self.driver)
 
 
-    def test_login_open_hrm(self):
-        self.hrm.enter_username(username_value=username_value)
-        self.hrm.enter_password(pass_value=password_value)
-        self.hrm.click_to_login_button()
-        time.sleep(10)
+    # def test_login_open_hrm(self):
+    #     self.hrm.enter_username(username_value=username_value)
+    #     self.hrm.enter_password(pass_value=password_value)
+    #     self.hrm.click_to_login_button()
+    #     time.sleep(10)
+
+
+    def test_login_openhrm(self):
+        self.hrm.login_openhrm(username_value, password_value)
+
 
