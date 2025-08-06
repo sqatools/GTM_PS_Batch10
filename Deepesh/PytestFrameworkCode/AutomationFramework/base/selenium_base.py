@@ -13,8 +13,8 @@ class SeleniumBase:
         element = self.wait.until(cond(locator))
         return element
 
-    def click_element(self, locator):
-        element = self.get_element(locator=locator)
+    def click_element(self, locator, **kwargs):
+        element = self.get_element(locator=locator, **kwargs)
         element.click()
 
     def fill_text(self, locator, value):
