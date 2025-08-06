@@ -1,0 +1,12 @@
+
+username_value = "Admin"
+password_value = "admin123"
+e_name1 = "Peter"
+e_username1 = "user3_peter"
+e_password1 = "Peter@1234"
+c_password1 = "Peter@1234"
+user_name = "user3_peter"
+jobtitle = "Automation_Tester"
+desc = "Automating the website"
+first_name = "Ryaan"
+last_name = "Zehr"
