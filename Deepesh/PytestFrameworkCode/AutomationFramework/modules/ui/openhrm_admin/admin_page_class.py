@@ -16,7 +16,6 @@ class AdminPage(SeleniumBase):
     def click_to_add_user_btn(self):
         self.click_element(admin_locator.add_user_btn)
 
-
     def select_user_role(self, role_name):
         self.click_element(admin_locator.user_role_dropdown)
         role_name_loc = (By.XPATH, f"//div[@role='listbox']//*[contains(text(), '{role_name}')]")

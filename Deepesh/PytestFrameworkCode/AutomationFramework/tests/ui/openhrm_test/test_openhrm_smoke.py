@@ -22,11 +22,11 @@ class TestOpenHRM:
     #     self.hrm.click_to_login_button()
     #     time.sleep(10)
 
-
+    @pytest.mark.smoke
     def test_login_openhrm(self):
         self.hrm.login_openhrm(username_value, password_value)
 
-
+    @pytest.mark.sanity
     def test_admin_add_user(self):
         self.admin.navigate_to_admin_page()
         self.admin.click_to_add_user_btn()
