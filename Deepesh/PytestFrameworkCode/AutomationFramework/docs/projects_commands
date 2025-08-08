@@ -2,3 +2,10 @@
 ->  python -m pytest -v .\tests\ui\openhrm_test\
 
 # We are working on home work
+
+# generate HTML Report,
+-> install pytest-html package with below command
+   -> pip install pytest-html
+
+
+
