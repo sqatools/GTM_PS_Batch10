@@ -1,10 +1,10 @@
 import time
 
 import pytest
-from modules.ui.openhrm.openhrm_page_class import OpenHRM
-from modules.ui.openhrm_admin.admin_page_class import AdminPage
-from modules.ui.openhrm.openhrm_page_data import *
-from modules.ui.openhrm_admin.admin_page_data import *
+from ....modules.ui.openhrm.openhrm_page_class import OpenHRM
+from ....modules.ui.openhrm_admin.admin_page_class import AdminPage
+from ....modules.ui.openhrm.openhrm_page_data import *
+from ....modules.ui.openhrm_admin.admin_page_data import *
 
 
 @pytest.mark.usefixtures("get_driver")
