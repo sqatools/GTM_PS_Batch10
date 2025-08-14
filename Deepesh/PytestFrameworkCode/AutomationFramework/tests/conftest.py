@@ -2,11 +2,23 @@ import pytest
 import os
 from datetime import datetime
 from selenium import webdriver
+from ..base.webdriver_factory import WebDriverFactory
 
 @pytest.fixture(scope='class')
 def get_driver(request):
     driver = webdriver.Chrome()
     driver.maximize_window()
+    driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    # create a class variable, that we use in the class with self.driver
+    request.cls.driver = driver
+    yield driver
+    driver.close()
+
+
+@pytest.fixture(scope='class')
+def get_driver_wdf(request):
+    wdf = WebDriverFactory(browser="Chrome", headless=False)
+    driver = wdf.get_driver_instance()
     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
     # create a class variable, that we use in the class with self.driver
     request.cls.driver = driver

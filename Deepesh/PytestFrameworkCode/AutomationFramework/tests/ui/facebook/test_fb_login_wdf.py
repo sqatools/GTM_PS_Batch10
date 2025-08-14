@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from ....modules.ui.facebook_page.fb_page_class import FBPage
 from ....utilities.util_tools import Utils
 
-@pytest.mark.usefixtures("get_driver")
+@pytest.mark.usefixtures("get_driver_wdf")
 class TestFBLogin:
 
     @pytest.fixture(autouse=True)
