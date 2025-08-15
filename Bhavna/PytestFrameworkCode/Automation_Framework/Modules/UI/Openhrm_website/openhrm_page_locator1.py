@@ -4,7 +4,7 @@ class Openhrm_locator:
 
     username_field = (By.NAME,"username")
     password_field = (By.NAME,"password")
-    login_button = (By.XPATH,"//button[contains(.,'Login')]")
+    login_button = (By.XPATH,"//button[@type='submit']")
     choose_admin = (By.XPATH,"//span[text()='Admin']")
     add_user = (By.XPATH,"//div[contains(@class,'orangehrm-header')]//button[@type='button']")
     select_dd = (By.XPATH,"//label[text()='User Role']//following::div[@class='oxd-select-wrapper'][1]")
