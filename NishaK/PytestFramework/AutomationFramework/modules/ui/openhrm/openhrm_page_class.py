@@ -18,7 +18,7 @@ class OpenHRM(SeleniumBase):
     def click_to_login_button(self):
         self.click_element(loc.login_button)
 
-    def login_openhrm(self, username, password):
-        self.enter_username(username)
-        self.enter_password(password)
-        self.click_to_login_button()
+    # def login_openhrm(self, username, password):
+       # self.enter_username(username)
+        # self.enter_password(password)
+        # self.click_to_login_button()

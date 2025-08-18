@@ -1,0 +1,31 @@
+e_name1 = "Peter"
+e_username1 = "user1_data"
+e_password1 = "User@1234"
+c_password1 = "User@1234"
+user_name = "user1_data"
+jobtitle = "Automation_Tester"
+desc = "Automating the website"
+value1 = r"D:\Demo\abc.txt"
+gradename = "Grade 7"
+minsal = "100"
+maxsal = "1000"
+name = 'Dummy data'
+register_no = '8877'
+lname = 'Abc Location'
+lcity = 'Mumbai'
+lstate = 'Maharashtra'
+pcode = '667788'
+lphone = '7879787978'
+laddress = 'Dummy Address 1'
+sname = 'Python-Selenium'
+sdesc = 'Selenium Python Skills'
+edu_level = 'B.E (Test)'
+language = 'Hindi'
+
+# sname = "Night Shift"
+
+
+
+
+# first_name = "Ryaan"
+# last_name = "Zehr"
