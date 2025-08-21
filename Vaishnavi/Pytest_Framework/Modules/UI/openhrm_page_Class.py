@@ -1,9 +1,9 @@
-from Base_Code.Base_Test_file import Base_Test_File
-from openrhm_Page_locator import openhrm_locator as loc
+from base_code.base_test_file import Base_Test_File
+from .openrhm_Page_locator import openhrm_locator as loc
 
 class OpenHRM(Base_Test_File):
 
-    def __init__(self,driver):
+    def __init__(self, driver):
         super().__init__(driver)
 
     def open_login_page(self,url):
