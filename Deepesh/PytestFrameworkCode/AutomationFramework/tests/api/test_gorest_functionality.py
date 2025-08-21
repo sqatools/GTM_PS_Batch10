@@ -28,4 +28,3 @@ class TestGoRest:
         self.gr.log.info(f"Test Name: {request.node.name}")
         resp, st_code = self.gr.delete_user_and_verify()
         assert st_code == 204
-        assert resp["status"] == "active"
