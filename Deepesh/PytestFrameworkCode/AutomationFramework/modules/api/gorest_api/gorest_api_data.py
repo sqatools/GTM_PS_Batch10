@@ -28,3 +28,21 @@ create_user_payload = json.dumps({
         "email": f"{fk.email()}",
         "status": "active"
     })
+
+
+# Update user info
+update_user_payload = {
+        "name": f"{fk.user_name()}",
+        "gender": "male",
+        "email": f"{fk.email()}",
+        "status": "inactive"
+    }
+
+
+# Delete user info
+delete_user_payload = json.dumps({
+        "name": f"{fk.user_name()}",
+        "gender": "male",
+        "email": f"{fk.email()}",
+        "status": "active"
+    })

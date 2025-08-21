@@ -62,6 +62,9 @@ class APIBase:
         self.log.info(f"URL: {url}")
         self.log.info(f"Headers: {headers}")
         self.log.info(f"Payload: {payload}")
-        self.log.info(f"response: {response.text}")
+        self.log.info(f"response: {response.text}, {type(response.text)}")
         self.log.info(f"status code: {response.status_code}")
-        return response.json(), response.status_code
+        if response.text == "":
+            return response, response.status_code
+        else:
+            return response.json(), response.status_code
