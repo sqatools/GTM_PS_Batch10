@@ -14,10 +14,21 @@ def get_driver(request):
     yield driver
     driver.close()
 
+def pytest_addoption(parser):
+    parser.addoption("--browserName", action="store", default='chrome', help='browser to execute the automation code')
+    parser.addoption("--headlessValue", action="store", default=False, help='headless mode execution for browser')
+
 
 @pytest.fixture(scope='class')
-def get_driver_wdf(request):
-    wdf = WebDriverFactory(browser="Chrome", headless=False)
+def get_driver_wdf(request, pytestconfig):
+    browser = pytestconfig.getoption("browserName")
+    headless = pytestconfig.getoption("headlessValue")
+    if browser and headless:
+        wdf = WebDriverFactory(browser=browser, headless=headless)
+    elif browser:
+        wdf = WebDriverFactory(browser=browser, headless=False)
+    else:
+        wdf = WebDriverFactory(browser="chrome", headless=False)
     driver = wdf.get_driver_instance()
     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
     # create a class variable, that we use in the class with self.driver
