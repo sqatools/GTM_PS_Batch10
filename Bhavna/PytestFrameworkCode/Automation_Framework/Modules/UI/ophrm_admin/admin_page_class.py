@@ -1,5 +1,5 @@
 import time
-from Base.selenium_base1 import *
+from ....Base.selenium_base1 import *
 from .admin_page_locator import *
 
 class AdminPage(SeleniumBase):
@@ -20,14 +20,15 @@ class AdminPage(SeleniumBase):
         time.sleep(5)
         self.click_element(admin_locator.select_employee)
 
+
     def status(self):
         self.click_element(admin_locator.status)
         self.click_element(admin_locator.e_status)
 
-    def e_username_password(self,e_username1,e_password1,c_password1):
-        self.fill_text(admin_locator.e_username,e_username1)
-        self.fill_text(admin_locator.e_password,e_password1)
-        self.fill_text(admin_locator.c_password,c_password1)
+    def e_username_password(self, e_username1, e_password1, c_password1):
+        self.fill_text(admin_locator.e_username, e_username1)
+        self.fill_text(admin_locator.e_password, e_password1)
+        self.fill_text(admin_locator.c_password, c_password1)
         self.click_element(admin_locator.save_button)
         time.sleep(5)
 
@@ -45,14 +46,14 @@ class AdminPage(SeleniumBase):
         time.sleep(5)
 
 
-    def job(self,jobtitle,desc,value):
+    def job(self,jobtitle,desc):
         self.click_element(admin_locator.admin_job)
         self.click_element(admin_locator.job_title)
         self.click_element(admin_locator.add_title)
         self.fill_text(admin_locator.add_jobtitle,jobtitle)
         self.fill_text(admin_locator.add_desc,desc)
         # self.click_element(admin_locator.browse)
-        self.fill_text(admin_locator.browse, value)
+        # self.fill_text(admin_locator.browse, value)
         time.sleep(5)
         self.click_element(admin_locator.save_button)
         time.sleep(5)
@@ -140,6 +141,7 @@ class AdminPage(SeleniumBase):
 
 
 
+
     def admin_module_user(self,employee_name,eusername,epassword,cpassword,username):
         self.click_on_admin()
         self.add_user()
@@ -150,8 +152,8 @@ class AdminPage(SeleniumBase):
         self.delete_user()
 
 
-    def admin_job(self,jobtitle,desc,gradename,minsal,maxsal,name,value):
-        self.job(jobtitle,desc,value)
+    def admin_job(self,jobtitle,desc,gradename,minsal,maxsal,name):
+        self.job(jobtitle,desc)
         self.pay_grade(gradename,minsal,maxsal)
         self.job_category(name)
 
