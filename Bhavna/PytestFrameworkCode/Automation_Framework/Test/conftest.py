@@ -2,6 +2,8 @@ import pytest
 import os
 from datetime import datetime
 from selenium import webdriver
+from ..Base.webdriver_code import WebdriverFactory
+
 
 @pytest.fixture(scope='class')
 def get_driver(request):
@@ -12,6 +14,28 @@ def get_driver(request):
     request.cls.driver = driver
     yield driver
     driver.close()
+
+def pytest_addoption(parser):
+    parser.addoption("--browserName", action="store", default='chrome', help='browser to execute the automation code')
+    parser.addoption("--headlessValue", action="store", default=False, help='headless mode execution for browser')
+
+@pytest.fixture(scope='class')
+def get_driver_wdf(request, pytestconfig):
+    browser = pytestconfig.getoption("browserName")
+    headless = pytestconfig.getoption("headlessValue")
+    if browser and headless:
+        wdf = WebdriverFactory(browser=browser, headless=headless)
+    elif browser:
+        wdf = WebdriverFactory(browser=browser, headless=False)
+    else:
+        wdf = WebdriverFactory(browser="chrome", headless=False)
+    driver = wdf.get_driver_instance()
+    driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    # create a class variable, that we use in the class with self.driver
+    request.cls.driver = driver
+    yield driver
+    driver.close()
+
 
 def pytest_configure(config):
     logs_path = os.path.join(os.getcwd(), "logs")
