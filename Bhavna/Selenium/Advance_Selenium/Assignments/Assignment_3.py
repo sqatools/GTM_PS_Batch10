@@ -82,6 +82,7 @@ class AutomateOHRM:
         time.sleep(5)
         self.driver.close()
 
+
     def Admin_Module(self):
         self.Login('Admin','admin123')
         self.Admin()

@@ -7,5 +7,8 @@
 -> install pytest-html package with below command
    -> pip install pytest-html
 
+# command to execute pytest code with custom params.
+-> python -m pytest -v .\tests\ui\facebook\test_fb_login_wdf.py --browserName="edge" --headlessValue=True
+
 
 
