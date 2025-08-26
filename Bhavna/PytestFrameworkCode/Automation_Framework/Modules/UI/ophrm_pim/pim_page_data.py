@@ -1,0 +1,13 @@
+f_name = "Arya"
+l_name = "Jha"
+street_1 = "House No. 1"
+street_2 = "Dharmpeth"
+e_city = 'Nagpur'
+e_state = 'Maharashtra'
+pincode = '440021'
+number = '8529637411'
+ename = 'Asha'
+relation = 'Mother'
+mobile = '9896969696'
+join_date = '2024-07-07'
+attachment_file = r"D:\Demo\abc.txt"

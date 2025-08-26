@@ -39,4 +39,64 @@
    ->  Type :wq and hit enter
    ->  It will close the pull details editor and update local repository.
 
-14. 
+
+#################### Multi Branching Model #####################
+1. Go to GitHub server
+2. Open GTM_PS_BATCH10 repository
+3. click on branching dropdown, default branch name is main
+4. click on view all branches link ->  default branch will be visible (main)
+5. Click on New Branch button and provide new branch name e.g. deepesh_feature
+   ->  click on 'create new branch' button 
+
+6. Go git terminal on local system and run below command
+   ->  git pull
+   ->  it will update repository from server changes.
+   ->  It will show list all newly created branches.
+
+7. check current active branch with below command
+   ->  git branch
+   ->  current active branch is main
+
+8. Switch to new feature with command below
+   ->  git checkout <feature_branch_name>
+   ->  Switch to feature branch successful
+   ->  Check current active branch again with command
+       ->  git branch
+       ->  feature branch should be the active branch.
+
+
+9.  Create a file in your folder.
+10. goto terminal and check status with command 
+    ->  git status : new file will show in red color
+
+11. Add file with git add command
+    ->  git add file_path
+
+12. Initiate commit operation with command
+    ->  git commit -m "message"
+
+13. perform git push operation with command
+    ->  git push
+
+14. Check newly added file should be available in feature branch on GitHub server.
+
+15. Raise a pull again main branch with below steps
+
+16.  Navigate to repository folder and check there should green button to raise a pull request.
+     ->  compare & pull request
+
+17. If above button is not visible
+    ->  Go to git server
+    ->  server for your branch
+    ->  click on contribute dropdown
+    ->  click on open pull request button.
+
+18. Create a pull request with title, description and required screenshot.
+
+19.  Add review from review section, then select any team member to review code.
+
+20.  The review has to review the code and approve pull request.
+
+21.  Once we got approval from reviewer, then we can merge changes to main branch.
+
+22.  Once feature branch changes are done, then it will visible in main branch.

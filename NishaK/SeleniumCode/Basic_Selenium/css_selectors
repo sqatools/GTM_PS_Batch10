@@ -1,0 +1,51 @@
+Different methods of css selectors
+1. ID
+2. Class
+3. Attribute
+4. prefix substring
+5. suffix substring
+6. Any substring
+
+
+1. ID
+In css selector ID represents with # as prefix to locate element.
+e.g.
+    #ID
+    >>> #email, #pass, #u_0_5_kb
+
+2. Class
+In css selector class represents with dot (.) as prefix to locate element.
+e.g.
+    .class value
+    >>> ._58mk
+    >>> ._42ft._4jy0._6lti._4jy6._4jy2.selected._51sy
+
+3. Attribute
+We can write a css selector with element attribute
+e.g.
+    tag-name[attribute='value']
+    >>> input[placeholder="Email address or phone number"]
+    >>> input[value='2']
+    >>> a[aria-label="Already have an account?"]
+    >>> div>a[aria-label="Already have an account?"]
+
+4. prefix substring
+In css selector we can search the element with the help (^) partial prefix value of attribute.
+e.g.
+    tag-name[attribute^='prefix partial value']
+    >>> a[aria-label^="Already have"]
+    >>> input[aria-label^="Mobile number"]
+
+5. suffix substring
+In css selector we can search the element with the help($) partial suffix value of attribute.
+e.g.
+    tag-name[attribute$='suffix value']
+    >>> input[aria-label$="or email address"]
+    >>> [aria-label$="or email address"]
+
+6. Any substring
+e.g.
+    tag-name[attribute*='attrib value']
+    >>> input[aria-label*="or email"]
+    >>> input[aria-label*="First"]
+    >>> div>div>input[aria-label*="First"]

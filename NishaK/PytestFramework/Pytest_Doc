@@ -1,0 +1,40 @@
+# command to install pytest framework
+>> pip install pytest
+
+# In ptyest each python file name "test_" as prefix considered as test suite file.
+
+# In pytest file, function with "test_" as prefix will considered as test case.
+
+# Command to execute pytest code in terminal
+>> Open terminal in current location where the pytest file exist & run below command
+
+        python -m pytest -v -s .\test_basic_cases.py
+
+            -m : for current path of root location
+            -v : verbose, it will provides detailed information
+            -s : console output of print statement
+
+# Test class name has to starts with capital T or Test as prefix of class
+
+# Function name should be starts with small letter test*<name>
+
+# Execute test cases with folder structure
+
+        python -m pytest -v .\test_practice\
+
+# Command to execute one specific test case
+
+        python -m pytest -v -k "test_multiplication" .\test_practice\smoke_class_marker_file.py
+            -k : pick specific test case
+
+# Command to execute specific marker test case in the file
+
+        python -m pytest -v -m "smoke" .\test_practice\smoke_class_marker_file.py
+
+# Command to execute multiple matching marker with AND condition
+
+        python -m pytest -v -m "smoke and sanity" .\test_practice\smoke_class_marker_file.py
+
+# Command to execute multiple matching marker with OR condition
+
+        python -m pytest -v -m "smoke or sanity" .\test_practice\smoke_class_marker_file.py

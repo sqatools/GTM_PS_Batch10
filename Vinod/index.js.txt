@@ -9,4 +9,4 @@ input_password = input("Enter password: ")
 if input_username == USERNAME and input_password == PASSWORD:
     print("Login successful!")
 else:
-    print("Invalid username or password.")
+    print("Invalid username or password1.")

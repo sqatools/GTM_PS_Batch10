@@ -1,0 +1,46 @@
+# command to install pytest framework
+->  pip install pytest
+
+# In pytest in python with "test_" as prefix consider as test suite file
+
+# In pytest file, function with "test_" as prefix will consider as test cases.
+
+# command to execute pytest code in terminal
+   ->  Open terminal in current location where the pytest file exist and run below command
+  ->   python -m pytest -v -s .\test_basic_cases.py
+   -m :  for current path a root location
+   -v : verbose , it provides detailed
+   -s :  console output of print statement
+
+
+test_basic_cases.py::test_addition PASSED
+test_basic_cases.py::test_multiplication PASSED
+test_basic_cases.py::test_subtraction PASSED
+test_basic_cases.py::test_division FAILED
+test_basic_cases.py::test_greeting Welcome to Pytest
+PASSED
+
+======== 1 failed, 4 passed in 0.52s =====
+
+
+# test class name has to with capital T or Test as prefix of class
+
+# function name should start with small letter test*<name>
+
+# execute test cases with folder structure
+  -> python -m pytest -v .\tests_practice\
+
+# command to execute one specific test case.
+   ->  python -m pytest -v -k "test_multiplication" .\tests_practice\smoke_class_marker_file.py
+   -k :  pick specific test case.
+
+# command to execute specific marker test cases in the file
+   -> python -m pytest -v -m "smoke" .\tests_practice\smoke_class_marker_file.py
+
+
+# command to exe3cute multiple matching marker with AND condition
+  -> python -m pytest -v -m "smoke and sanity" .\tests_practice\smoke_class_marker_file.py
+
+# command to exe3cute multiple matching marker with or condition
+  -> python -m pytest -v -m "smoke or sanity" .\tests_practice\smoke_class_marker_file.py
+

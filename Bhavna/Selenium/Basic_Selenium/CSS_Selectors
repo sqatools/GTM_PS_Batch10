@@ -1,0 +1,31 @@
+# 22/07/25 Session
+
+# Different Method of css selector
+
+1). ID :  in css selector id represent with # as prefix in the locator
+        e.g. #email, #pass, #u_0_5_0E, #u_0_6_l3,
+
+2). class : In css selector class represent with dot (.) as prefix in the locator
+        eg. ._6luy._55r1._1kbt, ._6lux, ._42ft._4jy0._6lth._4jy6._4jy1.selected._51sy, ._42ft._4jy0._6lti._4jy6._4jy2.selected._51sy
+
+3). Attribute :  we can write a css selector with element attribute e.g. tagname[attribute='value']
+        eg: input[placeholder='Email address or phone number']
+            div[id='passContainer']
+            input[value="1"]
+            a[aria-label='Already have an account?']
+4). prefix substring : In css selector we can search the element with the help partial prefix value of attribute
+         e.g tagname[attrib^='prefix partial value']
+            a[aria-label^="Already have"]
+            input[name^="first"]
+
+5) suffix subtring:  In css selector we can search the element with the help partial suffix value of attribute
+            e.g. tagname[attrib$='sufix value']
+            input[aria-label$="or email address"]
+            [aria-label$="or email address"]
+            select[name$="day"]
+
+6) Any substring :
+            e.g.  tagname[attib*='attrib value']
+            input[aria-label*="or email"]
+            input[autocomplete*="new"]
+

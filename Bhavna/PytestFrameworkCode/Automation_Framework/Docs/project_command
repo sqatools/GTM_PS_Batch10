@@ -1,0 +1,11 @@
+# execute automation code from root directory AutomationFramework
+->  python -m pytest -v .\tests\ui\openhrm_test\
+
+# We are working on home work
+
+# generate HTML Report,
+-> install pytest-html package with below command
+   -> pip install pytest-html
+
+ # command to execute pytest code with custom params
+-> python -m pytest -v .\Test\UI\facebook\test_fb_login_wdf.py --browserName='Firefox' --headlessValue=True

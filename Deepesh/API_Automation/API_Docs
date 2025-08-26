@@ -1,0 +1,28 @@
+Types of APIs b y Architecture
+1. Rest API (Reprensentational State Tranfer)
+2. SOAP API (Simple Object Acess Protocol)
+
+# Types of API by Accessibility.
+
+1. Public API:  Anyone can access the public API.
+2. Partner API:  API where the specific partner has access of the data, then it is called partner API.
+3. Private/Internal API: Private API generally not exposed to user public doman.
+
+
+API communicate to each other with help of HTTP protocol
+HTTP Methods
+1. GET :  This method to get information  from any component of the product.
+2. POST : POST method is use for create a new entry in the data base.
+3. PUT :  PUT method helps to update the existing entry.
+4. PATCH : PATCH method helps to update the specific field of the entry.
+5. DELETE :  Delete method remove value from data base.
+
+API Status code:
+100-199 :  Informational
+200-299 :  Success operation
+300-399 :  re-directional message
+400-499 :  client error.
+500-599 :  server error.
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status#informational_responses
+
+

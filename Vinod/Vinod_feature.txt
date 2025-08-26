@@ -1,0 +1,12 @@
+USERNAME = "admin"
+PASSWORD = "1234"
+
+# Get input from user
+input_username = input("Enter username: ")
+input_password = input("Enter password: ")
+
+# Check credentials
+if input_username == USERNAME and input_password == PASSWORD:
+    print("Login successful!")
+else:
+    print("Invalid username or password.")

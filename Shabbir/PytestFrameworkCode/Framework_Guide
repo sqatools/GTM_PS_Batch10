@@ -1,0 +1,31 @@
+Types of Automation Framework
+1. Linear Framework :  data/locator/selenium code everything is one single file, is called linear framework
+2. Module Framework : In this framework user will design some re-usable module functions, that can reduce code redundancy.
+3. Data Driven Framework : When we read data from external file then it is called data driven framework.
+4. Keyword Driven Framework:  In this user will design some re-usage keyword, that can use n number of time.
+                              e.g.  Robotframework is purely keyword driven framework
+
+5. Hybrid Framework : Hybrid framework is combination all other possible framework.
+6. BDD Framework : In this framework , tool will decide the action as the user behaviour in feature file. (Cucumber, Behave)
+
+
+POM (Page Object Model) :  POM is design patter of the class structure.
+                           ->  In POM for each page of website, will create a separate file, that we can specifically contains
+                               method belongs to that page on the website.
+
+
+# We will the design the framework with below combination.
+Pytest + Hybrid + POM
+
+
+#####################################
+Hydrid Framework with POM
+
+->  selenium_base.py  (This is a common class for all the selenium action method)
+->  openhrm_page_class.py (This file will contains all the method belongs to openhrm feature.)
+->  openhrm_page_locator.py (This is locator file for openhrm website)
+->  openhrm_page_data.py (This is test data file for each file)
+->  conftest.py (common fixture file)
+->  test_openhrm_smoke.py  (This file will contain smoke test cases of openhrm website)
+
+
