@@ -5,7 +5,6 @@ c_password1 = "User@1234"
 user_name = "user1_data"
 jobtitle = "Automation_Tester"
 desc = "Automating the website"
-value1 = r"D:\Demo\abc.txt"
 gradename = "Grade 7"
 minsal = "100"
 maxsal = "1000"
@@ -21,11 +20,3 @@ sname = 'Python-Selenium'
 sdesc = 'Selenium Python Skills'
 edu_level = 'B.E (Test)'
 language = 'Hindi'
-
-# sname = "Night Shift"
-
-
-
-
-# first_name = "Ryaan"
-# last_name = "Zehr"

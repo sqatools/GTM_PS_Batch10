@@ -8,6 +8,8 @@ from ....modules.ui.openhrm.openhrm_page_data import *
 from ....modules.ui.openhrm_admin.admin_page_data import *
 from ....utilities.util_tools import Utils
 
+from Deepesh.PytestFrameworkCode.AutomationFramework.modules.ui.openhrm.openhrm_page_data import password_value
+
 
 @pytest.mark.usefixtures("get_driver")
 class TestOpenHRM:

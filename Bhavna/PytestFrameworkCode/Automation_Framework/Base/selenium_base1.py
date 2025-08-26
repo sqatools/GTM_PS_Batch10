@@ -63,7 +63,7 @@ class SeleniumBase:
             self.log.info(f"{e}")
             raise
 
-    def get_text(self, locator,):
+    def get_text(self, locator):
         self.log.info(f"entering text of: {locator}")
         try:
             element = self.get_element(locator=locator)
@@ -84,5 +84,13 @@ class SeleniumBase:
             self.log.info(f"{e}")
             raise
 
-
+    def send_keys(self, locator,value):
+        self.log.info(f"sending keys:{value} to {locator}")
+        try:
+            element = self.get_element(locator=locator)
+            element.send_keys(value)
+        except Exception as e:
+            self.take_screenshot("send_keys")
+            self.log.info(f"{e}")
+            raise
 

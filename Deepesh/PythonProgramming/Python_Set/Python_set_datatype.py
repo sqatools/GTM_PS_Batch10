@@ -111,7 +111,7 @@ set_g.discard(78)
 print("set_g:", set_g)  #
 # set_g: {100, 4, 456, 'b', 200, 50, 'a'}
 
-# discard non-existing value : If value is not available, it will now throw any error.
+# discard non-existing value : If value is not available, it will not throw any error.
 set_g.discard(500)
 print("set_g:", set_g) # {100, 4, 456, 200, 50, 'a', 'b'}
 
