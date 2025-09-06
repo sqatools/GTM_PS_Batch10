@@ -1,0 +1,96 @@
+# 16/07/2025 Session
+
+
+# There are 2 type of xpath
+1. absolute xpath (non-recommended): absolute xpath follows complete dom structure to indentify any specific element.
+   e.g.  /html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input
+
+2. relative xpath: relative xpath works with any attribute of specific element
+     e.g.   //tagname[@attribute='value']
+        ->  //input[@type="password"]
+            //input[@id="email"]
+            //input[@placeholder="Password"]
+            //input[@id="pass"]
+            //input[@name="pass"]
+            //input[@data-testid="royal-pass"]
+            //input[@aria-label="Password"]
+
+
+Basic XPath Methods:
+
+    i) text method :  text method look for exact text of any particular web element.
+                    eg: //tagname[text()='textvalue']
+                    //button[text()='Log in']
+                    //a[text()='Create new account']
+
+     ii) contains method : contains method search the element with the help of partial value of text and partial value
+                    eg. //tagname[contains(text(),'Partial text')]
+                    //button[contains(text(),in)]
+                    //a[contains(text(),'new')]
+
+                    eg. //tagname[contains(@attribute,'partial attribute value)]
+                     //input[contains(@type,"word")]
+                     //input[contains(@data-testid,"email")]
+
+    iii) and , or condition :  we can identify the element with the help multiple attribute with logical operators
+    # in case of 'and' condition both the condition should be True.
+                    eg. //tagname[@att1='value' and @att2='value']
+                        //input[@type="text" and @name="email"]
+                        //input[@data-testid="royal-pass" and @placeholder="Password"]
+
+    # in case of 'or' condition one of the condition should be True.
+                    eg. //tagname[@attr1 = 'value or attr2='value]
+                    //input[contains(@data-testid,"royal") or @name='email']
+                    //input[class="input[@text _6luy" or @name='pass']
+
+   iv) starts-with :  start-with method look for starting value of any attribute.
+                    eg. //tagname[starts-with(@attribute,'start-value')]
+                    //a[starts-with(text(), 'Create new')]
+                    //input[starts-with(@placeholder,"Email")]
+
+    v) indexing with multiple matching element: If we have multiple matching element, then we can use indexing to findout
+                       e.g.  ->  (//tagname[@atribute='value'])[1]
+                       (//input[contains(@data-testid,"royal")])[2]
+
+#########################################################
+
+# Advance XPath Methods
+
+1) parent :  In this we will take reference of child element and target parent element.
+             e.g  //ref_tagname[@attribute='value']//parent::tar_tagname[@attribute='value']
+//th[contains(@class,'productHeadTH')]//parent::tr
+//td[contains(@class,'productHead')]//parent::tr
+//th[text()='PRODUCTS']//parent::tr
+//p[text()='Stock Traded']//parent::div
+//p[text()='Advances']//parent::div
+//p[text()='52 Week Low']//parent::div
+//a[text()='2,907']//parent::h3//parent::div
+
+2) ancestor: ancestor method helps to identify the element with which upper side parent (grandparent, great grand parent)
+              e.g   //ref_tagname[@attribute='value']//ancestor::tar_tagname[@attribute='value']
+//a[text()='2,907']//ancestor::div[@class="ms_indicater_box blue_box"]
+//a[text()='2,907']//ancestor::div[@class="ms_indicater"]
+
+
+3) following : with the help following method we can findout all the element which are available downside of refer element
+               on the web page.
+               e.g    //ref_tagname[@attribute='value']//following::tar_tagname[@attribute='value']
+//p[text()='NIFTY BANK']//following::h3
+//span[text()='From']//following::p3
+//span[text()='To']//following::p
+
+4) following-sibling: with the help following-sibling method we can find out all the element which are available downside of refer element
+               on the in same family on web page. It only targe sibliung element.
+
+                 e.g  //ref_tagname[@attribute='value']//following::tar_tagname[@attribute='value']
+5) preceding: with the help of preceding method we can find out all the element which are available upper side of refer element
+               on the web page.
+                e.g. -> //ref_tagname[@attribute='value']//preceding::tar_tagname[@attribute='value']
+//td[text()='Mumbai']//preceding::input[@id='birthday']
+//td[text()='Mumbai']//preceding::input[@id='female']
+//td[text()='Mumbai']//preceding::input[@type='checkbox']
+
+6) preceding-sibling:
+               e.g  -> //ref_tagname[@attribute='value']//preceding-sibling::tar_tagname[@attribute='value']
+//td[text()='Delhi']//preceding-sibling::td[2]
+

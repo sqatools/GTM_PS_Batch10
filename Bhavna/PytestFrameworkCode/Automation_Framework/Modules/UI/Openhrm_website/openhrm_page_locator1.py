@@ -1,0 +1,37 @@
+from selenium.webdriver.common.by import By
+
+class Openhrm_locator:
+
+    username_field = (By.NAME,"username")
+    password_field = (By.NAME,"password")
+    login_button = (By.XPATH,"//button[@type='submit']")
+    choose_admin = (By.XPATH,"//span[text()='Admin']")
+    add_user = (By.XPATH,"//div[contains(@class,'orangehrm-header')]//button[@type='button']")
+    select_dd = (By.XPATH,"//label[text()='User Role']//following::div[@class='oxd-select-wrapper'][1]")
+    select_admin_dd = (By.XPATH,"//div[@role='option']//span[text()='Admin']")
+    e_name = (By.XPATH,"//input[contains(@placeholder,'Type for')]")
+    select_employee = (By.XPATH,"//div[@class='oxd-autocomplete-option']")
+    status = (By.XPATH,"//label[text()='User Role']//following::div[@class='oxd-select-wrapper'][2]")
+    e_status = (By.XPATH,"//span[text()='Enabled']")
+    e_username = (By.XPATH,"//label[text()='Username']//following::input[1]")
+    e_password = (By.XPATH,"//label[text()='Password']//following::input[1]")
+    c_password = (By.XPATH,"//label[text()='Password']//following::input[2]")
+    save_button = (By.XPATH,"//button[text()=' Save ']")
+    s_username = (By.XPATH,"//label[text()='Username']//following::input[contains(@class,'oxd-input')]")
+    search_user = (By.XPATH,"//button[text()=' Search ']")
+    delete1_user = (By.XPATH,"//div[text()='user3_peter']//following::div//i[@class='oxd-icon bi-trash']")
+    delete2_user = (By.XPATH,"//div[@class='orangehrm-modal-footer']//button[@type='button'][2]")
+    reset = (By.XPATH,"//button[text()=' Reset ']")
+    admin_job = (By.XPATH,"//span[text()='Job ']")
+    job_title = (By.XPATH,"//a[text()='Job Titles']")
+    add_title = (By.XPATH,"//button[text()=' Add ']")
+    add_jobtitle = (By.XPATH,"//label[text()='Job Title']//following::input[contains(@class,'oxd-input')]")
+    add_desc = (By.XPATH,"//textarea[@placeholder='Type description here']")
+    # save_button1 = (By.XPATH,"//button[text()=' Save ']")
+    PIM = (By.XPATH,"//span[text()='PIM']")
+    e_list = (By.XPATH,"//a[text()='Add Employee']")
+    e_firstname = (By.NAME,"firstName")
+    e_lastname = (By.NAME,"lastName")
+    leave = (By.XPATH,"//span[text()='Leave']")
+
+
